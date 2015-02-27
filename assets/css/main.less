@@ -2,18 +2,111 @@
 
 // conference specific styles here
 
+@orange:      #d87500;
+@dark-grey:   #222;
+@medium-grey: #333;
+@light-grey:  #555;
+
+@brand-primary: @orange;
+
 @navbar-default-link-color:        #FFF;
 @navbar-default-link-hover-color:  darken(@navbar-default-link-color, 10%);
-@navbar-default-bg:                #333;
+@navbar-default-bg:                @medium-grey;
 
 @border-radius-base:        0;
+
+
+
+/* font Estrangelo Edessa */
+@font-face {
+  font-family: 'Estrangelo Edessa';
+  src: url('../fonts/estre.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estrangelo Edessa';
+  src: url('../fonts/estre.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estrangelo Edessa';
+  src: url('../fonts/estre.ttf') format('truetype'),
+       url('../fonts/estre.woff') format('woff'),
+       url('../fonts/estre.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: 'Estrangelo Edessa';
+}
 
 
 .banner {
 	background: url('@{img}bg.png') no-repeat top center;
 	text-align: center;
+	margin-bottom: 60px;
 
 	img {
 		margin: 30px;
+	}
+}
+
+
+.overview {
+	.row {
+		background-color: @dark-grey;
+		color: @light-grey;
+	}
+
+	.panel {
+		border-color: transparent;
+		background-color: @medium-grey;
+
+		min-height: 100px;
+	}
+
+	.room {
+		.title {
+			color: white;
+			font-weight: bold;
+		}
+
+		.program-schedule {
+			color: #eeeeee;
+			font-size: 14px;
+		}
+
+		&.has-preview.has-schedule {
+			.panel-heading {
+				display: none !important;
+			}
+
+			.panel-body {
+				position: relative;
+
+				.title {
+					display: block !important;
+
+					position: absolute;
+					top: 52px;
+					left: 15px;
+					width: 213px;
+					text-align: center;
+
+					&:hover, &:active {
+						text-decoration: none;
+					}
+
+					text-shadow:
+						#333333 -3px -3px 5px,
+						#333333 3px 3px 5px,
+						#333333 -3px 3px 5px,
+						#333333 3px -3px 5px;
+				}
+			}
+		}
 	}
 }
