@@ -80,6 +80,10 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 			'S2',
 			'S1',
 		),
+
+		'Webcam' => array(
+			'foyer'
+		),
 	),
 
 	/**
@@ -287,7 +291,19 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'PREVIEW' => true,
 		'SCHEDULE' => true,
 		'FEEDBACK' => true,
-		'SUBTITLES' => true,
+		'IRC' => true,
+		'TWITTER' => true,
+	),
+
+	'foyer' => array(
+		'DISPLAY' => 'Foyer (Ausstellung)',
+		'FORMATS' => array(
+			'rtmp-hd',
+			'hls-hd',
+			'webm-hd',
+		),
+		'STREAM' => 'cam',
+		'PREVIEW' => true,
 		'IRC' => true,
 		'TWITTER' => true,
 	),
