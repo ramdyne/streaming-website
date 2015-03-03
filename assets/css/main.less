@@ -1,3 +1,30 @@
 @import "_structure.less";
 
 // conference specific styles here
+
+@orange: #eb7f00;
+
+@brand-primary: @orange;
+
+.banner .container {
+	position: relative;
+
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: @border-radius-large;
+		margin-top: 20px;
+	}
+
+	h2 {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		text-align: center;
+
+		color: #fff;
+		text-shadow: 1px 1px 3px #333;
+		font-weight: normal;
+		font-size: 30px;
+	}
+}

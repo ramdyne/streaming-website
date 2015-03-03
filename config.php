@@ -15,40 +15,35 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => '31C3',
+	'TITLE' => 'FOSSGIS-Konferenz 2015',
 
 	/**
 	 * Veranstalter
 	 * Wird für den <meta name="author">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'AUTHOR' => 'CCC',
+	'AUTHOR' => 'FOSSGIS e.V.',
 
 	/**
 	 * Beschreibungstext
 	 * Wird für den <meta name="description">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'DESCRIPTION' => 'Video Live-Streaming vom 31C3',
+	'DESCRIPTION' => 'Video Live-Streaming von der FOSSGIS-Konferenz 2015',
 
 	/**
 	 * Schlüsselwortliste, Kommasepariert
 	 * Wird für den <meta name="keywords">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'KEYWORDS' => '31C3, Hacking, Chaos Computer Club, Video, Media, Streaming, Hacker',
+	'KEYWORDS' => 'FOSSGIS, FOSSGIS-Konferenz, 2015, FOSSGIS-Konferenz 2015, Open Source, GIS, Konferenz, Geoinformatik, OpenStreetMap, Video, Media, Streaming, Live',
 
 	/**
 	 * HTML-Code für den Footer (z.B. für spezielle Attribuierung mit <a>-Tags)
 	 * Sollte üblicherweise nur Inline-Elemente enthalten
 	 * Wird diese Zeile auskommentiert, wird die Standard-Attribuierung für (c3voc.de) verwendet
 	 */
-	'FOOTER_HTML' => '
-		by <a href="https://ccc.de">Chaos Computer Club e.V</a>,
-		<a href="http://fem.tu-ilmenau.de/">FeM</a>,
-		<a href="http://www.ags.tu-bs.de/">ags</a> &amp;
-		<a href="https://c3voc.de">c3voc</a>
-	',
+	//'FOOTER_HTML' => 'by <a href="https://c3voc.de">c3voc</a>',
 
 	/**
 	 * HTML-Code für den Banner (nur auf der Startseite, direkt unter dem Header)
@@ -60,7 +55,12 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
-	//'BANNER_HTML' => '31C3 – a new dawn',
+	'BANNER_HTML' => '
+		<div class="container">
+			<img src="assets/img/schloss.png" width="1367" height="463" alt="Schloss zu Münster" />
+			<h2 class="hidden-xs">Willkommen zur FOSSGIS-Konferenz 2015</h2>
+		</div>
+	',
 );
 
 /**
@@ -75,19 +75,10 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 * sonst werden sie nicht angezeigt.
 	 */
 	'GROUPS' => array(
-		'Lecture Rooms' => array(
-			'saal1',
-			'saal2',
-			'saalg',
-			'saal6',
-		),
-
-		'Live DJ Sets'  => array(
-			'lounge',
-			'ambient',
-		),
-		'Live Podcasts' => array(
-			'sendezentrum',
+		'Vortragsräume' => array(
+			'S10',
+			'S2',
+			'S1',
 		),
 	),
 
@@ -95,7 +86,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELEASES' => 'http://media.ccc.de/browse/congress/2014/index.html',
+	'RELEASES' => 'http://www.fossgis.de/konferenz/2015/programm/events.de.html',
 
 	/**
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
@@ -110,7 +101,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
+	//'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
 );
 
 
@@ -123,11 +114,11 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'saal1' => array(
+	'S10' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'Saal 1',
+		'DISPLAY' => 'S10 (GIS I)',
 
 		/**
 		 * Vefügbare Streaming-Formate
@@ -136,11 +127,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Änderungen am Code erforderlich.
 		 */
 		'FORMATS' => array(
-			'rtmp-sd', 'rtmp-hd',
-			'hls-sd', 'hls-hd',
-			'webm-sd', 'webm-hd',
+			'rtmp-sd',
+			'hls-sd',
+			'webm-sd',
 			'audio-mp3', 'audio-opus',
-			'slides',
 		),
 
 		/**
@@ -148,7 +138,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
 		 * s1 bis s5 durchnummeriert.
 		 */
-		'STREAM' => 's1',
+		'STREAM' => 's2',
 
 		/**
 		 * Stream-Vorschaubildchen auf der Übersichtsseite anzeigen
@@ -169,7 +159,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * s1_<string>_sd, also z.B. s1_stereo_sd zu benutzen. Abgesehen von den
 		 * anderen Streamnamen verhält sich die Seite, als wäre false gesetzt.
 		 */
-		'TRANSLATION' => true,
+		'TRANSLATION' => false,
 
 		/**
 		 * Fahrplan-Ansicht auf der Raum-Seite aktivieren (boolean)
@@ -187,7 +177,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Name des Raums im Fahrplan
 		 * Wenn diese Zeile auskommentiert ist wird der Raum-Slug verwendet
 		 */
-		'SCHEDULE_NAME' => 'Saal 1',
+		//'SCHEDULE_NAME' => 'S10',
 
 		/**
 		 * Feedback anzeigen (boolean)
@@ -209,7 +199,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle Subtitles-Funktionialitäten durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['SUBTITLES']-Blocks deaktiviert werden
 		 */
-		'SUBTITLES' => true,
+		'SUBTITLES' => false,
 
 		/**
 		 * IRC-Link aktivieren (boolean)
@@ -235,10 +225,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		* Der globale $GLOBALS['CONFIG']['IRC']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-1 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-1',
-		),
+		//'IRC_CONFIG' => array(
+		//	'DISPLAY' => '#31C3-hall-1 @ hackint',
+		//	'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-1',
+		//),
 
 		/**
 		 * Twitter-Link aktivieren (boolean)
@@ -263,126 +253,43 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		* Der globale $GLOBALS['CONFIG']['TWITTER']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall1 @ twitter',
-			'TEXT'    => '#31C3 #hall1',
-		),
+		//'TWITTER_CONFIG' => array(
+		//	'DISPLAY' => '#hall1 @ twitter',
+		//	'TEXT'    => '#31C3 #hall1',
+		//),
 	),
 
-	'saal2' => array(
-		'DISPLAY' => 'Saal 2',
+	'S2' => array(
+		'DISPLAY' => 'S2 (GIS II)',
 		'FORMATS' => array(
-			'rtmp-sd', 'rtmp-hd',
-			'hls-sd', 'hls-hd',
-			'webm-sd', 'webm-hd',
-			'audio-mp3', 'audio-opus',
-			'slides',
-		),
-		'STREAM' => 's2',
-		'PREVIEW' => true,
-		'TRANSLATION' => true,
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 2',
-		'FEEDBACK' => true,
-		'SUBTITLES' => true,
-		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-2 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-2',
-		),
-		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall2 @ twitter',
-			'TEXT'    => '#31C3 #hall2',
-		),
-	),
-
-	'saalg' => array(
-		'DISPLAY' => 'Saal G',
-		'FORMATS' => array(
-			'rtmp-sd', 'rtmp-hd',
-			'hls-sd', 'hls-hd',
+			'rtmp-sd',
+			'hls-sd',
 			'webm-sd',
 			'audio-mp3', 'audio-opus',
-			'slides',
 		),
 		'STREAM' => 's3',
 		'PREVIEW' => true,
-		'TRANSLATION' => true,
 		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal G',
 		'FEEDBACK' => true,
-		'SUBTITLES' => true,
 		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-g @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-g',
-		),
 		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hallg @ twitter',
-			'TEXT'    => '#31C3 #hallg',
-		),
 	),
 
-	'saal6' => array(
-		'DISPLAY' => 'Saal 6',
+	'S1' => array(
+		'DISPLAY' => 'S3 (OSM)',
 		'FORMATS' => array(
-			'rtmp-sd', 'rtmp-hd',
-			'hls-sd', 'hls-hd',
-			'webm-sd', 'webm-hd',
+			'rtmp-sd',
+			'hls-sd',
+			'webm-sd',
 			'audio-mp3', 'audio-opus',
-			'slides',
 		),
 		'STREAM' => 's4',
 		'PREVIEW' => true,
-		'TRANSLATION' => true,
 		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 6',
 		'FEEDBACK' => true,
 		'SUBTITLES' => true,
 		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-6 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-6',
-		),
 		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall6 @ twitter',
-			'TEXT'    => '#31C3 #hall6',
-		),
-	),
-
-
-	'lounge' => array(
-		'DISPLAY' => 'Lounge',
-		'FORMATS' => array(
-			'music-mp3', 'music-opus',
-		),
-	),
-	'ambient' => array(
-		'DISPLAY' => 'Ambient',
-		'FORMATS' => array(
-			'music-mp3', 'music-opus',
-		),
-	),
-
-
-	'sendezentrum' => array(
-		'DISPLAY' => 'Sendezentrum',
-		'FORMATS' => array(
-			'rtmp-sd', 'rtmp-hd',
-			'hls-sd', 'hls-hd',
-			'webm-sd', 'webm-hd',
-			'audio-mp3', 'audio-opus',
-		),
-		'STREAM' => 's5',
-		'TRANSLATION' => false,
-		'SCHEDULE' => true,
-		'FEEDBACK' => true,
-		'SUBTITLES' => false,
-		'IRC' => false,
-		'TWITTER' => false,
 	),
 );
 
@@ -400,7 +307,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * aufhören zu funktionieren. Wenn die Quelle unverlässlich ist ;) sollte ein
 	 * externer HTTP-Cache vorgeschaltet werden.
 	 */
-	'URL' => 'http://events.ccc.de/congress/2014/Fahrplan/schedule.xml',
+	'URL' => 'http://www.fossgis.de/konferenz/2015/programm/schedule.de.xml',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
@@ -420,7 +327,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * Diese folgende Beispiel-Zeile Simuliert, dass das
 	 * Konferenz-Datum 2014-12-29 auf den heutigen Tag 2015-02-24 verschoben ist.
 	 */
-	'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2014-12-28') - strtotime(/* Today */ '2015-03-01'),
+	'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2015-03-11') - strtotime(/* Today */ '2015-03-03'),
 	//'SIMULATE_OFFSET' => 0,
 );
 
@@ -461,12 +368,12 @@ $GLOBALS['CONFIG']['FEEDBACK'] = array(
  *
  * Wird dieser Block auskommentiert, wird das gesamte Subtitle-System deaktiviert
  */
-$GLOBALS['CONFIG']['SUBTITLES'] = array(
-	/**
-	 * URL des L2S2-Servers
-	 */
-	'URL' => 'http://subtitles.c3voc.de/',
-);
+//$GLOBALS['CONFIG']['SUBTITLES'] = array(
+//	/**
+//	 * URL des L2S2-Servers
+//	 */
+//	'URL' => 'http://subtitles.c3voc.de/',
+//);
 
 /**
  * Globale Konfiguration der IRC-Links.
@@ -485,7 +392,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein IRC_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#31C3-%s @ hackint',
+	'DISPLAY' => '#fossgis @ freenode',
 
 	/**
 	 * URL für die IRC-Links.
@@ -493,7 +400,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'URL' => 'irc://irc.hackint.eu:6667/31C3-%s',
+	'URL' => 'irc://irc.freenode.net/#fossgis',
 );
 
 /**
@@ -513,7 +420,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#%s @ twitter',
+	'DISPLAY' => '#FOSSGIS2015 @ twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
@@ -521,7 +428,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#31C3 #%s',
+	'TEXT' => '#FOSSGIS2015',
 );
 
 
