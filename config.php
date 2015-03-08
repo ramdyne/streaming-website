@@ -367,7 +367,7 @@ $GLOBALS['CONFIG']['FEEDBACK'] = array(
 	 * die .sqlite3-Datei schreiben darf, er muss auch im übergeordneten Order neue
 	 * (Lock-)Dateien anlegen dürfen
 	 */
-	'DSN' => 'sqlite:/opt/31c3-streaming-feedback/feedback.sqlite3',
+	'DSN' => 'sqlite:/var/streaming-feedback/feedback.sqlite3',
 
 	/**
 	 * Login-Daten für die /feedback/read/-Seite, auf der eingegangenes
