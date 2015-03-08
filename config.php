@@ -57,7 +57,10 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 */
 	'BANNER_HTML' => '
 		<div class="container">
-			<img src="assets/img/schloss.png" width="1367" height="463" alt="Schloss zu Münster" />
+			<figure>
+				<img src="assets/img/schloss.jpg" width="1367" height="463" alt="Schloss zu Münster" />
+				<figcaption>Photo: WWU/Peter Grewer</figcaption>
+			</figure>
 			<h2 class="hidden-xs">Willkommen zur FOSSGIS-Konferenz 2015</h2>
 		</div>
 	',
