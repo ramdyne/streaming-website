@@ -419,7 +419,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'URL' => 'irc://irc.freenode.net/#fossgis',
+	'URL' => 'https://kiwiirc.com/client/irc.freenode.net/#fossgis',
 );
 
 /**
