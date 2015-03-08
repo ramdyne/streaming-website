@@ -299,11 +299,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	),
 
 	'foyer' => array(
-		'DISPLAY' => 'Foyer (Ausstellung)',
+		'DISPLAY' => 'Foyer',
 		'FORMATS' => array(
-			'rtmp-hd',
-			'hls-hd',
-			'webm-hd',
+			'hls-sd',
+			'webm-sd',
 		),
 		'STREAM' => 'cam',
 		'PREVIEW' => true,
