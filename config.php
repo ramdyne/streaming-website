@@ -137,7 +137,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 			//'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
-			'audio-mp3', //'audio-opus',
+			'audio-mp3', 'audio-opus',
 		),
 
 		/**
@@ -272,7 +272,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 			//'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
-			'audio-mp3', //'audio-opus',
+			'audio-mp3', 'audio-opus',
 		),
 		'STREAM' => 's4',
 		'PREVIEW' => true,
@@ -288,7 +288,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 			//'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
-			'audio-mp3', //'audio-opus',
+			'audio-mp3', 'audio-opus',
 		),
 		'STREAM' => 's2',
 		'PREVIEW' => true,
