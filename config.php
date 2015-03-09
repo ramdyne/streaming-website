@@ -121,11 +121,11 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'S10' => array(
+	'S2' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'S10 (GIS I)',
+		'DISPLAY' => 'S2 (GIS I)',
 
 		/**
 		 * Vefügbare Streaming-Formate
@@ -145,7 +145,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
 		 * s1 bis s5 durchnummeriert.
 		 */
-		'STREAM' => 's2',
+		'STREAM' => 's3',
 
 		/**
 		 * Stream-Vorschaubildchen auf der Übersichtsseite anzeigen
@@ -266,15 +266,15 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		//),
 	),
 
-	'S2' => array(
-		'DISPLAY' => 'S2 (GIS II)',
+	'S10' => array(
+		'DISPLAY' => 'S10 (GIS II)',
 		'FORMATS' => array(
 			'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
 			'audio-mp3', 'audio-opus',
 		),
-		'STREAM' => 's3',
+		'STREAM' => 's4',
 		'PREVIEW' => true,
 		'SCHEDULE' => true,
 		'FEEDBACK' => true,
@@ -283,14 +283,14 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	),
 
 	'S1' => array(
-		'DISPLAY' => 'S3 (OSM)',
+		'DISPLAY' => 'S1 (OSM)',
 		'FORMATS' => array(
 			'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
 			'audio-mp3', 'audio-opus',
 		),
-		'STREAM' => 's4',
+		'STREAM' => 's2',
 		'PREVIEW' => true,
 		'SCHEDULE' => true,
 		'FEEDBACK' => true,
