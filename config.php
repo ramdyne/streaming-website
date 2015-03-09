@@ -439,7 +439,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '@FOSSGIS2015 on twitter',
+	'DISPLAY' => '#FOSSGIS on twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
@@ -447,7 +447,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => ' @FOSSGIS2015',
+	'TEXT' => ' #FOSSGIS',
 );
 
 
