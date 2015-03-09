@@ -411,7 +411,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein IRC_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#fossgis @ freenode',
+	'DISPLAY' => '#fossgis on freenode',
 
 	/**
 	 * URL für die IRC-Links.
@@ -439,7 +439,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#FOSSGIS2015 @ twitter',
+	'DISPLAY' => '@FOSSGIS2015 on twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
