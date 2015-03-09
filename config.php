@@ -134,10 +134,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Änderungen am Code erforderlich.
 		 */
 		'FORMATS' => array(
-			'rtmp-sd',
+			//'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
-			'audio-mp3', 'audio-opus',
+			'audio-mp3', //'audio-opus',
 		),
 
 		/**
@@ -269,10 +269,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	'S10' => array(
 		'DISPLAY' => 'S10 (GIS II)',
 		'FORMATS' => array(
-			'rtmp-sd',
+			//'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
-			'audio-mp3', 'audio-opus',
+			'audio-mp3', //'audio-opus',
 		),
 		'STREAM' => 's4',
 		'PREVIEW' => true,
@@ -285,10 +285,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	'S1' => array(
 		'DISPLAY' => 'S1 (OSM)',
 		'FORMATS' => array(
-			'rtmp-sd',
+			//'rtmp-sd',
 			'hls-sd',
 			'webm-sd',
-			'audio-mp3', 'audio-opus',
+			'audio-mp3', //'audio-opus',
 		),
 		'STREAM' => 's2',
 		'PREVIEW' => true,
