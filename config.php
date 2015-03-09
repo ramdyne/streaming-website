@@ -447,7 +447,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#FOSSGIS2015',
+	'TEXT' => ' @FOSSGIS2015',
 );
 
 
