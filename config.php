@@ -357,7 +357,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
  *
  * Wird dieser Block auskommentiert, wird das gesamte Feedback-System deaktiviert
  */
-$GLOBALS['CONFIG']['FEEDBACK'] = array(
+$GLOBALS['CONFIG']['FEEDBACK_DISABLED'] = array(
 	/**
 	 * DSN zum abspeichern der eingegebenen Daten
 	 * die Datenbank muss eine Tabelle enthaltem, die dem in `lib/schema.sql` angegebenen
