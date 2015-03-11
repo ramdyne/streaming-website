@@ -83,10 +83,6 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 			'S2',
 			'S1',
 		),
-
-		'Webcam' => array(
-			'foyer'
-		),
 	),
 
 	/**
@@ -294,18 +290,6 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'PREVIEW' => true,
 		'SCHEDULE' => true,
 		'FEEDBACK' => true,
-		'IRC' => true,
-		'TWITTER' => true,
-	),
-
-	'foyer' => array(
-		'DISPLAY' => 'Foyer',
-		'FORMATS' => array(
-			'hls-sd',
-			'webm-sd',
-		),
-		'STREAM' => 'cam',
-		'PREVIEW' => true,
 		'IRC' => true,
 		'TWITTER' => true,
 	),
