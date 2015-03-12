@@ -89,7 +89,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELEASES' => 'http://www.fossgis.de/konferenz/2015/programm/events.de.html',
+	'RELEASES' => 'https://www.youtube.com/playlist?list=PLTli5-lbeoiYopkK5ixkgt1Uzh_0v6Z6T',
 
 	/**
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
