@@ -22,7 +22,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird für den <meta name="author">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'AUTHOR' => 'C3Voc & ags',
+	'AUTHOR' => 'c3voc & ags',
 
 	/**
 	 * Beschreibungstext
@@ -44,7 +44,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird die Standard-Attribuierung für (c3voc.de) verwendet
 	 */
 	'FOOTER_HTML' => '
-		by <a href="https://c3voc.de">C3Voc</a>,
+		by <a href="https://c3voc.de">c3voc</a>,
 		<a href="http://www.ags.tu-bs.de/">ags</a> &amp;
 	',
 
