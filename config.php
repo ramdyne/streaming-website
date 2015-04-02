@@ -44,8 +44,8 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird die Standard-Attribuierung für (c3voc.de) verwendet
 	 */
 	'FOOTER_HTML' => '
-		by <a href="https://c3voc.de">c3voc</a>,
-		<a href="http://www.ags.tu-bs.de/">ags</a> &amp;
+		by <a href="https://c3voc.de">c3voc</a> &amp;
+		<a href="http://www.ags.tu-bs.de/">ags</a>
 	',
 
 	/**
