@@ -1,3 +1,37 @@
 @import "_structure.less";
 
 // conference specific styles here
+@brand-primary:         #1ec290;
+@highlight:             #b6cd5d;
+@background:            #251c16;
+@text-color:            #434343;
+
+@link-color:            #656565;
+@link-hover-color:      #009467;
+
+@navbar-default-bg:     #222222;
+
+
+html, body {
+	height: 100%;
+}
+
+body > .container {
+	background-color: white;
+	min-height: 100%;
+	margin-bottom: 30px;
+}
+
+@schedule-selected-room: @background;
+
+body {
+	background-color: @background;
+}
+
+
+body.overview .recordings a {
+	color: @brand-primary;
+	&:hover {
+		color: @link-hover-color;
+	}
+}
