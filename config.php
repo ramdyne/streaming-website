@@ -356,7 +356,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * Wird diese Zeile auskommentiert, werden die apc_*-Methoden nicht verwendet und
 	 * der Fahrplan bei jedem Request von der Quelle geladen und geparst
 	 */
-	'CACHE' => 30*60,
+	//'CACHE' => 30*60,
 
 	/**
 	 * Skalierung der Programm-Vorschau in Sekunden pro Pixel
