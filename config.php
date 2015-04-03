@@ -190,7 +190,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Audio und zuletzt Musik als
 		 * Default-Stream angenommen.
 		 */
-		'SLIDES' => true,
+		'SLIDES' => false,
 
 		/**
 		 * Audio-Only-Stream verfügbar
@@ -319,7 +319,6 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'SD_VIDEO' => true,
 		'HD_VIDEO' => false,
 		'AUDIO' => true,
-		'SLIDES' => true,
 
 		'SCHEDULE' => true,
 		'SCHEDULE_NAME' => 'Tagungsraum 1',
