@@ -103,7 +103,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	'GROUPS' => array(
 		'' => array(
 			'vortragssaal',
-			'workshops',
+			'tagungsraum-1',
 		),
 	),
 );
