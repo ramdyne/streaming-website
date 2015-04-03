@@ -311,8 +311,8 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		//),
 	),
 
-	'workshops' => array(
-		'DISPLAY' => 'Workshops',
+	'tagungsraum-1' => array(
+		'DISPLAY' => 'Tagungsraum 1',
 		'STREAM' => 's2',
 		'PREVIEW' => true,
 
