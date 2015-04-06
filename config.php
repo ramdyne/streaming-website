@@ -111,7 +111,6 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 		'' => array(
 			'vortragssaal',
 			'tagungsraum-1',
-			//'heggcenter', // Enable Me!
 		),
 	),
 );
@@ -334,22 +333,6 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'IRC' => true,
 		'TWITTER' => true,
 	),
-
-	'heggcenter' => array(
-		'DISPLAY' => 'Heggcenter',
-		'STREAM' => 's3',
-		'PREVIEW' => true,
-
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Heggcenter',
-		'FEEDBACK' => true,
-		'IRC' => true,
-		'TWITTER' => true,
-	),
 );
 
 
@@ -373,7 +356,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
-	'ROOMFILTER' => array('SAAL', 'Tagungsraum 1', 'Heggcenter'),
+	'ROOMFILTER' => array('SAAL', 'Tagungsraum 1'),
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
