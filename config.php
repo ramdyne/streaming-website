@@ -415,7 +415,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * aufhören zu funktionieren. Wenn die Quelle unverlässlich ist ;) sollte ein
 	 * externer HTTP-Cache vorgeschaltet werden.
 	 */
-	'URL' => 'http://www.fossgis.de/konferenz/2015/programm/schedule.de.xml',
+	'URL' => 'https://frab.sendegate.de/en/ppw15a/public/schedule.xml',
 	/**
 	 * APCU-Cache-Zeit in Sekunden
 	 * Wird diese Zeile auskommentiert, werden die apc_*-Methoden nicht verwendet und
