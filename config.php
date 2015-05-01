@@ -22,7 +22,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => '5. Podlove Podcaster Workshop in Berlin am 1.-3. Mai 2015 #ppw15a',
+	'TITLE' => '5. Podlove Podcaster Workshop',
 
 	/**
 	 * Veranstalter
@@ -66,8 +66,9 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
 	'BANNER_HTML' => '
-		<h2>5. Podlove Podcaster Workshop</h2>
-		<h3>Berlin 1.-3. Mai 2015 #ppw15a</h3>
+		<div class="container">
+			<h2>Berlin 1.-3. Mai 2015 #ppw15a</h2>
+		</div>
 	',
 
 	/**
