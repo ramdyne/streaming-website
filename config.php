@@ -109,8 +109,8 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 */
 	'GROUPS' => array(
 		'Lecture Rooms' => array(
-			's2',
-			's3',
+			'lounge',
+			'eisengiesserei',
 		),
 	),
 );
@@ -125,7 +125,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	's2' => array(
+	'lounge' => array(
 		/**
 		 * Angezeige-Name
 		 */
@@ -308,7 +308,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'TWITTER' => true,
 	),
 
-	's3' => array(
+	'eisengiesserei' => array(
 		'DISPLAY' => 'Eisengießerei',
 		'STREAM' => 's3',
 		'PREVIEW' => true,
