@@ -344,7 +344,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * aufhören zu funktionieren. Wenn die Quelle unverlässlich ist ;) sollte ein
 	 * externer HTTP-Cache vorgeschaltet werden.
 	 */
-	'URL' => 'http://events.ccc.de/congress/2014/Fahrplan/schedule.xml', //FIXME: Frab-URL fehlt noch
+	'URL' => 'https://events.sublab.io/en/CC15/public/schedule.xml',
 
 	/**
 	 * Nur die angegebenen Räume aus dem Fahrplan beachten
