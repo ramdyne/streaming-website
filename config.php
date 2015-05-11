@@ -15,7 +15,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Gut-Nach-Hause-Seite sowie einem Ausblick auf die kommenden Events angezeigt. Während einer
 	 * Konferenz kann dieser Schalter auskommentiert oder auf false gesetzt werden.
 	 */
-	'CLOSED' => false,
+	'CLOSED' => true,
 
 	/**
 	 * Titel der Konferenz (kann Leer- und Sonderzeichen enthalten)
@@ -86,7 +86,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
+	'RELIVE_JSON' => 'http://live.dus.c3voc.de/releases/relive/index.json',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
@@ -136,7 +136,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
 		 * s1 bis s5 durchnummeriert.
 		 */
-		'STREAM' => 's2',
+		'STREAM' => 's3',
 
 		/**
 		 * Stream-Vorschaubildchen auf der Übersichtsseite anzeigen
@@ -186,7 +186,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Slides, Audio und zuletzt Musik
 		 * als Default-Stream angenommen.
 		 */
-		'HD_VIDEO' => true, //FIXME: Ein Saal hat kein HD, ist es dieser?
+		'HD_VIDEO' => false,
 
 		/**
 		 * Slide-Only-Stream (1024×576) verfügbar
@@ -310,7 +310,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 	'eisengiesserei' => array(
 		'DISPLAY' => 'Eisengießerei',
-		'STREAM' => 's3',
+		'STREAM' => 's2',
 		'PREVIEW' => true,
 
 		'TRANSLATION' => false,
@@ -321,7 +321,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'MUSIC' => false,
 
 		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 2',
+		'SCHEDULE_NAME' => 'Eisengießerei',
 		'FEEDBACK' => false,
 		'SUBTITLES' => false,
 		'EMBED' => true,
@@ -371,8 +371,8 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * Diese folgende Beispiel-Zeile Simuliert, dass das
 	 * Konferenz-Datum 2014-12-29 auf den heutigen Tag 2015-02-24 verschoben ist.
 	 */
-	'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2014-12-28') - strtotime(/* Today */ '2015-03-01'),
-	//'SIMULATE_OFFSET' => 0,
+	//'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2015-05-08') - strtotime(/* Today */ '2015-05-06'),
+	'SIMULATE_OFFSET' => 0,
 );
 
 
@@ -402,7 +402,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#%s @ twitter',
+	'DISPLAY' => '#CryptoCon15 #%s @ twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
@@ -410,5 +410,5 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#cryptocon15 #%s',
+	'TEXT' => '#CryptoCon15 #%s',
 );
