@@ -12,6 +12,11 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
 
+$EPISODE = 51;
+$DATE = '12. Mai 2015';
+$TITLE = 'zero_0ne – Puppet … Konfigurationsmanagement';
+
+
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	/**
 	 * Der Startzeitpunkt der Konferenz als Unix-Timestamp. Befinden wir uns davor, wird die Closed-Seite
@@ -40,7 +45,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => 'Datengarten',
+	'TITLE' => "Datengarten #$EPISODE",
 
 	/**
 	 * Veranstalter
@@ -83,10 +88,10 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
-	'BANNER_HTML' => '
-		<h2>Datengarten #49 – 09. April 2015</h2>
-		<h3>starbug – No more secrets: Biometrie hacken</h3>
-	',
+	'BANNER_HTML' => "
+		<h2>Datengarten #$EPISODE – $DATE</h2>
+		<h3>$TITLE</h3>
+	",
 
 	/**
 	 * Link zu den Recordings
@@ -137,7 +142,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'Datengarten #49',
+		'DISPLAY' => "Datengarten #$EPISODE",
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
