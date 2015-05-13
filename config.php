@@ -22,28 +22,28 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => 'CryptoCon15',
+	'TITLE' => 'Chaos.Cologne ',
 
 	/**
 	 * Veranstalter
 	 * Wird für den <meta name="author">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'AUTHOR' => 'sublab e.V.',
+	'AUTHOR' => 'Chaos Computer Club Cologne and KHM',
 
 	/**
 	 * Beschreibungstext
 	 * Wird für den <meta name="description">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'DESCRIPTION' => 'CryptoCon 2015',
+	'DESCRIPTION' => 'Die erste Chaos.Cologne Konferenz – eine gemeinsame Veranstaltung der Kunsthochschule für Meiden Köln (KHM) und dem Chaos Computer Club, tagt unter dem Motto “The Edge of Control”.',
 
 	/**
 	 * Schlüsselwortliste, Kommasepariert
 	 * Wird für den <meta name="keywords">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'KEYWORDS' => 'CryptoCon15, CryptoCon',
+	'KEYWORDS' => 'Chaos, Cologne, Chaos Cologne, KHM, Köln, C4, Streaming, CCC, Konferenz, Video, AUfzeichnungen',
 
 	/**
 	 * HTML-Code für den Footer (z.B. für spezielle Attribuierung mit <a>-Tags)
@@ -51,7 +51,8 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird die Standard-Attribuierung für (c3voc.de) verwendet
 	 */
 	'FOOTER_HTML' => '
-		by <a href="https://sublab.org">sublab e.V.</a> &amp;
+		by <a href="http://www.khm.de/">KHM</a>, 
+                <a href="https://koeln.ccc.de">C4 e.V.</a> &amp;
 		<a href="https://c3voc.de">c3voc</a>
 	',
 
@@ -65,19 +66,19 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
-	//'BANNER_HTML' => '31C3 – a new dawn',
+	'BANNER_HTML' => '31C3 – a new dawn',
 
 	/**
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELEASES' => 'http://media.ccc.de/browse/conferences/cryptocon/2015/index.html',
+	'RELEASES' => 'http://media.ccc.de/browse/conferences/chaoscologne/1c2/index.html',
 
 	/**
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	//'RELIVE' => 'http://vod.c3voc.de/',
+	'RELIVE' => 'http://vod.c3voc.de/',
 
 	/**
 	 * Alternativ kann ein ReLive-Json konfiguriert werden, um die interne
@@ -109,8 +110,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 */
 	'GROUPS' => array(
 		'Lecture Rooms' => array(
-			'lounge',
-			'eisengiesserei',
+			'aula',
 		),
 	),
 );
@@ -125,18 +125,18 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'lounge' => array(
+	'aula' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'Lounge',
+		'DISPLAY' => 'Aula',
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
 		 * s1 bis s5 durchnummeriert.
 		 */
-		'STREAM' => 's2',
+		'STREAM' => 's3',
 
 		/**
 		 * Stream-Vorschaubildchen auf der Übersichtsseite anzeigen
@@ -186,7 +186,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Slides, Audio und zuletzt Musik
 		 * als Default-Stream angenommen.
 		 */
-		'HD_VIDEO' => true, //FIXME: Ein Saal hat kein HD, ist es dieser?
+		'HD_VIDEO' => false, 
 
 		/**
 		 * Slide-Only-Stream (1024×576) verfügbar
@@ -236,7 +236,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Name des Raums im Fahrplan
 		 * Wenn diese Zeile auskommentiert ist wird der Raum-Slug verwendet
 		 */
-		'SCHEDULE_NAME' => 'Lounge',
+		'SCHEDULE_NAME' => 'Aula',
 
 		/**
 		 * Feedback anzeigen (boolean)
@@ -306,28 +306,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * des globalen $GLOBALS['CONFIG']['TWITTER']-Blocks deaktiviert werden
 		 **/
 		'TWITTER' => true,
-	),
-
-	'eisengiesserei' => array(
-		'DISPLAY' => 'Eisengießerei',
-		'STREAM' => 's3',
-		'PREVIEW' => true,
-
-		'TRANSLATION' => false,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-		'SLIDES' => false,
-		'MUSIC' => false,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 2',
-		'FEEDBACK' => false,
-		'SUBTITLES' => false,
-		'EMBED' => true,
-		'IRC' => false,
-		'TWITTER' => true,
-	),
+	)
 );
 
 
@@ -344,14 +323,14 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * aufhören zu funktionieren. Wenn die Quelle unverlässlich ist ;) sollte ein
 	 * externer HTTP-Cache vorgeschaltet werden.
 	 */
-	'URL' => 'https://events.sublab.io/en/CC15/public/schedule.xml',
+	'URL' => 'http://chaos.cologne/Fahrplan/schedule.xml',
 
 	/**
 	 * Nur die angegebenen Räume aus dem Fahrplan beachten
 	 *
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
-	'ROOMFILTER' => array('Lounge', 'Eisengießerei'),
+	'ROOMFILTER' => array('Aula'),
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
@@ -410,5 +389,5 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#cryptocon15 #%s',
+	'TEXT' => '#1c2 #%s',
 );
