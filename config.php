@@ -78,7 +78,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELIVE' => 'http://vod.c3voc.de/',
+	'RELIVE' => 'http://streaming.media.ccc.de/relive/',
 
 	/**
 	 * Alternativ kann ein ReLive-Json konfiguriert werden, um die interne
@@ -87,7 +87,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
+	'RELIVE_JSON' => 'http://vod.c3voc.de/releases/relive/index.json',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
