@@ -22,7 +22,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => '31C3',
+	'TITLE' => 'PyData 2015',
 
 	/**
 	 * Veranstalter
@@ -36,14 +36,14 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird für den <meta name="description">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'DESCRIPTION' => 'Video Live-Streaming vom 31C3',
+	'DESCRIPTION' => 'PyData is the home for all things related to the use of Python in data management and analysis. It brings together Python enthusiasts at a novice level and includes Tutorials and corresponding talks as well as advanced talks by experts and package developers. The conference not only focuses on the application of data science tools but also on underlying algorithms and patterns. After a very successful PyData Berlin 2014 hosted at the BCC we are thrilled to announce PyData Berlin 2015, this time taking place at Betahaus Berlin.',
 
 	/**
 	 * Schlüsselwortliste, Kommasepariert
 	 * Wird für den <meta name="keywords">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'KEYWORDS' => '31C3, Hacking, Chaos Computer Club, Video, Media, Streaming, Hacker',
+	'KEYWORDS' => 'PyData Berlin 2015 Python Big Data Analytics Spark PySpark Pandas NumFocus Conda NumPy SciPy conference MeetUp',
 
 	/**
 	 * HTML-Code für den Footer (z.B. für spezielle Attribuierung mit <a>-Tags)
@@ -51,10 +51,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird die Standard-Attribuierung für (c3voc.de) verwendet
 	 */
 	'FOOTER_HTML' => '
-		by <a href="https://ccc.de">Chaos Computer Club e.V</a>,
-		<a href="http://fem.tu-ilmenau.de/">FeM</a>,
-		<a href="http://www.ags.tu-bs.de/">ags</a> &amp;
-		<a href="https://c3voc.de">c3voc</a>
+		by <a href="https://c3voc.de">c3voc</a>
 	',
 
 	/**
@@ -67,7 +64,9 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
-	//'BANNER_HTML' => '31C3 – a new dawn',
+	'BANNER_HTML' => '
+		<img src="assets/img/logo.png">
+	',
 
 	/**
 	 * Link zu den Recordings
@@ -88,7 +87,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
+	//'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
@@ -111,18 +110,8 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 */
 	'GROUPS' => array(
 		'Lecture Rooms' => array(
-			'saal1',
-			'saal2',
-			'saalg',
-			'saal6',
-		),
-
-		'Live DJ Sets'  => array(
-			'lounge',
-			'ambient',
-		),
-		'Live Podcasts' => array(
-			'sendezentrum',
+			'eventspace',
+			'innospace',
 		),
 	),
 );
@@ -137,18 +126,18 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'saal1' => array(
+	'eventspace' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'Saal 1',
+		'DISPLAY' => 'Eventspace',
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
 		 * s1 bis s5 durchnummeriert.
 		 */
-		'STREAM' => 's1',
+		'STREAM' => 's2',
 
 		/**
 		 * Stream-Vorschaubildchen auf der Übersichtsseite anzeigen
@@ -164,7 +153,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * die native-Streams verwendet, andernfalls wird native und translated
 		 * angeboten und auch für beide Tonspuren eine Player-Seite angezeigt.
 		 */
-		'TRANSLATION' => true,
+		'TRANSLATION' => false,
 
 		/**
 		 * stereo-Tonspur statt native-Tonspur benutzen
@@ -198,7 +187,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Slides, Audio und zuletzt Musik
 		 * als Default-Stream angenommen.
 		 */
-		'HD_VIDEO' => true,
+		'HD_VIDEO' => false,
 
 		/**
 		 * Slide-Only-Stream (1024×576) verfügbar
@@ -209,7 +198,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Audio und zuletzt Musik als
 		 * Default-Stream angenommen.
 		 */
-		'SLIDES' => true,
+		'SLIDES' => false,
 
 		/**
 		 * Audio-Only-Stream verfügbar
@@ -248,7 +237,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Name des Raums im Fahrplan
 		 * Wenn diese Zeile auskommentiert ist wird der Raum-Slug verwendet
 		 */
-		'SCHEDULE_NAME' => 'Saal 1',
+		'SCHEDULE_NAME' => 'Eventspace',
 
 		/**
 		 * Feedback anzeigen (boolean)
@@ -270,7 +259,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle Subtitles-Funktionialitäten durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['SUBTITLES']-Blocks deaktiviert werden
 		 */
-		'SUBTITLES' => true,
+		'SUBTITLES' => false,
 
 		/**
 		 * Embed-Form aktivieren (boolean)
@@ -301,7 +290,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle IRC-Links durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['IRC']-Blocks deaktiviert werden
 		 */
-		'IRC' => true,
+		'IRC' => false,
 
 		/**
 		* Mit dem Angaben in diesem Block können die Vorgaben aus dem
@@ -338,127 +327,35 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		* Der globale $GLOBALS['CONFIG']['TWITTER']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall1 @ twitter',
-			'TEXT'    => '#31C3 #hall1',
-		),
+		//'TWITTER_CONFIG' => array(
+		//	'DISPLAY' => '#hall1 @ twitter',
+		//	'TEXT'    => '#31C3 #hall1',
+		//),
 	),
 
-	'saal2' => array(
-		'DISPLAY' => 'Saal 2',
-		'STREAM' => 's2',
+	'innospace' => array(
+		'DISPLAY' => 'Innospace',
+		'STREAM' => 's3',
 		'PREVIEW' => true,
 
-		'TRANSLATION' => true,
+		'TRANSLATION' => false,
 		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
+		'HD_VIDEO' => false,
 		'AUDIO' => true,
-		'SLIDES' => true,
+		'SLIDES' => false,
 		'MUSIC' => false,
 
 		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 2',
+		'SCHEDULE_NAME' => 'Innospace',
 		'FEEDBACK' => true,
-		'SUBTITLES' => true,
+		'SUBTITLES' => false,
 		'EMBED' => true,
-		'IRC' => true,
+		'IRC' => false,
 		'IRC_CONFIG' => array(
 			'DISPLAY' => '#31C3-hall-2 @ hackint',
 			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-2',
 		),
 		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall2 @ twitter',
-			'TEXT'    => '#31C3 #hall2',
-		),
-	),
-
-	'saalg' => array(
-		'DISPLAY' => 'Saal G',
-		'STREAM' => 's3',
-		'PREVIEW' => true,
-
-		'TRANSLATION' => true,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-		'SLIDES' => true,
-		'MUSIC' => false,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal G',
-		'FEEDBACK' => true,
-		'SUBTITLES' => true,
-		'EMBED' => true,
-		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-g @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-g',
-		),
-		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hallg @ twitter',
-			'TEXT'    => '#31C3 #hallg',
-		),
-	),
-
-	'saal6' => array(
-		'DISPLAY' => 'Saal 6',
-		'STREAM' => 's4',
-		'PREVIEW' => true,
-
-		'TRANSLATION' => true,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-		'SLIDES' => true,
-		'MUSIC' => false,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 6',
-		'FEEDBACK' => true,
-		'SUBTITLES' => true,
-		'EMBED' => true,
-		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-6 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-6',
-		),
-		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall6 @ twitter',
-			'TEXT'    => '#31C3 #hall6',
-		),
-	),
-
-
-	'lounge' => array(
-		'DISPLAY' => 'Lounge',
-		'MUSIC' => true,
-		'EMBED' => true,
-	),
-	'ambient' => array(
-		'DISPLAY' => 'Ambient',
-		'MUSIC' => true,
-		'EMBED' => true,
-	),
-
-
-	'sendezentrum' => array(
-		'DISPLAY' => 'Sendezentrum',
-		'STREAM' => 's5',
-
-		'STEREO' => true,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-
-		'SCHEDULE' => true,
-		'FEEDBACK' => true,
-		'SUBTITLES' => false,
-		'EMBED' => true,
-		'IRC' => false,
-		'TWITTER' => false,
 	),
 );
 
@@ -476,7 +373,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * aufhören zu funktionieren. Wenn die Quelle unverlässlich ist ;) sollte ein
 	 * externer HTTP-Cache vorgeschaltet werden.
 	 */
-	'URL' => 'http://events.ccc.de/congress/2014/Fahrplan/schedule.xml',
+	'URL' => 'https://raw.githubusercontent.com/pydataberlin/pydataberlin.github.io/master/utils/pydata_berlin_voc.xml',
 
 	/**
 	 * Nur die angegebenen Räume aus dem Fahrplan beachten
@@ -503,8 +400,8 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * Diese folgende Beispiel-Zeile Simuliert, dass das
 	 * Konferenz-Datum 2014-12-29 auf den heutigen Tag 2015-02-24 verschoben ist.
 	 */
-	'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2014-12-28') - strtotime(/* Today */ '2015-03-01'),
-	//'SIMULATE_OFFSET' => 0,
+	//'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2014-12-28') - strtotime(/* Today */ '2015-03-01'),
+	'SIMULATE_OFFSET' => 0,
 );
 
 
@@ -607,7 +504,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#%s @ twitter',
+	'DISPLAY' => '#PyData @ twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
@@ -615,5 +512,5 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#31C3 #%s',
+	'TEXT' => '#PyData',
 );
