@@ -22,7 +22,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => 'PyData 2015',
+	'TITLE' => 'pyData Berlin 2015',
 
 	/**
 	 * Veranstalter
@@ -72,7 +72,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELEASES' => 'http://media.ccc.de/browse/congress/2014/index.html',
+	'RELEASES' => 'https://www.youtube.com/user/PyDataTV',
 
 	/**
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
