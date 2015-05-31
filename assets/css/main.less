@@ -16,8 +16,26 @@
 //  @navbar-default-link-color:       #777;
 //  @navbar-default-link-hover-color: #333;
 
+body {
+  background-image: url("img/wolkenbar.png");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+}
+
+.navbar-fixed-top {
+  background: @body-bg url("img/wolkenbar.png") repeat-x left top;
+}
 
 
+@gray-darker:            #369; // #222
+@gray:                   #445; // #555
+@gray-light:             #030333;   // #999
+@gray-lighter:           #0D0FAE; // #eee
+@body-bg:               rgba(0, 122, 186, 1);
+
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          #fff;
+@navbar-default-link-active-color:         #fff;
 
 
 // colors of the schedule ("Fahrplan") widget below the video-player
