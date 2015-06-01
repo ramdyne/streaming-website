@@ -16,6 +16,10 @@
 //  @navbar-default-link-color:       #777;
 //  @navbar-default-link-hover-color: #333;
 
+html, body {
+  min-height: 100%;
+}
+
 body {
   background-image: url("../img/wolkenbar.png");
   background-repeat: repeat-x;
@@ -23,8 +27,16 @@ body {
 }
 
 .navbar-fixed-top {
-  background: @body-bg url("../img/wolkenbar.png") repeat-x left top;
+  background: @body-bg url("../img/wolkenbar.png") repeat-x left -46px;
   border-color: #000;
+}
+
+footer {
+  background-color: rgba(255,255,255,0.35);
+  a {
+    color: #777;
+    text-decoration: underline;
+  }
 }
 
 
