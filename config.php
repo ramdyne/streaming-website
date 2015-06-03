@@ -361,7 +361,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 		'TRANSLATION' => false,
 		'SD_VIDEO' => true,
-		'HD_VIDEO' => false,
+		'HD_VIDEO' => true,
 		'AUDIO' => true,
 		'SLIDES' => false,
 		'MUSIC' => false,
