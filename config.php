@@ -367,6 +367,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'MUSIC' => false,
 
 		'SCHEDULE' => true,
+		'SCHEDULE_NAME' => 'Blauer Salon',
 		'FEEDBACK' => false,
 		'SUBTITLES' => false,
 		'EMBED' => false,
