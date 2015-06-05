@@ -397,7 +397,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
-	'ROOMFILTER' => array('Medientheater', 'ZKM-Vortragssaal'),
+	'ROOMFILTER' => array('Medientheater', 'ZKM-Vortragssaal', 'Blauer Salon'),
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
