@@ -366,7 +366,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'SLIDES' => false,
 		'MUSIC' => false,
 
-		'SCHEDULE' => false,
+		'SCHEDULE' => true,
 		'FEEDBACK' => false,
 		'SUBTITLES' => false,
 		'EMBED' => false,
