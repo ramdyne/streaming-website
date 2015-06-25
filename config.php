@@ -27,7 +27,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => "Chaosradio #$EPISODE",
+	'TITLE' => 'Chaosradio',
 
 	/**
 	 * Veranstalter
@@ -48,7 +48,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird für den <meta name="keywords">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'KEYWORDS' => 'Chaosradio, Chaos Radio, Radio,	Chaos Computer Club, Berlin, Video, Media, Streaming, Club Discordia',
+	'KEYWORDS' => 'Chaosradio, Chaos Computer Club, Berlin, Video, Media, Streaming',
 
 	/**
 	 * HTML-Code für den Footer (z.B. für spezielle Attribuierung mit <a>-Tags)
@@ -137,7 +137,6 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Angezeige-Name
 		 */
 		'DISPLAY' => "Chaosradio #$EPISODE",
-
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
@@ -296,7 +295,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle IRC-Links durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['IRC']-Blocks deaktiviert werden
 		 */
-		'IRC' => true,
+		'IRC' => false,
 
 		/**
 		* Mit dem Angaben in diesem Block können die Vorgaben aus dem
