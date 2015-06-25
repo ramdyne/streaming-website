@@ -9,9 +9,9 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = 'http://streaming.media.ccc.de/';
 
 
-$EPISODE = 51;
-$DATE = '12. Mai 2015';
-$TITLE = 'zero_0ne – Puppet … Konfigurationsmanagement';
+$EPISODE = 213;
+$DATE = '25. Juni 2015';
+$TITLE = "Chaosradio $EPISODE - Das Internet hinter dem DSL-Router";
 
 
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
@@ -27,7 +27,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => "Datengarten #$EPISODE",
+	'TITLE' => "Chaosradio #$EPISODE",
 
 	/**
 	 * Veranstalter
@@ -41,14 +41,14 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird für den <meta name="description">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'DESCRIPTION' => 'Der Datengarten ist eine Vortrags- und Projektreihe im Rahmen des Club Discordia.',
+	'DESCRIPTION' => 'Chaosradio (CR) ist eine zweistündige Talk-Sendung, die seit 1995 jeden letzten Donnerstag im Monat im Rahmen gesendet wird ',
 
 	/**
 	 * Schlüsselwortliste, Kommasepariert
 	 * Wird für den <meta name="keywords">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'KEYWORDS' => 'Datengarten, Chaos Computer Club, Berlin, Video, Media, Streaming, Club Discordia',
+	'KEYWORDS' => 'Chaosradio, Chaos Radio, Radio,	Chaos Computer Club, Berlin, Video, Media, Streaming, Club Discordia',
 
 	/**
 	 * HTML-Code für den Footer (z.B. für spezielle Attribuierung mit <a>-Tags)
@@ -71,7 +71,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
 	'BANNER_HTML' => "
-		<h2>Datengarten #$EPISODE – $DATE</h2>
+		<h2>Chaosradio #$EPISODE – $DATE</h2>
 		<h3>$TITLE</h3>
 	",
 
@@ -79,7 +79,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELEASES' => 'https://media.ccc.de/browse/events/datengarten/index.html',
+	'RELEASES' => 'https://media.ccc.de/browse/broadcast/chaosradio/index.html',
 
 	/**
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
@@ -117,7 +117,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 */
 	'GROUPS' => array(
 		'' => array(
-			'datengarten',
+			'chaosradio',
 		),
 	),
 );
@@ -132,11 +132,11 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'datengarten' => array(
+	'chaosradio' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => "Datengarten #$EPISODE",
+		'DISPLAY' => "Chaosradio #$EPISODE",
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
@@ -365,7 +365,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein IRC_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#ccc @ ircnet',
+	'DISPLAY' => '#chaosradio @ freenode',
 
 	/**
 	 * URL für die IRC-Links.
@@ -376,7 +376,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * %s wird durch den urlencodeten Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'URL' => 'irc://irc.de.ircnet.net/ccc',
+	'URL' => 'irc://irc.freenode.net/chaosradio',
 );
 
 /**
@@ -396,7 +396,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#datengarten @ twitter',
+	'DISPLAY' => '#chaosradio @ twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
@@ -404,5 +404,5 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#datengarten',
+	'TEXT' => '#chaosradio',
 );
