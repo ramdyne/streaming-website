@@ -18,6 +18,18 @@
 @blueish_light: #707f9a;
 @blueish_dark: #5c687e;
 
+
+
+@tents_light: @blueish_light;
+@tents_dark: @blueish_dark;
+
+@radio_light: @purple_light;
+@radio_dark: @purple_dark;
+
+@recordings_light: @grey_dark;
+@recordings_dark: @grey_darker;
+
+
 // often configured values (and their defaults):
 //
 @brand-primary:         @green_light;
@@ -31,6 +43,70 @@
 
 @navbar-default-link-color:           white;
 @navbar-default-link-hover-color:     darken(white, 20%);
+
+@panel-default-border:  @green_light;
+
+
+
+.overview {
+	.headline {
+		display: none;
+	}
+
+	.room-group-n0 {
+		color: @tents_dark;
+
+		.panel {
+			border-color: @tents_dark;
+
+			.panel-body {
+				&, a {
+					color: @tents_dark;
+				}
+			}
+
+			.panel-heading {
+				background-color: @tents_light;
+				border-color: @tents_dark;
+				color: white;
+			}
+		}
+	}
+
+	.room-group-n2 {
+		color: @radio_dark;
+
+		.panel {
+			border-color: @radio_dark;
+
+			.panel-body {
+				&, a {
+					color: @radio_dark;
+				}
+			}
+
+			.panel-heading {
+				background-color: @radio_light;
+				border-color: @radio_dark;
+				color: white;
+			}
+		}
+	}
+
+	.recordings {
+		&, a {
+			color: @recordings_light;
+		}
+		a:hover {
+			color: @recordings_dark;
+		}
+
+		.panel {
+			border-color: @recordings_dark;
+		}
+
+	}
+}
 
 body {
 	background: url(../img/bg.png) no-repeat top left;
