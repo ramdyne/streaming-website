@@ -71,6 +71,16 @@
 								<?=h($room->getDisplay())?>
 							</a>
 
+							<? if($room->hasDescription()): ?>
+								<p>
+									<?=h($room->getDescription())?>
+
+									<? if($room->hasGenre()): ?>
+										(<i><?=h($room->getGenre())?></i>)
+									<? endif ?>
+								</p>
+							<? endif ?>
+
 							<? if($room->hasSchedule()): ?>
 								<div class="program-schedule">
 									<div class="talk current-talk">

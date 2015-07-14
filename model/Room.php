@@ -133,6 +133,20 @@ class Room extends ModelBase
 	}
 
 
+	public function hasGenre() {
+		return $this->has('ROOMS.'.$this->getSlug().'.GENRE');
+	}
+	public function getGenre() {
+		return $this->get('ROOMS.'.$this->getSlug().'.GENRE');
+	}
+	public function hasDescription() {
+		return $this->has('ROOMS.'.$this->getSlug().'.DESCRIPTION');
+	}
+	public function getDescription() {
+		return $this->get('ROOMS.'.$this->getSlug().'.DESCRIPTION');
+	}
+
+
 	public function hasSdVideo() {
 		return $this->get('ROOMS.'.$this->getSlug().'.SD_VIDEO');
 	}
