@@ -2,20 +2,54 @@
 
 // conference specific styles here
 
+@grey_light: #d3d2d2;
+@grey_dark: #918f90;
+@grey_darker: #4f4c4d;
+
+@brown_light: #94694d;
+@brown_dark: #7a563f;
+
+@green_light: #6c9e30;
+@green_dark: #598227;
+
+@purple_light: #77438d;
+@purple_dark: #623672;
+
+@blueish_light: #707f9a;
+@blueish_dark: #5c687e;
+
 // often configured values (and their defaults):
 //
-//  @brand-primary:         #337ab7;
-//  @text-color:            @gray-dark;
-//
-//  @link-color:            @brand-primary;
-//  @link-hover-color:      darken(@link-color, 15%);
-//
-//  @navbar-default-color:  #777777;
-//  @navbar-default-bg:     #f8f8f8;
-//
-//  @navbar-default-link-color:       #777;
-//  @navbar-default-link-hover-color: #333;
+@brand-primary:         @green_light;
+@text-color:            @green_dark;
 
+@link-color:            @green_light;
+@link-hover-color:      @green_dark;
+
+@navbar-default-color:  white;
+@navbar-default-bg:     @brown_dark;
+
+@navbar-default-link-color:           white;
+@navbar-default-link-hover-color:     darken(white, 20%);
+
+body {
+	background: url(../img/bg.png) no-repeat top left;
+	background-attachment: fixed;
+	background-position: 0px 50px;
+}
+
+.tab-content {
+	background-color: white;
+}
+
+
+.navbar-brand {
+	text-indent: -9999em;
+	background: url(../img/logo.png) no-repeat;
+	background-size: auto 43px;
+	background-position: 0 5px;
+	width: 180px;
+}
 
 
 
