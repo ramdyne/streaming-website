@@ -12,8 +12,13 @@
 			<? if($group): ?>
 				<div class="col-xs-12">
 					<h2><?=h($group)?></h2>
+
+					<? if($group == 'Public Radio'): ?>
+						<p>If your Village produces any kind of Music or Sound, that's suitable to be streamed Live, you can publish via our Relays and get it listed on this Website. <a href="https://c3voc.de/wiki/cccamp15:public_radio">Read more.</a></p>
+					<? endif ?>
 				</div>
 			<? endif ?>
+
 
 			<? $count = count($rooms); ?>
 			<? foreach($rooms as $idx => $room): ?>
