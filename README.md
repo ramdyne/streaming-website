@@ -17,7 +17,7 @@ Zum vorbereiten einer Konferenz oder weiterentwickeln der Seite ist es hilfreich
 
 Abweichend von der Default-Config muss in PHP das Flag `short_open_tag = On` gesetzt werden.
 
-Die CSS-Styles sind in [less-css](http://lesscss.org/) geschrieben und es wird ein less-Compiler benötigt, um diese in CSS-Dateien umzuwandeln. Der Einfachste Weg ist [node.js](https://nodejs.org/) über das [Debian-Repo](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions) installieren und dann mit `npm install -g less` den `lessc`-Compiler installieren.
+Die CSS-Styles sind in [less-css](http://lesscss.org/) geschrieben und es wird ein less-Compiler benötigt, um diese in CSS-Dateien umzuwandeln. Der Einfachste Weg ist [node.js](https://nodejs.org/) über das [Debian-Repo](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions) installieren und dann mit `npm install -g less` den `lessc`-Compiler installieren. Zum korrekten bauen der Less-Datei kann das makefile in [assets/css](assets/css/) verwendet werden.
 
 
 
@@ -25,6 +25,32 @@ Die CSS-Styles sind in [less-css](http://lesscss.org/) geschrieben und es wird e
 
 Die Gesamte Seite wird von der zentralen [config.php](config.php)-Datei gesteuert. Diese ist ausführlich dokumentiert und sollte sich selbst erklären.
 
-Für die Konferenztypische Gestaltung kann in der [main.less](assets/css/main.less) nach Wunsch ausgestaltet werden. Als Beispiel sei hier die Gestaltung für das [Easterhegg 2015](https://eh15.easterhegg.eu/site/) verlinkt: d3c0e74f459121c3e624c9b3b92d6ec6b39a3dbe
+Für die Konferenztypische Gestaltung kann in der [main.less](assets/css/main.less) nach Wunsch ausgestaltet werden. Als Beispiel sei hier die Gestaltung für das [Easterhegg 2015](https://eh15.easterhegg.eu/site/) verlinkt: [d3c0e74](https://github.com/voc/streaming-website/commit/d3c0e74f459121c3e624c9b3b92d6ec6b39a3dbe)
 
 Üblicherweise machen wir für jede Veranstaltung einen `events/XXXX` branch auf, wobei XXXX das Acronym der Konferenz ist.
+
+
+
+## Deployment (auf der VOC Infrastruktur)
+````
+	ssh voc@live.ber
+	cd /srv/nginx/streaming-website
+	git fetch origin
+	git checkout <branch>
+
+	cd assets/css
+	make
+	sudo sh -c 'rm -rf  /srv/nginx/cache/streaming_fcgi/*'
+	exit
+
+	ssh voc@live.dus
+	sudo sh -c 'rm /srv/nginx/cache/streaming_website/static/* /srv/nginx/cache/streaming_website/pages/*'
+	exit
+````
+
+
+## JSON-API
+
+Unter der URL http://streaming.media.ccc.de/streams/v1.json bietet die Steaming-Webseite eine Übersicht über alle konfigurierten Räume und Streams in einem Maschienenlesbaren Format an. Dieses kann z.B. genutzt werden, um in den diversen Anwendungen die sich rund um das Konferenzgeschehen entwickelt haben Player und Links zu Liveübertragungen anzubieten.
+
+Wie die URL vermuten lässt, ist die API versionionert. Dies bedeutet, dass in der v1.json keine Felder *entfernt werden* oder ihre *bedeutung ändern* – es können aber durchaus *neue Felder* hinzukommen. Eine formalere Spezifikation des JSON-Formats ist tbd.
