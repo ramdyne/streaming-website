@@ -12,9 +12,9 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
 
-$EPISODE = 51;
-$DATE = '12. Mai 2015';
-$TITLE = 'zero_0ne – Puppet … Konfigurationsmanagement';
+$EPISODE = 55;
+$DATE = '14. Juli 2015';
+$TITLE = 'Zara Rahman – Technology and data use among vulnerable communities';
 
 
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
