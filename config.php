@@ -12,6 +12,22 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
 
+$radio_rooms = array();
+$icecast = simplexml_load_file('http://'.file_get_contents('/opt/streaming-feedback/icecast-password').'@live.ber.c3voc.de:8000/admin/stats.xml');
+foreach ($icecast->source as $source)
+{
+	$mount = preg_replace('/[^a-z0-9]/i', '-', ltrim($source['mount'], '/'));
+	$radio_rooms[$mount] = array(
+		'DISPLAY' => $source->server_name,
+		'GENRE' => (string)$source->genre,
+		'DESCRIPTION' => (string)$source->server_description,
+
+		'MUSIC' => true,
+		'EMBED' => true,
+	);
+}
+
+
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	/**
 	 * Am Ende der Konferenz wird durch das Umlegen dieses Schalters auf True eine Danke-Und-Kommen-Sie-
@@ -121,9 +137,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 		'Live DJ Sets'  => array(
 			'marketplace',
 		),
-		'Public Radio' => array(
-			// tbd
-		),
+		'Public Radio' => array_keys($radio_rooms),
 	),
 );
 
@@ -132,7 +146,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 /**
  * Liste der Räume (= Audio & Video Produktionen, also auch DJ-Sets oä.)
  */
-$GLOBALS['CONFIG']['ROOMS'] = array(
+$GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 	/**
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
@@ -370,7 +384,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'MUSIC' => true,
 		'EMBED' => true,
 	),
-);
+));
 
 
 
