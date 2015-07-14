@@ -25,7 +25,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => '31C3',
+	'TITLE' => 'Chaos Communication Camp 2015',
 
 	/**
 	 * Veranstalter
@@ -39,14 +39,14 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird für den <meta name="description">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'DESCRIPTION' => 'Video Live-Streaming vom 31C3',
+	'DESCRIPTION' => 'Video Live-Streaming of the Chaos Communication Camp 2015',
 
 	/**
 	 * Schlüsselwortliste, Kommasepariert
 	 * Wird für den <meta name="keywords">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'KEYWORDS' => '31C3, Hacking, Chaos Computer Club, Video, Media, Streaming, Hacker',
+	'KEYWORDS' => 'cccamp, CCC, Chaos Communication Camp, Camp, 2015, Hacking, Chaos Computer Club, Video, Media, Streaming, Hacker',
 
 	/**
 	 * HTML-Code für den Footer (z.B. für spezielle Attribuierung mit <a>-Tags)
@@ -55,8 +55,8 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 */
 	'FOOTER_HTML' => '
 		by <a href="https://ccc.de">Chaos Computer Club e.V</a>,
-		<a href="http://fem.tu-ilmenau.de/">FeM</a>,
-		<a href="http://www.ags.tu-bs.de/">ags</a> &amp;
+		<a href="http://www.ags.tu-bs.de/">ags</a>,
+		<a href="https://www.isystems.at">isystems.at</a> &amp;
 		<a href="https://c3voc.de">c3voc</a>
 	',
 
@@ -76,7 +76,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELEASES' => 'http://media.ccc.de/browse/congress/2014/index.html',
+	'RELEASES' => 'https://media.ccc.de/browse/conferences/camp2015/index.html',
 
 	/**
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
@@ -113,19 +113,16 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 * sonst werden sie nicht angezeigt.
 	 */
 	'GROUPS' => array(
-		'Lecture Rooms' => array(
-			'saal1',
-			'saal2',
-			'saalg',
-			'saal6',
+		'Lecture Tents' => array(
+			'tent-1',
+			'tent-2',
 		),
 
 		'Live DJ Sets'  => array(
-			'lounge',
-			'ambient',
+			'marketplace',
 		),
-		'Live Podcasts' => array(
-			'sendezentrum',
+		'Public Radio' => array(
+			// tbd
 		),
 	),
 );
@@ -140,11 +137,11 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'saal1' => array(
+	'tent-1' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'Saal 1',
+		'DISPLAY' => 'Tent 1 (South)',
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
@@ -251,7 +248,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Name des Raums im Fahrplan
 		 * Wenn diese Zeile auskommentiert ist wird der Raum-Slug verwendet
 		 */
-		'SCHEDULE_NAME' => 'Saal 1',
+		'SCHEDULE_NAME' => 'Vortrag 1',
 
 		/**
 		 * Feedback anzeigen (boolean)
@@ -273,7 +270,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle Subtitles-Funktionialitäten durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['SUBTITLES']-Blocks deaktiviert werden
 		 */
-		'SUBTITLES' => true,
+		'SUBTITLES' => false,
 
 		/**
 		 * Embed-Form aktivieren (boolean)
@@ -313,10 +310,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		* Der globale $GLOBALS['CONFIG']['IRC']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-1 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-1',
-		),
+		//'IRC_CONFIG' => array(
+		//	'DISPLAY' => '#31C3-hall-1 @ hackint',
+		//	'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-1',
+		//),
 
 		/**
 		 * Twitter-Link aktivieren (boolean)
@@ -341,14 +338,14 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		* Der globale $GLOBALS['CONFIG']['TWITTER']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall1 @ twitter',
-			'TEXT'    => '#31C3 #hall1',
-		),
+		//'TWITTER_CONFIG' => array(
+		//	'DISPLAY' => '#hall1 @ twitter',
+		//	'TEXT'    => '#31C3 #hall1',
+		//),
 	),
 
-	'saal2' => array(
-		'DISPLAY' => 'Saal 2',
+	'tent-2' => array(
+		'DISPLAY' => 'Tent 2 (North)',
 		'STREAM' => 's2',
 		'PREVIEW' => true,
 
@@ -360,108 +357,18 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'MUSIC' => false,
 
 		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 2',
-		'FEEDBACK' => true,
-		'SUBTITLES' => true,
-		'EMBED' => true,
-		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-2 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-2',
-		),
-		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall2 @ twitter',
-			'TEXT'    => '#31C3 #hall2',
-		),
-	),
-
-	'saalg' => array(
-		'DISPLAY' => 'Saal G',
-		'STREAM' => 's3',
-		'PREVIEW' => true,
-
-		'TRANSLATION' => true,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-		'SLIDES' => true,
-		'MUSIC' => false,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal G',
-		'FEEDBACK' => true,
-		'SUBTITLES' => true,
-		'EMBED' => true,
-		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-g @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-g',
-		),
-		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hallg @ twitter',
-			'TEXT'    => '#31C3 #hallg',
-		),
-	),
-
-	'saal6' => array(
-		'DISPLAY' => 'Saal 6',
-		'STREAM' => 's4',
-		'PREVIEW' => true,
-
-		'TRANSLATION' => true,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-		'SLIDES' => true,
-		'MUSIC' => false,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Saal 6',
-		'FEEDBACK' => true,
-		'SUBTITLES' => true,
-		'EMBED' => true,
-		'IRC' => true,
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-6 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-6',
-		),
-		'TWITTER' => true,
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall6 @ twitter',
-			'TEXT'    => '#31C3 #hall6',
-		),
-	),
-
-
-	'lounge' => array(
-		'DISPLAY' => 'Lounge',
-		'MUSIC' => true,
-		'EMBED' => true,
-	),
-	'ambient' => array(
-		'DISPLAY' => 'Ambient',
-		'MUSIC' => true,
-		'EMBED' => true,
-	),
-
-
-	'sendezentrum' => array(
-		'DISPLAY' => 'Sendezentrum',
-		'STREAM' => 's5',
-
-		'STEREO' => true,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-
-		'SCHEDULE' => true,
+		'SCHEDULE_NAME' => 'Vortrag 2',
 		'FEEDBACK' => true,
 		'SUBTITLES' => false,
 		'EMBED' => true,
-		'IRC' => false,
-		'TWITTER' => false,
+		'IRC' => true,
+		'TWITTER' => true,
+	),
+
+	'marketplace' => array(
+		'DISPLAY' => 'Marketplace',
+		'MUSIC' => true,
+		'EMBED' => true,
 	),
 );
 
@@ -506,8 +413,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * Diese folgende Beispiel-Zeile Simuliert, dass das
 	 * Konferenz-Datum 2014-12-29 auf den heutigen Tag 2015-02-24 verschoben ist.
 	 */
-	'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2014-12-28') - strtotime(/* Today */ '2015-03-01'),
-	//'SIMULATE_OFFSET' => 0,
+	'SIMULATE_OFFSET' => 0,
 );
 
 
@@ -527,7 +433,7 @@ $GLOBALS['CONFIG']['FEEDBACK'] = array(
 	 * die .sqlite3-Datei schreiben darf, er muss auch im übergeordneten Order neue
 	 * (Lock-)Dateien anlegen dürfen
 	 */
-	'DSN' => 'sqlite:/opt/31c3-streaming-feedback/feedback.sqlite3',
+	'DSN' => 'sqlite:/opt/streaming-feedback/feedback.sqlite3',
 
 	/**
 	 * Login-Daten für die /feedback/read/-Seite, auf der eingegangenes
@@ -579,7 +485,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein IRC_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#31C3-%s @ hackint',
+	'DISPLAY' => '#cccamp-%s @ hackint',
 
 	/**
 	 * URL für die IRC-Links.
@@ -590,7 +496,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * %s wird durch den urlencodeten Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'URL' => 'irc://irc.hackint.eu:6667/31C3-%s',
+	'URL' => 'irc://irc.hackint.eu:6667/cccamp-%s',
 );
 
 /**
@@ -618,5 +524,5 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#31C3 #%s',
+	'TEXT' => '#cccamp15 #%s',
 );
