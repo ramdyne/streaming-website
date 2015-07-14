@@ -53,17 +53,17 @@
 		display: none;
 	}
 
+	p a {
+		text-decoration: underline;
+	}
+
 	.room-group-n0 {
-		color: @tents_dark;
+		&, a {
+			color: @tents_dark;
+		}
 
 		.panel {
 			border-color: @tents_dark;
-
-			.panel-body {
-				&, a {
-					color: @tents_dark;
-				}
-			}
 
 			.panel-heading {
 				background-color: @tents_light;
@@ -74,16 +74,12 @@
 	}
 
 	.room-group-n2 {
-		color: @radio_dark;
+		&, a {
+			color: @radio_dark;
+		}
 
 		.panel {
 			border-color: @radio_dark;
-
-			.panel-body {
-				&, a {
-					color: @radio_dark;
-				}
-			}
 
 			.panel-heading {
 				background-color: @radio_light;
