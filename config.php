@@ -13,7 +13,7 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 
 
 $radio_rooms = array();
-$icecast = simplexml_load_file('http://'.file_get_contents('/opt/streaming-feedback/icecast-password').'@live.ber.c3voc.de:8000/admin/stats.xml');
+$icecast = simplexml_load_file('http://'.trim(file_get_contents('/opt/streaming-feedback/icecast-password')).'@live.ber.c3voc.de:8000/admin/stats.xml');
 foreach ($icecast->source as $source)
 {
 	$mount = preg_replace('/[^a-z0-9]/i', '-', ltrim($source['mount'], '/'));
