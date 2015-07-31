@@ -106,6 +106,35 @@
 		</div>
 	<? endforeach ?>
 
+
+	<? if(Multicast::isEnabled()): ?>
+
+		<div class="row room-group room-group-multicast">
+			<div class="col-xs-12">
+				<h2>Multicast-Streams</h2>
+			</div>
+
+			<div class="
+				room
+				clearfix
+
+				wide
+				col-xs-12
+			">
+				<div class="panel panel-default">
+					<div class="panel-body">
+
+						<a href="multicast/">
+							<span class="fa fa-rocket"></span> Multicast-Streams
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<? endif ?>
+
 	<? if($conference->hasReleases() || $conference->hasRelive()): ?>
 		<?
 			$class = ($conference->hasReleases() && $conference->hasRelive()) ?

@@ -1,0 +1,32 @@
+<div class="container multicast">
+	<h1>Multicast-Streams!</h1>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="alert alert-warning" role="alert">
+				<p>
+					Multicast-Streams may be available on the Camp-Site. They are an experiment and may or may not work.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<? foreach($streams as $stream): ?>
+		<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a href="<?=h($stream->getUrl())?>">
+						<?=h($stream->getTitle())?>
+					</a>
+				</div>
+				<div class="panel-body">
+					<a href="<?=h($stream->getUrl())?>">
+						<?=h($stream->getUrl())?>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	<? endforeach ?>
+</div>

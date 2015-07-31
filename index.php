@@ -20,6 +20,7 @@ require_once('model/RoomSelection.php');
 require_once('model/Stream.php');
 require_once('model/Relive.php');
 require_once('model/Upcoming.php');
+require_once('model/Multicast.php');
 
 $route = @$_GET['route'];
 $route = rtrim($route, '/');
@@ -88,6 +89,11 @@ try {
 	else if($route == 'feedback')
 	{
 		require('view/feedback.php');
+	}
+
+	else if($route == 'multicast')
+	{
+		require('view/multicast.php');
 	}
 
 	else if(preg_match('@^relive/([0-9]+)$@', $route, $m))

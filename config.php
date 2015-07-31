@@ -14,7 +14,7 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 
 $radio_rooms = array();
 $icecast = simplexml_load_file('http://admin:'.trim(file_get_contents('/opt/streaming-feedback/icecast-password')).'@live.ber.c3voc.de:8000/admin/stats.xml');
-foreach ($icecast->source as $source)
+if($icecast) foreach ($icecast->source as $source)
 {
 	$mount = preg_replace('/[^a-z0-9]/i', '-', ltrim($source['mount'], '/'));
 	$radio_rooms[$mount] = array(
@@ -115,6 +115,12 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * das Relive-Json bei jedem Request von der Quelle geladen und geparst
 	 */
 	//'RELIVE_JSON_CACHE' => 30*60,
+);
+
+$GLOBALS['CONFIG']['MULTICAST'] = array(
+
+	'rtp://@239.255.0.1:5004' => 'Tent A – FullHD – h264/mp4',
+
 );
 
 /**
