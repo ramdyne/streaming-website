@@ -12,22 +12,6 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
 
-$radio_rooms = array();
-$icecast = simplexml_load_file('http://admin:'.trim(file_get_contents('/opt/streaming-feedback/icecast-password')).'@live.ber.c3voc.de:8000/admin/stats.xml');
-if($icecast) foreach ($icecast->source as $source)
-{
-	$mount = preg_replace('/[^a-z0-9]/i', '-', ltrim($source['mount'], '/'));
-	$radio_rooms[$mount] = array(
-		'DISPLAY' => $source->server_name,
-		'GENRE' => (string)$source->genre,
-		'DESCRIPTION' => (string)$source->server_description,
-
-		'MUSIC' => true,
-		'EMBED' => true,
-	);
-}
-
-
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	/**
 	 * Am Ende der Konferenz wird durch das Umlegen dieses Schalters auf True eine Danke-Und-Kommen-Sie-
@@ -107,7 +91,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
+	//'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
@@ -115,12 +99,6 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * das Relive-Json bei jedem Request von der Quelle geladen und geparst
 	 */
 	//'RELIVE_JSON_CACHE' => 30*60,
-);
-
-$GLOBALS['CONFIG']['MULTICAST'] = array(
-
-	'rtp://@239.255.0.1:5004' => 'Tent A – FullHD – h264/mp4',
-
 );
 
 /**
@@ -135,15 +113,9 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 * sonst werden sie nicht angezeigt.
 	 */
 	'GROUPS' => array(
-		'Lecture Tents' => array(
-			'tent-1',
-			'tent-2',
+		'Pre Stream' => array(
+			'pre',
 		),
-
-		'Live DJ Sets'  => array(
-			'marketplace',
-		),
-		'Public Radio' => array_keys($radio_rooms),
 	),
 );
 
@@ -152,23 +124,23 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 /**
  * Liste der Räume (= Audio & Video Produktionen, also auch DJ-Sets oä.)
  */
-$GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
+$GLOBALS['CONFIG']['ROOMS'] = array(
 	/**
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'tent-1' => array(
+	'pre' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'Tent 1 (South)',
+		'DISPLAY' => 'The Camp-Site',
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
 		 * s1 bis s5 durchnummeriert.
 		 */
-		'STREAM' => 's1',
+		'STREAM' => 's2',
 
 		/**
 		 * Stream-Vorschaubildchen auf der Übersichtsseite anzeigen
@@ -184,7 +156,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 		 * die native-Streams verwendet, andernfalls wird native und translated
 		 * angeboten und auch für beide Tonspuren eine Player-Seite angezeigt.
 		 */
-		'TRANSLATION' => true,
+		'TRANSLATION' => false,
 
 		/**
 		 * stereo-Tonspur statt native-Tonspur benutzen
@@ -229,7 +201,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Audio und zuletzt Musik als
 		 * Default-Stream angenommen.
 		 */
-		'SLIDES' => true,
+		'SLIDES' => false,
 
 		/**
 		 * Audio-Only-Stream verfügbar
@@ -239,7 +211,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 		 *
 		 * In diesem Fall wird, sofern aktiviert, Musik als Default-Stream angenommen.
 		 */
-		'AUDIO' => true,
+		'AUDIO' => false,
 
 		/**
 		 * Musik-Stream verfügbar
@@ -262,13 +234,13 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 		 * Ebenso können alle Fahrplan-Funktionialitäten durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['SCHEDULE']-Blocks deaktiviert werden
 		 */
-		'SCHEDULE' => true,
+		'SCHEDULE' => false,
 
 		/**
 		 * Name des Raums im Fahrplan
 		 * Wenn diese Zeile auskommentiert ist wird der Raum-Slug verwendet
 		 */
-		'SCHEDULE_NAME' => 'Vortrag 1',
+		//'SCHEDULE_NAME' => 'Vortrag 1',
 
 		/**
 		 * Feedback anzeigen (boolean)
@@ -279,7 +251,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 		 * Ebenso können alle Feedback-Funktionialitäten durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['FEEDBACK']-Blocks deaktiviert werden
 		 */
-		'FEEDBACK' => true,
+		'FEEDBACK' => false,
 
 		/**
 		 * Subtitles-Player aktivieren (boolean)
@@ -330,10 +302,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 		* Der globale $GLOBALS['CONFIG']['IRC']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		//'IRC_CONFIG' => array(
-		//	'DISPLAY' => '#31C3-hall-1 @ hackint',
-		//	'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-1',
-		//),
+		'IRC_CONFIG' => array(
+			'DISPLAY' => '#voc @ hackint',
+			'URL'     => 'irc://irc.hackint.eu:6667/voc',
+		),
 
 		/**
 		 * Twitter-Link aktivieren (boolean)
@@ -358,39 +330,12 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
 		* Der globale $GLOBALS['CONFIG']['TWITTER']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		//'TWITTER_CONFIG' => array(
-		//	'DISPLAY' => '#hall1 @ twitter',
-		//	'TEXT'    => '#31C3 #hall1',
-		//),
+		'TWITTER_CONFIG' => array(
+			'DISPLAY' => '@c3voc @ twitter',
+			'TEXT'    => '@c3voc',
+		),
 	),
-
-	'tent-2' => array(
-		'DISPLAY' => 'Tent 2 (North)',
-		'STREAM' => 's2',
-		'PREVIEW' => true,
-
-		'TRANSLATION' => true,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-		'SLIDES' => true,
-		'MUSIC' => false,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Vortrag 2',
-		'FEEDBACK' => true,
-		'SUBTITLES' => false,
-		'EMBED' => true,
-		'IRC' => true,
-		'TWITTER' => true,
-	),
-
-	'marketplace' => array(
-		'DISPLAY' => 'Marketplace',
-		'MUSIC' => true,
-		'EMBED' => true,
-	),
-));
+);
 
 
 
