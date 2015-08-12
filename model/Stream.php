@@ -218,6 +218,9 @@ class Stream
 			case 'opus':
 				return proto().'://cdn.c3voc.de/'.rawurlencode($this->getRoom()->getStream()).'.opus';
 
+			case 'oga':
+				return proto().'://cdn.c3voc.de/'.rawurlencode($this->getRoom()->getStream()).'.oga';
+
 			default:
 				return null;
 		}
@@ -228,6 +231,9 @@ class Stream
 		{
 			case 'mp3':
 				return 'MP3-Audio, 192 kBit/s';
+
+			case 'oga':
+				return 'Ogg-Audio, 128 kBit/s';
 
 			case 'opus':
 				return 'Opus-Audio, 96 kBit/s';

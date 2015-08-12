@@ -3,12 +3,24 @@
 	preload="auto"
 	style="width: 230px;"
 >
-	<source
-		src="<?=h($stream->getMusicUrl('mp3'))?>"
-		type="audio/mp3"
-	/>
-	<source
-		src="<?=h($stream->getMusicUrl('opus'))?>"
-		type="audio/opus"
-	/>
+
+	<? if(!$room->isPublicStream()): ?>
+		<source
+			src="<?=h($stream->getMusicUrl('mp3'))?>"
+			type="audio/mp3"
+		/>
+		<source
+			src="<?=h($stream->getMusicUrl('opus'))?>"
+			type="audio/opus"
+		/>
+	<? else: ?>
+		<? foreach(['mp3', 'opus', 'oga'] as $format): ?>
+			<? if(!$room->hasPublicStreamFormat($format)) continue ?>
+
+			<source
+				src="<?=h($stream->getMusicUrl($format))?>"
+				type="audio/<?=h($format)?>"
+			/>
+		<? endforeach ?>
+	<? endif ?>
 </audio>

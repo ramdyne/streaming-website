@@ -171,6 +171,22 @@ class Room extends ModelBase
 		return $this->get('ROOMS.'.$this->getSlug().'.MUSIC');
 	}
 
+	public function isPublicStream() {
+		return $this->hasPublicStreamFormatList();
+	}
+
+	public function hasPublicStreamFormatList() {
+		return $this->has('ROOMS.'.$this->getSlug().'.FORMATS');
+	}
+
+	public function getPublicStreamFormatList() {
+		return $this->get('ROOMS.'.$this->getSlug().'.FORMATS');
+	}
+
+	public function hasPublicStreamFormat($format) {
+		return in_array($format, $this->getPublicStreamFormatList());
+	}
+
 	public function hasTranslation() {
 		return $this->get('ROOMS.'.$this->getSlug().'.TRANSLATION');
 	}

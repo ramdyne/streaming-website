@@ -21,6 +21,7 @@ require_once('model/Stream.php');
 require_once('model/Relive.php');
 require_once('model/Upcoming.php');
 require_once('model/Multicast.php');
+require_once('model/PublicStream.php');
 
 $route = @$_GET['route'];
 $route = rtrim($route, '/');

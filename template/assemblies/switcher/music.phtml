@@ -2,20 +2,42 @@
 	<h3>Directlinks</h3>
 	<div class="directlinks">
 		<div class="row">
-			<? foreach(Stream::getMusicProtos() as $proto => $display): ?>
-				<? $switcherstream = $room->createStreamObject('music') ?>
-				<div class="col-lg-3 col-md-4 col-lg-5 col-xs-12">
-					<div class="btn-group" role="group" title="<?=h($switcherstream->getMusicTech($proto))?>">
-						<div class="btn btn-primary" disabled><?=h($display)?></div>
+			<? $switcherstream = $room->createStreamObject('music') ?>
+			<? if(!$room->isPublicStream()): ?>
 
-						<a href="<?=h($switcherstream->getMusicUrl($proto))?>" class="btn btn-default">
-							<span class="fa fa-music"></span>
-							live music
-						</a>
+				<? foreach(Stream::getMusicProtos() as $proto => $display): ?>
+					<div class="col-lg-3 col-md-4 col-lg-5 col-xs-12">
+						<div class="btn-group" role="group" title="<?=h($switcherstream->getMusicTech($proto))?>">
+							<div class="btn btn-primary" disabled><?=h($display)?></div>
 
+							<a href="<?=h($switcherstream->getMusicUrl($proto))?>" class="btn btn-default">
+								<span class="fa fa-music"></span>
+								live music
+							</a>
+
+						</div>
 					</div>
-				</div>
-			<? endforeach ?>
+				<? endforeach ?>
+
+			<? else: ?>
+
+				<? foreach(['mp3' => 'MP3', 'opus' => 'Opus', 'oga' => 'OGA'] as $format => $display): ?>
+					<? if(!$room->hasPublicStreamFormat($format)) continue ?>
+
+					<div class="col-lg-3 col-md-4 col-lg-5 col-xs-12">
+						<div class="btn-group" role="group" title="<?=h($switcherstream->getMusicTech($format))?>">
+							<div class="btn btn-primary" disabled><?=h($display)?></div>
+
+							<a href="<?=h($switcherstream->getMusicUrl($format))?>" class="btn btn-default">
+								<span class="fa fa-music"></span>
+								live music
+							</a>
+
+						</div>
+					</div>
+				<? endforeach ?>
+
+			<? endif ?>
 		</div>
 	</div>
 </div>

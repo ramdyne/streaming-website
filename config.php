@@ -11,41 +11,6 @@ date_default_timezone_set('Europe/Berlin');
 if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
-$radio_rooms = [];
-$running_mounts = [];
-
-$ys = json_decode(file_get_contents('configs/ys.json'));
-$icecast = simplexml_load_file('configs/stats.xml');
-
-foreach ($icecast->source as $source) {
-	$running_mounts[] = $source['mount'];
-}
-
-print_r($mounts);
-
-// iterate all registered productions
-if($icecast && $ys) foreach ($ys as $production)
-{
-	// iterate all mount_points and check if any of those is online on the icecast
-	foreach ($production->mount_points as $mount_point)
-	{
-		if( in_array($mount_point->mount_name, $running_mounts) )
-		{
-			$radio_rooms[$mount] = array(
-				'DISPLAY' => $production->title,
-				//'GENRE' => (string)$source->genre,
-				'DESCRIPTION' => (string)$production->description,
-
-				'MUSIC' => true,
-				'EMBED' => true,
-			);
-
-			break 2;
-		}
-	}
-}
-
-
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	/**
 	 * Am Ende der Konferenz wird durch das Umlegen dieses Schalters auf True eine Danke-Und-Kommen-Sie-
@@ -140,6 +105,9 @@ $GLOBALS['CONFIG']['MULTICAST'] = array(
 	//'rtp://@239.255.0.1:5004' => 'Tent A – FullHD – h264/mp4',
 
 );
+
+require_once('model/PublicStream.php');
+$radio_rooms = PublicStream::getOverviewRooms();
 
 /**
  * Konfiguration der Stream-Übersicht auf der Startseite
