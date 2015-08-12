@@ -11,20 +11,38 @@ date_default_timezone_set('Europe/Berlin');
 if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
+$radio_rooms = [];
+$running_mounts = [];
 
-$radio_rooms = array();
-$icecast = simplexml_load_file('http://admin:'.trim(file_get_contents('/opt/streaming-feedback/icecast-password')).'@live.ber.c3voc.de:8000/admin/stats.xml');
-if($icecast) foreach ($icecast->source as $source)
+$ys = json_decode(file_get_contents('configs/ys.json'));
+$icecast = simplexml_load_file('configs/stats.xml');
+
+foreach ($icecast->source as $source) {
+	$running_mounts[] = $source['mount'];
+}
+
+print_r($mounts);
+
+// iterate all registered productions
+if($icecast && $ys) foreach ($ys as $production)
 {
-	$mount = preg_replace('/[^a-z0-9]/i', '-', ltrim($source['mount'], '/'));
-	$radio_rooms[$mount] = array(
-		'DISPLAY' => $source->server_name,
-		'GENRE' => (string)$source->genre,
-		'DESCRIPTION' => (string)$source->server_description,
+	// iterate all mount_points and check if any of those is online on the icecast
+	foreach ($production->mount_points as $mount_point)
+	{
+		if( in_array($mount_point->mount_name, $running_mounts) )
+		{
+			$radio_rooms[$mount] = array(
+				'DISPLAY' => $production->title,
+				//'GENRE' => (string)$source->genre,
+				'DESCRIPTION' => (string)$production->description,
 
-		'MUSIC' => true,
-		'EMBED' => true,
-	);
+				'MUSIC' => true,
+				'EMBED' => true,
+			);
+
+			break 2;
+		}
+	}
 }
 
 
@@ -107,7 +125,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
+	//'RELIVE_JSON' => 'configs/vod.json',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
@@ -406,7 +424,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * aufhören zu funktionieren. Wenn die Quelle unverlässlich ist ;) sollte ein
 	 * externer HTTP-Cache vorgeschaltet werden.
 	 */
-	'URL' => 'http://events.ccc.de/congress/2014/Fahrplan/schedule.xml',
+	'URL' => 'configs/schedule.xml',
 
 	/**
 	 * Nur die angegebenen Räume aus dem Fahrplan beachten
