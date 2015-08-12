@@ -137,7 +137,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 
 $GLOBALS['CONFIG']['MULTICAST'] = array(
 
-	'rtp://@239.255.0.1:5004' => 'Tent A – FullHD – h264/mp4',
+	//'rtp://@239.255.0.1:5004' => 'Tent A – FullHD – h264/mp4',
 
 );
 
