@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # icecast
-wget "http://admin:`cat /opt/streaming-feedback/icecast-password`@live.ber.c3voc.de:8000/admin/stats.xml" -O /tmp/stats.xml && mv /tmp/stats.xml stats.xml
+curl -u admin:`cat /opt/streaming-feedback/icecast-password` "http://live.ber.c3voc.de:8000/admin/stats.xml" > /tmp/stats.xml && mv /tmp/stats.xml stats.xml
 
 # fahrplan
 wget "https://events.ccc.de/camp/2015/Fahrplan/schedule.xml" -O /tmp/schedule.xml && mv /tmp/schedule.xml schedule.xml
