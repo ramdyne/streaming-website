@@ -107,7 +107,7 @@ $GLOBALS['CONFIG']['MULTICAST'] = array(
 );
 
 require_once('model/PublicStream.php');
-$radio_rooms = PublicStream::getOverviewRooms();
+$public_stream_rooms = PublicStream::getOverviewRooms();
 
 /**
  * Konfiguration der Stream-Übersicht auf der Startseite
@@ -129,7 +129,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 		'Live DJ Sets'  => array(
 			'marketplace',
 		),
-		'Public Radio' => array_keys($radio_rooms),
+		'Public Streams' => array_keys($public_stream_rooms),
 	),
 );
 
@@ -138,7 +138,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 /**
  * Liste der Räume (= Audio & Video Produktionen, also auch DJ-Sets oä.)
  */
-$GLOBALS['CONFIG']['ROOMS'] = array_merge($radio_rooms, array(
+$GLOBALS['CONFIG']['ROOMS'] = array_merge($public_stream_rooms, array(
 	/**
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
