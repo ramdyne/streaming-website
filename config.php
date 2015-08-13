@@ -514,7 +514,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein IRC_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#cccamp-%s @ hackint',
+	'DISPLAY' => '#camp-everywhere @ hackint',
 
 	/**
 	 * URL für die IRC-Links.
@@ -525,7 +525,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * %s wird durch den urlencodeten Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'URL' => 'irc://irc.hackint.eu:6667/cccamp-%s',
+	'URL' => 'irc://irc.hackint.eu:6667/camp-everywhere',
 );
 
 /**
@@ -545,7 +545,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#%s @ twitter',
+	'DISPLAY' => '#camp-everywhere @ twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
@@ -553,5 +553,5 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#cccamp15 #%s',
+	'TEXT' => '#camp-everywhere',
 );
