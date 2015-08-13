@@ -216,7 +216,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($public_stream_rooms, array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Audio und zuletzt Musik als
 		 * Default-Stream angenommen.
 		 */
-		'SLIDES' => true,
+		'SLIDES' => false,
 
 		/**
 		 * Audio-Only-Stream verfügbar
@@ -255,7 +255,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($public_stream_rooms, array(
 		 * Name des Raums im Fahrplan
 		 * Wenn diese Zeile auskommentiert ist wird der Raum-Slug verwendet
 		 */
-		'SCHEDULE_NAME' => 'Vortrag 1',
+		'SCHEDULE_NAME' => 'Project 2501',
 
 		/**
 		 * Feedback anzeigen (boolean)
@@ -360,11 +360,11 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($public_stream_rooms, array(
 		'SD_VIDEO' => true,
 		'HD_VIDEO' => true,
 		'AUDIO' => true,
-		'SLIDES' => true,
+		'SLIDES' => false,
 		'MUSIC' => false,
 
 		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'Vortrag 2',
+		'SCHEDULE_NAME' => 'Simulacron-3',
 		'FEEDBACK' => true,
 		'SUBTITLES' => false,
 		'EMBED' => true,
