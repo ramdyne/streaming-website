@@ -11,4 +11,4 @@ wget -q --no-check-certificate "https://c3voc.de/ys/api/v1/productions?api_key=q
 # https://yolo.camp15.c3voc.de/ys/api/v1/productions?api_key=qqpkI97V9z5uL546IDbl
 
 # vod json
-#wget -q "http://vod.c3voc.de/index.json" -O /tmp/vod.json && mv /tmp/vod.json vod.json 
+wget -q "http://cdn.c3voc.de/releases/relive/index.json" -O /tmp/vod.json && mv /tmp/vod.json vod.json
