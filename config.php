@@ -124,6 +124,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 		'Lecture Tents' => array(
 			'tent-1',
 			'tent-2',
+			'ber',
 		),
 
 		'Live DJ Sets'  => array(
@@ -364,6 +365,28 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($public_stream_rooms, array(
 
 		'SCHEDULE' => true,
 		'SCHEDULE_NAME' => 'Vortrag 2',
+		'FEEDBACK' => true,
+		'SUBTITLES' => false,
+		'EMBED' => true,
+		'IRC' => true,
+		'TWITTER' => true,
+	),
+
+	'ber' => array(
+		'DISPLAY' => 'BER Stage',
+		'STREAM' => 's3',
+		'PREVIEW' => true,
+
+		'TRANSLATION' => false,
+		'SD_VIDEO' => true,
+		'HD_VIDEO' => true,
+		'AUDIO' => true,
+		'SLIDES' => false,
+		'MUSIC' => false,
+
+		'SCHEDULE' => false,
+		//'SCHEDULE_NAME' => 'Vortrag 2',
+
 		'FEEDBACK' => true,
 		'SUBTITLES' => false,
 		'EMBED' => true,
