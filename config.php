@@ -127,9 +127,9 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 			'ber',
 		),
 
-		/*'Live DJ Sets'  => array(
-			'marketplace',
-		),*/
+		'Live DJ Sets'  => array(
+			'lounge',
+		),
 
 		'Public Streams' => array_keys($public_stream_rooms),
 	),
@@ -395,11 +395,11 @@ $GLOBALS['CONFIG']['ROOMS'] = array_merge($public_stream_rooms, array(
 		'TWITTER' => true,
 	),
 
-	/*'marketplace' => array(
-		'DISPLAY' => 'Marketplace',
+	'lounge' => array(
+		'DISPLAY' => 'Lounge',
 		'MUSIC' => true,
 		'EMBED' => true,
-	),*/
+	),
 ));
 
 
