@@ -466,7 +466,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
-	//'ROOMFILTER' => array('Saal 1', 'Saal 2', 'Saal G', 'Saal 6'),
+	'ROOMFILTER' => array('HS 1/2', 'HS 3', 'HS 4', 'HS 5', 'HS 6', 'HS 7', 'HS 8'),
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
