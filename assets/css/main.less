@@ -2,19 +2,29 @@
 
 // conference specific styles here
 
+@blue: #00a2e1;
+
 // often configured values (and their defaults):
 //
-//  @brand-primary:         #337ab7;
+@brand-primary:         @blue;
 //  @text-color:            @gray-dark;
 //
 //  @link-color:            @brand-primary;
 //  @link-hover-color:      darken(@link-color, 15%);
 //
-//  @navbar-default-color:  #777777;
-//  @navbar-default-bg:     #f8f8f8;
+@navbar-default-color:  @blue;
+@navbar-default-link-color: @blue;
+@navbar-default-bg:     white;
 //
-//  @navbar-default-link-color:       #777;
 //  @navbar-default-link-hover-color: #333;
+
+@footer-default-color:  white;
+@footer-default-link-color:  white;
+@footer-default-bg:     @blue;
+
+
+@panel-default-heading-bg: @blue;
+@panel-default-text: white;
 
 
 
@@ -29,7 +39,7 @@
 //  @schedule-room:      darken(@brand-primary, 15%);
 //  @schedule-author:    #444;
 //
-//  @schedule-selected-room: lighten(@brand-success, 10%);
+@schedule-selected-room: lighten(@brand-success, 30%);
 //
 //  @schedule-daychange:    darken(@brand-primary, 20%);
 //  @schedule-daychange-bg: fade(white, 30%);
