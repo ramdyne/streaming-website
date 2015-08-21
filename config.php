@@ -343,7 +343,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 	'hs3' => array(
 		'DISPLAY' => 'HS 3',
-		'STREAM' => 's2',
+		'STREAM' => 's3',
 		'PREVIEW' => true,
 
 		'SD_VIDEO' => true,
@@ -359,7 +359,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 	'hs4' => array(
 		'DISPLAY' => 'HS 4',
-		'STREAM' => 's3',
+		'STREAM' => 's4',
 		'PREVIEW' => true,
 
 		'SD_VIDEO' => true,
@@ -375,7 +375,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 	'hs5' => array(
 		'DISPLAY' => 'HS 5',
-		'STREAM' => 's4',
+		'STREAM' => 's5',
 		'PREVIEW' => true,
 
 		'SD_VIDEO' => true,
@@ -391,7 +391,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 	'hs6' => array(
 		'DISPLAY' => 'HS 6',
-		'STREAM' => 's5',
+		'STREAM' => 's2',
 		'PREVIEW' => true,
 
 		'SD_VIDEO' => true,
@@ -407,7 +407,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 	'hs7' => array(
 		'DISPLAY' => 'HS 7',
-		'STREAM' => 's6',
+		'STREAM' => 's7',
 		'PREVIEW' => true,
 
 		'SD_VIDEO' => true,
@@ -423,7 +423,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 
 	'hs8' => array(
 		'DISPLAY' => 'HS 8',
-		'STREAM' => 's7',
+		'STREAM' => 's8',
 		'PREVIEW' => true,
 
 		'SD_VIDEO' => true,
