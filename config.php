@@ -245,7 +245,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Name des Raums im Fahrplan
 		 * Wenn diese Zeile auskommentiert ist wird der Raum-Slug verwendet
 		 */
-		'SCHEDULE_NAME' => 'HS 1/2',
+		'SCHEDULE_NAME' => 'HS 1',
 
 		/**
 		 * Feedback anzeigen (boolean)
