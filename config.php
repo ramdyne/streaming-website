@@ -9,7 +9,7 @@ date_default_timezone_set('Europe/Berlin');
  * In diesem Fall wird auch ein SSL-Umschalt-Button im Header angezeigt
  */
 if($_SERVER['HTTP_HOST'] != 'localhost')
-	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
+	$GLOBALS['CONFIG']['BASEURL'] = '//localhost:8888/';
 
 
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
@@ -113,8 +113,8 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 */
 	'GROUPS' => array(
 		'Lecture Rooms' => array(
-			'saal1',
-			'saal2',
+			'schneller',
+			'hoeher',
 		),
 	),
 );
@@ -129,7 +129,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'saal1' => array(
+	'schneller' => array(
 		/**
 		 * Angezeige-Name
 		 */
@@ -293,7 +293,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle IRC-Links durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['IRC']-Blocks deaktiviert werden
 		 */
-		'IRC' => false,
+		//'IRC' => false,
 
 		/**
 		* Mit dem Angaben in diesem Block können die Vorgaben aus dem
@@ -302,10 +302,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		* Der globale $GLOBALS['CONFIG']['IRC']-Block muss trotzdem existieren,
 		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
 		*/
-		'IRC_CONFIG' => array(
-			'DISPLAY' => '#31C3-hall-1 @ hackint',
-			'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-1',
-		),
+		//'IRC_CONFIG' => array(
+		//	'DISPLAY' => '#31C3-hall-1 @ hackint',
+		//	'URL'     => 'irc://irc.hackint.eu:6667/31C3-hall-1',
+		//),
 
 		/**
 		 * Twitter-Link aktivieren (boolean)
@@ -321,22 +321,10 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle Twitter-Links durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['TWITTER']-Blocks deaktiviert werden
 		 **/
-		'TWITTER' => false,
-
-		/**
-		* Mit dem Angaben in diesem Block können die Vorgaben aus dem
-		* globalen $GLOBALS['CONFIG']['TWITTER'] Block überschrieben werden.
-		*
-		* Der globale $GLOBALS['CONFIG']['TWITTER']-Block muss trotzdem existieren,
-		* da sonst überhaupt kein IRC-Link erzeugt wird. (ggf. einfach `= true` setzen)
-		*/
-		'TWITTER_CONFIG' => array(
-			'DISPLAY' => '#hall1 @ twitter',
-			'TEXT'    => '#31C3 #hall1',
-		),
+		'TWITTER' => true,
 	),
 
-	'saal2' => array(
+	'hoeher' => array(
 		'DISPLAY' => 'Höher.',
 		'STREAM' => 's4',
 		'PREVIEW' => true,
@@ -347,6 +335,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'AUDIO' => true,
 		'SLIDES' => false,
 		'MUSIC' => false,
+		'TWITTER' => true,
 
 		'SCHEDULE' => true,
 		'SCHEDULE_NAME' => 'Höher.',
@@ -410,6 +399,24 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
  * Embedding-Funktionen deaktiviert.
  */
 $GLOBALS['CONFIG']['EMBED'] = true;
+
+$GLOBALS['CONFIG']['TWITTER'] = array(
+	/**
+	 * Anzeigetext für die Twitter-Links.
+	 *
+	 * %s wird durch den Raum-Slug ersetzt.
+	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
+	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
+	 */
+	'DISPLAY' => '#mrmcd15 @ twitter',
+	/**
+	 * Vorgabe-Tweet-Text für die Twitter-Links.
+	 *
+	 * %s wird durch den Raum-Slug ersetzt.
+	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
+	 */
+	'TEXT' => '#mrmcd15',
+);
 
 
 
