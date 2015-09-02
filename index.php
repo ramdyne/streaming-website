@@ -65,9 +65,9 @@ try {
 		require('view/streams-json-v1.php');
 	}
 
-	else if($conference->hasBegun())
+	else if(!$conference->hasBegun())
 	{
-		require('view/not_started.php');
+		require('view/not-started.php');
 	}
 
 	else if($conference->hasEnded())
