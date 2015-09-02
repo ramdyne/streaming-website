@@ -91,28 +91,14 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	'RELEASES' => 'https://media.ccc.de/browse/conferences/mrmcd/mrmcd15/',
 
 	/**
-	 * Link zu einer (externen) ReLive-Übersichts-Seite
+	 * Um die interne ReLive-Ansicht zu aktivieren, kann hier ein ReLive-JSON
+	 * konfiguriert werden. Üblicherweise wird diese Datei über das Script
+	 * configs/download.sh heruntergeladen, welches von einem Cronjob
+	 * regelmäßig getriggert wird.
+	 *
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-//	'RELIVE' => 'http://vod.c3voc.de/',
-
-	/**
-	 * Alternativ kann ein ReLive-Json konfiguriert werden, um die interne
-	 * ReLive-Ansicht zu aktivieren. Üblicherweise wird diese Datei über
-	 * das Script configs/download.sh heruntergeladen, welches von einem
-	 * Cronjob regelmäßig getriggert wird.
-	 *
-	 * Wird beides aktiviert, hat der externe Link Vorrang!
-	 * Wird beides auskommentiert, wird der Link nicht angezeigt
-	 */
-	'RELIVE_JSON' => 'configs/index.json',
-
-	/**
-	 * APCU-Cache-Zeit in Sekunden
-	 * Wird diese Zeile auskommentiert, werden die apc_*-Methoden nicht verwendet und
-	 * das Relive-Json bei jedem Request von der Quelle geladen und geparst
-	 */
-	//'RELIVE_JSON_CACHE' => 30*60,
+	'RELIVE_JSON' => 'configs/vod.json',
 );
 
 /**
@@ -382,13 +368,6 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
 	//'ROOMFILTER' => array('Saal 1', 'Saal 2', 'Saal G', 'Saal 6'),
-
-	/**
-	 * APCU-Cache-Zeit in Sekunden
-	 * Wird diese Zeile auskommentiert, werden die apc_*-Methoden nicht verwendet und
-	 * der Fahrplan bei jedem Request von der Quelle geladen und geparst
-	 */
-	//'CACHE' => 30*60,
 
 	/**
 	 * Skalierung der Programm-Vorschau in Sekunden pro Pixel
