@@ -25,7 +25,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => 'MRMCD2015',
+	'TITLE' => 'MRMCD15',
 
 	/**
 	 * Veranstalter
