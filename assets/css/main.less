@@ -40,8 +40,7 @@
 		.panel {
 			border-color: white;
 
-			.panel-heading,
-			.panel-heading a{
+			.panel-heading {
 				background-color: @mrmcd-blue;
 				border-color: white;
 				color: white;
@@ -61,10 +60,23 @@
 			border-color: white;
 		}
 	}
+       
 }
 
 body {
     background-color: #231F20;
+}
+
+.closed {
+    .panel {
+		border-color: white;
+
+		.panel-heading {
+            background-color: @mrmcd-blue;
+            border-color: white;
+            color: white;
+        }
+    }
 }
 
 .navbar-brand {
