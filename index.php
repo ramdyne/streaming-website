@@ -107,6 +107,12 @@ try {
 	{
 		require('view/feedback.php');
 	}
+	else if ($route == 'redir')
+
+	{
+		Header("Access-Control-Allow-Origin: *");
+  		Header("Location: ".$_GET["t"]);
+	}	
 
 	else if(preg_match('@^([^/]+)$@', $route, $m))
 	{
