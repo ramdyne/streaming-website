@@ -117,6 +117,10 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 			'schneller',
 			'hoeher',
 		),
+        
+        'Lounge Music'  => array(
+			'playground',
+		),
 	),
 );
 
@@ -341,6 +345,12 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'SCHEDULE' => true,
 		'SCHEDULE_NAME' => 'Höher.',
 		'SUBTITLES' => false,
+		'EMBED' => true,
+	),
+
+	'playground' => array(
+		'DISPLAY' => 'Lounge',
+		'MUSIC' => true,
 		'EMBED' => true,
 	),
 );
