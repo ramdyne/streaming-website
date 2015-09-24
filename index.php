@@ -65,7 +65,25 @@ try {
 		require('view/streams-json-v1.php');
 	}
 
-	else if($conference->isClosed())
+	else if(!$conference->hasBegun())
+	{
+		require('view/not-started.php');
+	}
+
+	else if(preg_match('@^relive/([0-9]+)$@', $route, $m))
+	{
+		$_GET = array(
+			'id' => $m[1],
+		);
+		require('view/relive-player.php');
+	}
+
+	else if($route == 'relive')
+	{
+		require('view/relive.php');
+	}
+
+	else if($conference->hasEnded())
 	{
 		require('view/closed.php');
 	}
@@ -88,19 +106,6 @@ try {
 	else if($route == 'feedback')
 	{
 		require('view/feedback.php');
-	}
-
-	else if(preg_match('@^relive/([0-9]+)$@', $route, $m))
-	{
-		$_GET = array(
-			'id' => $m[1],
-		);
-		require('view/relive-player.php');
-	}
-
-	else if($route == 'relive')
-	{
-		require('view/relive.php');
 	}
 
 	else if(preg_match('@^([^/]+)$@', $route, $m))

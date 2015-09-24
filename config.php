@@ -19,11 +19,31 @@ $TITLE = "Chaosradio $EPISODE - Das Internet hinter dem DSL-Router";
 
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	/**
-	 * Am Ende der Konferenz wird durch das Umlegen dieses Schalters auf True eine Danke-Und-Kommen-Sie-
-	 * Gut-Nach-Hause-Seite sowie einem Ausblick auf die kommenden Events angezeigt. Während einer
-	 * Konferenz kann dieser Schalter auskommentiert oder auf false gesetzt werden.
+	 * Der Startzeitpunkt der Konferenz als Unix-Timestamp. Befinden wir uns davor, wird die Closed-Seite
+	 * mit einem Text der Art "hat noch nicht angefangen" angezeigt.
+	 *
+	 * Wird dieser Zeitpunkt nicht angegeben, gilt die Konferenz immer als angefangen. (Siehe aber ENDS_AT
+	 * und CLOSED weiter unten)
 	 */
-	'CLOSED' => false,
+	'STARTS_AT' => strtotime("2014-12-27 06:00"),
+
+	/**
+	 * Der Endzeitpunkt der Konferenz als Unix-Timestamp. Befinden wir uns danach, wird eine Danke-Und-Kommen-Sie-
+	 * Gut-Nach-Hause-Seite sowie einem Ausblick auf die kommenden Events angezeigt. 
+	 *
+	 * Wird dieser Zeitpunkt nicht angegeben, endet die Konferenz nie. (Siehe aber CLOSED weiter unten)
+	 */
+	'ENDS_AT' => strtotime("2014-12-30 21:00"),
+
+	/**
+	 * Hiermit kann die Funktionalitaet von STARTS_AT/ENDS_AT überschrieben werden. Der Wert 'before'
+	 * simuliert, dass die Konferenz noch nicht begonnen hat. Der Wert 'after' simuliert, dass die Konferenz
+	 * bereits beendet ist. 'running' simuliert eine laufende Konferenz.
+	 *
+	 * Der Boolean true ist aus Abwärtskompatibilitätsgründen äquivalent zu 'after'. False ist äquivalent
+	 * zu 'running'.
+	 */
+	//'CLOSED' => false,
 
 	/**
 	 * Titel der Konferenz (kann Leer- und Sonderzeichen enthalten)
@@ -85,28 +105,14 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	'RELEASES' => 'https://media.ccc.de/browse/broadcast/chaosradio/index.html',
 
 	/**
-	 * Link zu einer (externen) ReLive-Übersichts-Seite
+	 * Um die interne ReLive-Ansicht zu aktivieren, kann hier ein ReLive-JSON
+	 * konfiguriert werden. Üblicherweise wird diese Datei über das Script
+	 * configs/download.sh heruntergeladen, welches von einem Cronjob
+	 * regelmäßig getriggert wird.
+	 *
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	//'RELIVE' => 'http://vod.c3voc.de/',
-
-	/**
-	 * Alternativ kann ein ReLive-Json konfiguriert werden, um die interne
-	 * ReLive-Ansicht zu aktivieren. Üblicherweise wird diese Datei über
-	 * das Script configs/download.sh heruntergeladen, welches von einem
-	 * Cronjob regelmäßig getriggert wird.
-	 *
-	 * Wird beides aktiviert, hat der externe Link Vorrang!
-	 * Wird beides auskommentiert, wird der Link nicht angezeigt
-	 */
-	//'RELIVE_JSON' => 'configs/index.json',
-
-	/**
-	 * APCU-Cache-Zeit in Sekunden
-	 * Wird diese Zeile auskommentiert, werden die apc_*-Methoden nicht verwendet und
-	 * das Relive-Json bei jedem Request von der Quelle geladen und geparst
-	 */
-	//'RELIVE_JSON_CACHE' => 30*60,
+	'RELIVE_JSON' => 'configs/vod.json',
 );
 
 /**
@@ -367,13 +373,6 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
 	//'ROOMFILTER' => array('Saal 1', 'Saal 2', 'Saal G', 'Saal 6'),
-
-	/**
-	 * APCU-Cache-Zeit in Sekunden
-	 * Wird diese Zeile auskommentiert, werden die apc_*-Methoden nicht verwendet und
-	 * der Fahrplan bei jedem Request von der Quelle geladen und geparst
-	 */
-	//'CACHE' => 30*60,
 
 	/**
 	 * Skalierung der Programm-Vorschau in Sekunden pro Pixel

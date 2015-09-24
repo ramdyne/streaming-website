@@ -7,7 +7,49 @@ class Conference extends ModelBase
 	}
 
 	public function isClosed() {
-		return $this->get('CONFERENCE.CLOSED');
+		return !$this->hasBegun() || $this->hasEnded();
+	}
+
+	public function hasBegun() {
+		if($this->has('CONFERENCE.CLOSED')) {
+			$closed = $this->get('CONFERENCE.CLOSED');
+
+			/* when CLOSED is a boolean, we're reading an old config where
+			 * conferences didn't have a pre-beginning phase, thus we always
+			 * return true.
+			 */
+			if(gettype($closed) == "boolean")
+				return true;
+
+			if($closed == "before")
+				return false;
+			else if($closed == "running" || $closed == "after")
+				return true;
+		}
+
+		if($this->has('CONFERENCE.STARTS_AT')) {
+			return time() >= $this->get('CONFERENCE.STARTS_AT');
+		} else {
+			return true;
+		}
+	}
+
+	public function hasEnded() {
+		if($this->has('CONFERENCE.CLOSED')) {
+			$closed = $this->get('CONFERENCE.CLOSED');
+
+			if($closed == "after" || $closed === true)
+				return true;
+			else if($closed == "running" || $closed == "before" ||
+				$closed === false)
+				return false;
+		}
+
+		if($this->has('CONFERENCE.ENDS_AT')) {
+			return time() >= $this->get('CONFERENCE.ENDS_AT');
+		} else {
+			return false;
+		}
 	}
 
 	public function hasAuthor() {
@@ -41,13 +83,10 @@ class Conference extends ModelBase
 	}
 
 	public function hasRelive() {
-		return $this->has('CONFERENCE.RELIVE') || $this->has('CONFERENCE.RELIVE_JSON');
+		return $this->has('CONFERENCE.RELIVE_JSON');
 	}
 	public function getReliveUrl() {
-		if($this->has('CONFERENCE.RELIVE'))
-			return $this->get('CONFERENCE.RELIVE');
-
-		elseif($this->has('CONFERENCE.RELIVE_JSON'))
+		if($this->has('CONFERENCE.RELIVE_JSON'))
 			return 'relive/';
 
 		else
