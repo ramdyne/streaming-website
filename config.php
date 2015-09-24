@@ -14,7 +14,7 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 
 $EPISODE = 216;
 $DATE = '24. September 2015';
-$TITLE = "Chaosradio $EPISODE - Wie Hacker Flüchtlingen helfen";
+$TITLE = "Chaosradio $EPISODE - Flüchtlinge und Hacker - Hilfe zur Selbsthilfe";
 
 
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
