@@ -4,9 +4,12 @@ date_default_timezone_set('Europe/Berlin');
 /**
  * Während der Entwicklung wird die BASEURL automatisch erraten
  * In Produktionssituationen sollte manuell eine konfiguriert werden um Überraschungen zu vermeiden
+ *
+ * Protokollfreie URLs (welche, die mit // beginnen), werden automatisch mit dem korrekten Protokoll ergänzt.
+ * In diesem Fall wird auch ein SSL-Umschalt-Button im Header angezeigt
  */
 if($_SERVER['HTTP_HOST'] != 'localhost')
-	$GLOBALS['CONFIG']['BASEURL'] = 'http://streaming.media.ccc.de/';
+	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
 
 $EPISODE = 213;
@@ -89,12 +92,14 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 
 	/**
 	 * Alternativ kann ein ReLive-Json konfiguriert werden, um die interne
-	 * ReLive-Ansicht zu aktivieren.
+	 * ReLive-Ansicht zu aktivieren. Üblicherweise wird diese Datei über
+	 * das Script configs/download.sh heruntergeladen, welches von einem
+	 * Cronjob regelmäßig getriggert wird.
 	 *
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-	//'RELIVE_JSON' => 'http://vod.c3voc.de/index.json',
+	//'RELIVE_JSON' => 'configs/index.json',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden
@@ -337,6 +342,83 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		//	'TEXT'    => '#31C3 #hall1',
 		//),
 	),
+);
+
+
+
+/**
+ * Konfigurationen zum Konferenz-Fahrplan
+ * Wird dieser Block auskommentiert, werden alle Fahrplan-Bezogenen Features deaktiviert
+ */
+$GLOBALS['CONFIG']['SCHEDULE'] = array(
+	/**
+	 * URL zum Fahrplan-XML
+	 *
+	 * Diese URL muss immer verfügbar sein, sonst können kann die Programm-Ansicht
+	 * aufhören zu funktionieren. Üblicherweise wird diese daher Datei über
+	 * das Script configs/download.sh heruntergeladen, welches von einem
+	 * Cronjob regelmäßig getriggert wird.
+	 */
+	'URL' => 'configs/schedule.xml',
+
+	/**
+	 * Nur die angegebenen Räume aus dem Fahrplan beachten
+	 *
+	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
+	 */
+	//'ROOMFILTER' => array('Saal 1', 'Saal 2', 'Saal G', 'Saal 6'),
+
+	/**
+	 * APCU-Cache-Zeit in Sekunden
+	 * Wird diese Zeile auskommentiert, werden die apc_*-Methoden nicht verwendet und
+	 * der Fahrplan bei jedem Request von der Quelle geladen und geparst
+	 */
+	//'CACHE' => 30*60,
+
+	/**
+	 * Skalierung der Programm-Vorschau in Sekunden pro Pixel
+	 */
+	'SCALE' => 7,
+
+	/**
+	 * Simuliere das Verhalten als wäre die Konferenz bereits heute
+	 *
+	 * Diese folgende Beispiel-Zeile Simuliert, dass das
+	 * Konferenz-Datum 2014-12-29 auf den heutigen Tag 2015-02-24 verschoben ist.
+	 */
+	//'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2014-12-28') - strtotime(/* Today */ '2015-03-01'),
+	'SIMULATE_OFFSET' => 0,
+);
+
+
+
+/**
+ * Konfiguration des Feedback-Formulars
+ *
+ * Wird dieser Block auskommentiert, wird das gesamte Feedback-System deaktiviert
+ */
+$GLOBALS['CONFIG']['FEEDBACK'] = array(
+	/**
+	 * DSN zum abspeichern der eingegebenen Daten
+	 * die Datenbank muss eine Tabelle enthaltem, die dem in `lib/schema.sql` angegebenen
+	 * Schema entspricht.
+	 *
+	 * Achtung vor Dateirechten: Bei SQLite reicht es nicht, wenn wer Webseiten-Benutzer
+	 * die .sqlite3-Datei schreiben darf, er muss auch im übergeordneten Order neue
+	 * (Lock-)Dateien anlegen dürfen
+	 */
+	'DSN' => 'sqlite:/opt/31c3-streaming-feedback/feedback.sqlite3',
+
+	/**
+	 * Login-Daten für die /feedback/read/-Seite, auf der eingegangenes
+	 * Feedback gelesen werden kann.
+	 *
+	 * Durch auskommentieren der beiden Optionen wird diese Seite komplett deaktiviert,
+	 * es kann dann nur noch durch manuelle Inspektion der .sqlite3-Datei auf das Feedback
+	 * zugegriffen werden.
+	 */
+	'USERNAME' => 'katze',
+	'PASSWORD' => trim(@file_get_contents('/opt/streaming-feedback/feedback-password')),
 );
 
 /**

@@ -3,11 +3,11 @@
 if(!ini_get('short_open_tag'))
 	die('`short_open_tag = On` is required');
 
+require_once('lib/helper.php');
 require_once('config.php');
 
 require_once('lib/PhpTemplate.php');
 require_once('lib/Exceptions.php');
-require_once('lib/helper.php');
 
 require_once('model/ModelBase.php');
 require_once('model/Conference.php');
@@ -28,8 +28,9 @@ $conference = new Conference();
 
 $tpl = new PhpTemplate('template/page.phtml');
 $tpl->set(array(
-	'baseurl' => baseurl(),
+	'baseurl' => forceslash(baseurl()),
 	'route' => $route,
+	'canonicalurl' => forceslash(baseurl()).forceslash($route),
 	'assemblies' => './template/assemblies/',
 
 	'conference' => $conference,
@@ -37,6 +38,13 @@ $tpl->set(array(
 	'schedule' => new Schedule(),
 ));
 
+if(startswith('//', @$GLOBALS['CONFIG']['BASEURL']))
+{
+	$tpl->set(array(
+		'httpsurl' => forceslash('https:'.$GLOBALS['CONFIG']['BASEURL']).forceslash($route),
+		'httpurl' =>  forceslash('http:'. $GLOBALS['CONFIG']['BASEURL']).forceslash($route),
+	));
+}
 
 ob_start();
 try {
@@ -135,12 +143,13 @@ try {
 		require('view/room.php');
 	}
 
-	else if(preg_match('@^embed/([^/]+)/(hd|sd|audio|slides)/(native|translated|stereo)$@', $route, $m))
+	else if(preg_match('@^embed/([^/]+)/(hd|sd|audio|slides)/(native|translated|stereo)(/no-autoplay)?$@', $route, $m))
 	{
 		$_GET = array(
 			'room' => $m[1],
 			'selection' => $m[2],
 			'language' => $m[3],
+			'autoplay' => !isset($m[4]),
 		);
 		require('view/embed.php');
 	}

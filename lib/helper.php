@@ -1,11 +1,27 @@
 <?php
 
+function ssl()
+{
+	return isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on');
+}
+
+function proto()
+{
+	return ssl() ? 'https' : 'http';
+}
+
 function baseurl()
 {
-	if(isset($GLOBALS['CONFIG']['baseurl']))
-		return $GLOBALS['CONFIG']['baseurl'];
+	if(isset($GLOBALS['CONFIG']['BASEURL']))
+	{
+		$base = $GLOBALS['CONFIG']['BASEURL'];
+		if(startswith('//', $base))
+			$base = proto().':'.$base;
 
-	$base  = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']) ? 'https://' : 'http://';
+		return $base;
+	}
+
+	$base  = ssl() ? 'https://' : 'http://';
 	$base .= $_SERVER['HTTP_HOST'];
 	$base .=  forceslash(dirname($_SERVER['SCRIPT_NAME']));
 
