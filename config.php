@@ -21,6 +21,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * und CLOSED weiter unten)
 	 */
 	'STARTS_AT' => strtotime("2015-10-03 07:00"),
+	//'STARTS_AT' => strtotime("2015-10-02 07:00"),
 
 	/**
 	 * Der Endzeitpunkt der Konferenz als Unix-Timestamp. Befinden wir uns danach, wird eine Danke-Und-Kommen-Sie-
@@ -38,7 +39,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Der Boolean true ist aus Abwärtskompatibilitätsgründen äquivalent zu 'after'. False ist äquivalent
 	 * zu 'running'.
 	 */
-	//'CLOSED' => false,
+	 //'CLOSED' => false,
 
 	/**
 	 * Titel der Konferenz (kann Leer- und Sonderzeichen enthalten)
@@ -120,8 +121,8 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 */
 	'GROUPS' => array(
 		'Lecture Rooms' => array(
-			'Signallabor',
-			'Medientheater',
+			'sl',
+			'mt',
 		),
 	),
 );
@@ -136,7 +137,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'Signallabor' => array(
+	'sl' => array(
 		/**
 		 * Angezeige-Name
 		 */
@@ -343,7 +344,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		),
 	),
 
-	'saal2' => array(
+	'mt' => array(
 		'DISPLAY' => 'Medientheater',
 		'STREAM' => 's3',
 		'PREVIEW' => true,
