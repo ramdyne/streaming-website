@@ -141,7 +141,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => 'Signallabor',
+		'DISPLAY' => 'Raum 0.09',
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
