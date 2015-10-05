@@ -29,7 +29,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird dieser Zeitpunkt nicht angegeben, endet die Konferenz nie. (Siehe aber CLOSED weiter unten)
 	 */
-	'ENDS_AT' => strtotime("2015-10-05 21:00"),
+	'ENDS_AT' => strtotime("2015-10-04 21:00"),
 
 	/**
 	 * Hiermit kann die Funktionalitaet von STARTS_AT/ENDS_AT überschrieben werden. Der Wert 'before'
