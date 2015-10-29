@@ -12,9 +12,9 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
 
-$EPISODE = 216;
-$DATE = '24. September 2015';
-$TITLE = "Chaosradio $EPISODE - Flüchtlinge und Hacker - Hilfe zur Selbsthilfe";
+$EPISODE = 217;
+$DATE = '29. September 2015';
+$TITLE = "Chaosradio $EPISODE - Ein Einblick in die Security-Industrie";
 
 
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
@@ -25,7 +25,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird dieser Zeitpunkt nicht angegeben, gilt die Konferenz immer als angefangen. (Siehe aber ENDS_AT
 	 * und CLOSED weiter unten)
 	 */
-	'STARTS_AT' => strtotime("2015-09-24 19:30"),
+	'STARTS_AT' => strtotime("2015-09-29 21:30"),
 
 	/**
 	 * Der Endzeitpunkt der Konferenz als Unix-Timestamp. Befinden wir uns danach, wird eine Danke-Und-Kommen-Sie-
@@ -33,7 +33,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird dieser Zeitpunkt nicht angegeben, endet die Konferenz nie. (Siehe aber CLOSED weiter unten)
 	 */
-	'ENDS_AT' => strtotime("2015-09-24 23:30"),
+	'ENDS_AT' => strtotime("2015-09-24 23:59"),
 
 	/**
 	 * Hiermit kann die Funktionalitaet von STARTS_AT/ENDS_AT überschrieben werden. Der Wert 'before'
