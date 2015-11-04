@@ -12,10 +12,6 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 	$GLOBALS['CONFIG']['BASEURL'] = '//streaming.media.ccc.de/';
 
 
-$EPISODE = 57;
-$DATE = '28. September 2015';
-$TITLE = 'Eveline Lubbers - From Secret Manoeuvres to Undercover Research';
-
 
 $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	/**
@@ -25,7 +21,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird dieser Zeitpunkt nicht angegeben, gilt die Konferenz immer als angefangen. (Siehe aber ENDS_AT
 	 * und CLOSED weiter unten)
 	 */
-	'STARTS_AT' => strtotime("2015-09-28 19:30"),
+	'STARTS_AT' => strtotime("2015-11-05 09:30"),
 
 	/**
 	 * Der Endzeitpunkt der Konferenz als Unix-Timestamp. Befinden wir uns danach, wird eine Danke-Und-Kommen-Sie-
@@ -33,7 +29,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird dieser Zeitpunkt nicht angegeben, endet die Konferenz nie. (Siehe aber CLOSED weiter unten)
 	 */
-	'ENDS_AT' => strtotime("2015-09-28 23:30"),
+	'ENDS_AT' => strtotime("2015-11-06 19:15"),
 
 	/**
 	 * Hiermit kann die Funktionalitaet von STARTS_AT/ENDS_AT überschrieben werden. Der Wert 'before'
@@ -50,28 +46,28 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => "Datengarten #$EPISODE",
+	'TITLE' => "systemd.conf Berlin, November 5th-7th, 2015",
 
 	/**
 	 * Veranstalter
 	 * Wird für den <meta name="author">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'AUTHOR' => 'CCCB',
+	'AUTHOR' => 'systemd.conf',
 
 	/**
 	 * Beschreibungstext
 	 * Wird für den <meta name="description">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'DESCRIPTION' => 'Der Datengarten ist eine Vortrags- und Projektreihe im Rahmen des Club Discordia.',
+	'DESCRIPTION' => 'systemd.conf Berlin, November 5th-7th, 2015',
 
 	/**
 	 * Schlüsselwortliste, Kommasepariert
 	 * Wird für den <meta name="keywords">-Tag verdet. Wird diese Zeile auskommentiert, wird kein solcher
 	 * <meta>-Tag generiert.
 	 */
-	'KEYWORDS' => 'Datengarten, Chaos Computer Club, Berlin, Video, Media, Streaming, Club Discordia',
+	'KEYWORDS' => 'systemd.conf, Chaos Computer Club, Berlin, Video, Media, Streaming, systemd',
 
 	/**
 	 * HTML-Code für den Footer (z.B. für spezielle Attribuierung mit <a>-Tags)
@@ -79,8 +75,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird die Standard-Attribuierung für (c3voc.de) verwendet
 	 */
 	'FOOTER_HTML' => '
-		by <a href="https://ccc.de">Chaos Computer Club e.V</a> &amp;
-		<a href="https://c3voc.de">c3voc</a>
+		by <a href="https://c3voc.de">c3voc</a>
 	',
 
 	/**
@@ -94,15 +89,15 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird diese Zeile auskommentiert, wird kein Banner ausgegeben.
 	 */
 	'BANNER_HTML' => "
-		<h2>Datengarten #$EPISODE – $DATE</h2>
-		<h3>$TITLE</h3>
+		<h2>systemd.conf 2015</h2>
+		<h3>Berlin, November 5th-7th, 2015</h3>
 	",
 
 	/**
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	'RELEASES' => 'https://media.ccc.de/browse/events/datengarten/index.html',
+	'RELEASES' => 'https://www.youtube.com/user/users/systemd.conf',
 
 	/**
 	 * Um die interne ReLive-Ansicht zu aktivieren, kann hier ein ReLive-JSON
@@ -112,7 +107,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-	//'RELIVE_JSON' => 'configs/vod.json',
+	'RELIVE_JSON' => 'configs/vod.json',
 );
 
 /**
@@ -128,7 +123,7 @@ $GLOBALS['CONFIG']['OVERVIEW'] = array(
 	 */
 	'GROUPS' => array(
 		'' => array(
-			'datengarten',
+			'Main room',
 		),
 	),
 );
@@ -143,18 +138,18 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * Array-Key ist der Raum-Slug, der z.B. auch zum erstellen der URLs,
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
-	'datengarten' => array(
+	'Main room' => array(
 		/**
 		 * Angezeige-Name
 		 */
-		'DISPLAY' => "Datengarten #$EPISODE",
+		'DISPLAY' => "Main room",
 
 		/**
 		 * ID des Video/Audio-Streams. Die Stream-ID ist davon abhängig, welches
 		 * Event-Case in welchem Raum aufgebaut wird und wird üblicherweise von
 		 * s1 bis s5 durchnummeriert.
 		 */
-		'STREAM' => 'q1',
+		'STREAM' => 's2',
 
 		/**
 		 * Stream-Vorschaubildchen auf der Übersichtsseite anzeigen
@@ -204,7 +199,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * In diesem Fall wird, sofern jeweils aktiviert, Slides, Audio und zuletzt Musik
 		 * als Default-Stream angenommen.
 		 */
-		'HD_VIDEO' => true,
+		'HD_VIDEO' => false,
 
 		/**
 		 * Slide-Only-Stream (1024×576) verfügbar
@@ -248,7 +243,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle Fahrplan-Funktionialitäten durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['SCHEDULE']-Blocks deaktiviert werden
 		 */
-		'SCHEDULE' => false,
+		'SCHEDULE' => true,
 
 		/**
 		 * Name des Raums im Fahrplan
@@ -307,7 +302,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle IRC-Links durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['IRC']-Blocks deaktiviert werden
 		 */
-		'IRC' => true,
+		'IRC' => false,
 
 		/**
 		* Mit dem Angaben in diesem Block können die Vorgaben aus dem
@@ -335,7 +330,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		 * Ebenso können alle Twitter-Links durch auskommentieren
 		 * des globalen $GLOBALS['CONFIG']['TWITTER']-Blocks deaktiviert werden
 		 **/
-		'TWITTER' => true,
+		'TWITTER' => false,
 
 		/**
 		* Mit dem Angaben in diesem Block können die Vorgaben aus dem
@@ -366,7 +361,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * das Script configs/download.sh heruntergeladen, welches von einem
 	 * Cronjob regelmäßig getriggert wird.
 	 */
-//	'URL' => 'configs/schedule.xml',
+	'URL' => 'configs/schedule.xml',
 
 	/**
 	 * Nur die angegebenen Räume aus dem Fahrplan beachten
@@ -378,7 +373,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	/**
 	 * Skalierung der Programm-Vorschau in Sekunden pro Pixel
 	 */
-//	'SCALE' => 7,
+	'SCALE' => 7,
 
 	/**
 	 * Simuliere das Verhalten als wäre die Konferenz bereits heute
@@ -407,7 +402,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * die .sqlite3-Datei schreiben darf, er muss auch im übergeordneten Order neue
 	 * (Lock-)Dateien anlegen dürfen
 	 */
-//	'DSN' => 'sqlite:/opt/31c3-streaming-feedback/feedback.sqlite3',
+	'DSN' => 'sqlite:/opt/31c3-streaming-feedback/feedback.sqlite3',
 
 	/**
 	 * Login-Daten für die /feedback/read/-Seite, auf der eingegangenes
@@ -417,8 +412,8 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * es kann dann nur noch durch manuelle Inspektion der .sqlite3-Datei auf das Feedback
 	 * zugegriffen werden.
 	 */
-//	'USERNAME' => 'katze',
-//	'PASSWORD' => trim(@file_get_contents('/opt/streaming-feedback/feedback-password')),
+	'USERNAME' => 'katze',
+	'PASSWORD' => trim(@file_get_contents('/opt/streaming-feedback/feedback-password')),
 //);
 
 /**
@@ -446,7 +441,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein IRC_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#ccc @ ircnet',
+	# 'DISPLAY' => '#ccc @ ircnet',
 
 	/**
 	 * URL für die IRC-Links.
@@ -457,7 +452,7 @@ $GLOBALS['CONFIG']['IRC'] = array(
 	 * %s wird durch den urlencodeten Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'URL' => 'irc://irc.de.ircnet.net/ccc',
+	# 'URL' => 'irc://irc.de.ircnet.net/ccc',
 );
 
 /**
@@ -477,7 +472,7 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * Ist eine weitere Anpassung erfoderlich, kann ein TWITTER_CONFIG-Block in der
 	 * Raum-Konfiguration zum Überschreiben dieser Angaben verwendet werden.
 	 */
-	'DISPLAY' => '#datengarten @ twitter',
+	# 'DISPLAY' => '#datengarten @ twitter',
 
 	/**
 	 * Vorgabe-Tweet-Text für die Twitter-Links.
@@ -485,5 +480,5 @@ $GLOBALS['CONFIG']['TWITTER'] = array(
 	 * %s wird durch den Raum-Slug ersetzt.
 	 * Eine Anpassung kann ebenfalls in der Raum-Konfiguration vorgenommen werden.
 	 */
-	'TEXT' => '#datengarten',
+	# 'TEXT' => '#datengarten',
 );
