@@ -46,7 +46,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => "systemd.conf Berlin, November 5th-7th, 2015",
+	'TITLE' => "systemd.conf 2015",
 
 	/**
 	 * Veranstalter
@@ -352,7 +352,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
  * Konfigurationen zum Konferenz-Fahrplan
  * Wird dieser Block auskommentiert, werden alle Fahrplan-Bezogenen Features deaktiviert
  */
-//$GLOBALS['CONFIG']['SCHEDULE'] = array(
+$GLOBALS['CONFIG']['SCHEDULE'] = array(
 	/**
 	 * URL zum Fahrplan-XML
 	 *
@@ -383,7 +383,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 */
 	//'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2014-12-28') - strtotime(/* Today */ '2015-03-01'),
 //	'SIMULATE_OFFSET' => 0,
-//);
+);
 
 
 
@@ -392,7 +392,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
  *
  * Wird dieser Block auskommentiert, wird das gesamte Feedback-System deaktiviert
  */
-//$GLOBALS['CONFIG']['FEEDBACK'] = array(
+$GLOBALS['CONFIG']['FEEDBACK'] = array(
 	/**
 	 * DSN zum abspeichern der eingegebenen Daten
 	 * die Datenbank muss eine Tabelle enthaltem, die dem in `lib/schema.sql` angegebenen
@@ -414,7 +414,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 */
 	'USERNAME' => 'katze',
 	'PASSWORD' => trim(@file_get_contents('/opt/streaming-feedback/feedback-password')),
-//);
+);
 
 /**
  * Globaler Schalter für die Embedding-Funktionalitäten
