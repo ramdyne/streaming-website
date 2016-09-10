@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T223000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T220000
+DTSTAMP;VALUE=DATE-TIME:20151206T184130Z
+UID:5f5cdb89-f599-40a6-84eb-d588eeed0250@frab.cccv.de
+DESCRIPTION:Hacking receives growing attention among social scientists du
+ ring the last five years. Researchers particularly in the fields of Huma
+ n-Computer Interaction (HCI) and Computer-Supported Collaborative Work (
+ CSCW) but also in the social sciences generally have begun to study hack
+ ing empirically—investigating hacking as a practice and as cultural phen
+ omenon. The talk offers a glimpse of the spectrum of research about hack
+ ing in HCI\, CSCW\, and adjacent fields. Researchers in these fields por
+ tray hacking very differently. The spectrum ranges from “transgressive c
+ raft” to “innovative leisure practice\,” from skilled craftsmanship to a
+ d hoc kludging\, from an individualist pursuit to a community mission\, 
+ from an expression of liberalism to an exclusive practice of cultural di
+ stinction. Some researchers see hacking as an illustration of how to def
+ y technological determinism\, i.e.\, the conviction that the technologic
+ al determines the social\, a position that social scientists typically f
+ ight ferociously. Other researchers see it as the future of “end-user in
+ novation.” This talks discusses these notions and describes the value---
+ economic\, pedagogical\, cultural\, conceptual---that different research
+  perspectives perceive in hacking.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7114.html
+SUMMARY:Craft\, leisure\, and end-user innovation
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

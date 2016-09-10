@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T231500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T224500
+DTSTAMP;VALUE=DATE-TIME:20151222T091523Z
+UID:d961bd32-2c2a-45a5-bc58-64449bb4b16a@frab.cccv.de
+DESCRIPTION:Im April 2015 hat die österreichische Bundesregierung einen E
+ ntwurf für ein "Polizeiliches Staatsschutzgesetz" vorgelegt. Damit soll 
+ ein neuer Inlandsgeheimdienst mit weitreichenden Überwachungsbefugnissen
+  geschaffen werden. Unabhängige Kontrolle durch Gerichte und das Parlame
+ nt ist nicht vorgesehen. Bereits in der Begutachtungsphase wurde das Ges
+ etz massiv kritisiert. Der AKVorrat gab mit einer umfassenden Stellungna
+ hme die wichtigsten Argumente vor. Der Widerstand gegen das Gesetz und d
+ ie Kampagne des AKVorrat haben zwar zu mehrfacher Verschiebung der Besch
+ lussfassung geführt\, aber die Geheimdienstpläne der Regierung sind trot
+ z mehr als 22.000 Unterzeichnerinnen und Unterzeichnern der Petition auf
+  www.staatsschutz.at nach wie vor nicht vom Tisch. Der Talk bietet Einbl
+ icke\, wie Geheimdienste in der Post-Snowden-Ära öffentlich und nicht öf
+ fentlich diskutiert werden.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7413.html
+SUMMARY:Österreich: Der Kampf gegen unkontrollierte Massenüberwachung
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

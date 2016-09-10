@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T230000
+DTSTAMP;VALUE=DATE-TIME:20151211T124028Z
+UID:144b2208-bf0b-494c-99e5-665ed18f1e8f@frab.cccv.de
+DESCRIPTION:Legend has it\, the first iteration of the Secure Sockets Lay
+ er (SSL) protocol was broken in ten minutes by Phillip Hallam-Baker and 
+ Alan Schiffman during a presentation by Marc Andreesen at MIT in 1994. I
+ n the following two decades the protocol has been improved and the imple
+ mentations have been strengthened\, but not without a steady stream of i
+ mplementation vulnerabilities and protocol design errors. From the ciphe
+ rsuite rollback attack to LogJam\, SSL/TLS has seen a diverse set of pro
+ blems. In this talk we’ll discuss the pitfalls in designing and implemen
+ ting a cryptographic protocol and lessons learned from TLS up to version
+  1.2.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7438.html
+SUMMARY:goto fail\;
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T123000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T113000
+DTSTAMP;VALUE=DATE-TIME:20151211T220329Z
+UID:3f61827f-8b17-47b4-a43c-e0dce6532cbe@frab.cccv.de
+DESCRIPTION:    Embedded systems are omnipresent in our everyday life and
+  are becoming \n    increasingly present in many computing and networked
+  environments. For example\,\n    they are at the core of various Common
+ -Off-The-Shelf (COTS) devices such as\n    printers\, video surveillance
+  systems\, home routers and virtually anything we \n    informally call 
+ electronics. The emerging phenomenon of the Internet-of-Things\n    (IoT
+ ) will make them even more widespread and interconnected. Cisco famously
+ \n    predicted that there will be 50 billion connected embedded devices
+  by 2020.\n    Given those estimations\, the heterogeneity of technology
+  and application fields\,\n    and the current threat landscape\, the se
+ curity of all those devices becomes of\n    paramount importance. In add
+ ition to this\, manual security analysis does not\n    scale. Therefore\
+ , novel\, scalable and automated approaches are needed.\n    In this tal
+ k\, we present several methods that make *the large scale\n    security 
+ analyses of embedded devices* a feasible task. We implemented \n    thos
+ e techniques in a scalable framework that we tested on real world data. 
+ \n    First\, we collected a large number of firmware images from Intern
+ et \n    repositories and then performed simple static analysis. \n    S
+ econd\, since embedded devices often expose web interfaces for \n    rem
+ ote administration\, therefore we developed techniques for large scale \
+ n    static and dynamic analysis of such interfaces. \n    Finally\, ide
+ ntifying and classifying the firmware files\, as well as \n    fingerpri
+ nting and identifying embedded devices is difficult\, especially \n    a
+ t large scale. \n    Using these techniques\, we were able to discover a
+  large number of new \n    vulnerabilities in dozens of firmware package
+ s\, affecting a great variety of vendors and\n    device classes. We wer
+ e also able to achieve high accuracy in fingerprinting and\n    classifi
+ cation of both firmware images and live devices.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7252.html
+SUMMARY:(In)Security of Embedded Devices' Firmware - Fast and Furious at 
+ Large Scale
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

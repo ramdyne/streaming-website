@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T180000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T173000
+DTSTAMP;VALUE=DATE-TIME:20151228T174316Z
+UID:81cba379-0eb6-4dbb-a48c-80feaea60939@frab.cccv.de
+DESCRIPTION:We develop a tool to verify Linux netfilter/iptables firewall
+ s rulesets. Then\, we verify the verification tool itself.\n\nWarning: i
+ nvolves math!\n\nThis talk is also an introduction to interactive theore
+ m proving and programming in Isabelle/HOL. We strongly suggest that audi
+ ence members have some familiarity with functional programming. A strong
+  mathematical background is NOT required.\n\nTL\;DR: Math is cool again\
+ , we now have the tools for "executable math". Also: iptables!
+URL://events.ccc.de/congress/2015/Fahrplan/events/7195.html
+SUMMARY:Verified Firewall Ruleset Verification
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

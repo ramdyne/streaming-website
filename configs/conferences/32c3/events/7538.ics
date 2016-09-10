@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T140000
+DTSTAMP;VALUE=DATE-TIME:20151228T181620Z
+UID:78ea005f-4ddb-44d1-82e5-a2825ddea4e1@frab.cccv.de
+DESCRIPTION:In Internet Landscapes\, Evan Roth with discuss his work as i
+ t relates to visualizing\, archiving and understanding the Internet and 
+ its effects on culture with a focus on the misuse of communication techn
+ ologies. Roth will trace his personal and creative history within an Int
+ ernet landscape that has changed significantly in the last 16 years. The
+  presentation will include a range of work culminating in his more recen
+ t pilgrimages to the beaches of the UK\, New Zealand and Sweden\, where 
+ submarine Internet fiber optic cables reach the land. Armed with an arra
+ y of paranormal technologies\, Roth will recount his personal quest to v
+ isualize and reconnect with a changing Internet landscape. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7538.html
+SUMMARY:Internet Landscapes
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

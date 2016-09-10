@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T190000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T180000
+DTSTAMP;VALUE=DATE-TIME:20151211T220306Z
+UID:9b641e3f-6d6e-4850-bddd-ced7d67af5c6@frab.cccv.de
+DESCRIPTION:Governments post reports and data about their operations. Jou
+ rnalists publish documents from whistleblowers. But there is a third typ
+ e of open data that is often overlooked- the information people and comp
+ anies post about themselves. People need jobs. Companies need to hire pe
+ ople. Secret prisons do not build themselves.  \n\nBy making it feasible
+  for anyone to collect public data online in bulk and exploring ways to 
+ effectively use this data for concrete objectives\, we can build an inde
+ pendent\, distributed system of accountability.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7340.html
+SUMMARY:Collect It All: Open Source Intelligence (OSINT) for Everyone
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

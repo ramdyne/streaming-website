@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T140000
+DTSTAMP;VALUE=DATE-TIME:20151226T180854Z
+UID:b89b8cff-c496-4885-8e72-1461e8b274f7@frab.cccv.de
+DESCRIPTION:„Social Media Break Up Coordinator“ is a performance art piec
+ e and lecture performed by Caroline Sinders. Inspired by Facebook’s memo
+ ries algorithms faux pas\, such as parents being reminded of their child
+ ’s death\, or of events with an ex.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7497.html
+SUMMARY:When  algorithms fail in our personal lives
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

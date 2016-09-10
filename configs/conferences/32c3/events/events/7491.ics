@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T181500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T171500
+DTSTAMP;VALUE=DATE-TIME:20151214T223518Z
+UID:371063d0-da9d-4d9f-bbe9-f5739eba2f30@frab.cccv.de
+DESCRIPTION:Last year I presented research showing how to de-anonymize pr
+ ogrammers based on their coding style. This is of immediate concern to o
+ pen source software developers who would like to remain anonymous. On th
+ e other hand\, being able to de-anonymize programmers can help in forens
+ ic investigations\, or in resolving plagiarism claims or copyright dispu
+ tes. \n\nI will report on our new research findings in the past year. We
+  were able to increase the scale and accuracy of our methods dramaticall
+ y and can now handle 1\,600 programmers\, reaching 94% de-anonymization 
+ accuracy. In ongoing research\, we are tackling the much harder problem 
+ of de-anonymizing programmers from binaries of compiled code. This can h
+ elp identify the author of a suspicious executable file and can potentia
+ lly aid malware forensics. We demonstrate the efficacy of our techniques
+  using a dataset collected from GitHub.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7491.html
+SUMMARY:De-anonymizing Programmers
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

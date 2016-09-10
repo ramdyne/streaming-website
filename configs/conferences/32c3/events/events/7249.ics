@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T213000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T203000
+DTSTAMP;VALUE=DATE-TIME:20151206T191426Z
+UID:47c13b4a-a50b-4158-9a71-f4a2f24ace64@frab.cccv.de
+DESCRIPTION:Kommentierendes im Internet ist neuerdings bedroht. Der unflä
+ tige Kommentierer hat den Pedonazi als Schrecken des Netzes abgelöst\, a
+ ls Strohmann für mehr Kontrolle über das Netz kann er auf breitere Gefol
+ gschaft rechnen. Es “muss etwas geschehen” gegen den “Hass im Netz”\, “P
+ utintrolle” und Wutnetzbürger. Twitter\, Mark Zuckerberg\, Politiker\, a
+ lle sollen mehr tun - aber was denn eigentlich\, mehr Zensur und Moderat
+ ion\, andere Ausgestaltungen von Kommentarsystemen? 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7249.html
+SUMMARY:Das Zahnrad aus Fleisch
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

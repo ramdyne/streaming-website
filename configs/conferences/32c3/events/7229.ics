@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T140000
+DTSTAMP;VALUE=DATE-TIME:20151228T164134Z
+UID:6ef3da22-6e38-4997-b44d-e279907be98d@frab.cccv.de
+DESCRIPTION:Unser Vortrag demonstriert einen PLC-only Wurm. Der PLC-Wurm 
+ kann selbstständig ein Netzwerk nach Siemens Simatic S7-1200 Geräten in 
+ den Versionen 1 bis 3  durchsuchen und diese befallen.  Hierzu ist keine
+  Unterstützung durch PCs oder Server erforderlich. Der Wurm „lebt“ aussc
+ hließlich in den PLCs.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7229.html
+SUMMARY:PLC-Blaster
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

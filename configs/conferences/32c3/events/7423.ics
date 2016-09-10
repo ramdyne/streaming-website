@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T180000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T173000
+DTSTAMP;VALUE=DATE-TIME:20151228T184255Z
+UID:00abb473-d6cc-4200-9920-3794591fe4d4@frab.cccv.de
+DESCRIPTION:Earlier this year\, following the tragic events of early Janu
+ ary in Paris\, the French governement pushed a bill to put a legal frame
+ work around Intelligence Services activities. Far from protecting civil 
+ liberties\, this bill seem to be the translation of Snowden's revelation
+ s into law.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7423.html
+SUMMARY:One year of securitarian drift in France
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

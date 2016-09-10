@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T170000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T160000
+DTSTAMP;VALUE=DATE-TIME:20151220T174412Z
+UID:62a79191-ca6a-48ea-b747-8cf13faa75cb@frab.cccv.de
+DESCRIPTION:In the dark days of October 2014 an unprecedented Ebola epide
+ mic wrecked havoc across Sierra Leone\, Liberia and Guinea. In Sierra Le
+ one\, the health system was only weeks away from total collapse due to a
+ n inability to manage or pay health workers across the country and the w
+ orld braced for the unchecked spread of the disease throughout west Afri
+ ca. In the face of apocalyptic scenario\, a company made up of local hac
+ kers took on the unprecedented challenge of building\, implementing and 
+ running a huge Management Information System and Mobile payments system 
+ to keep the health system from collapsing. This talk will show how this 
+ was achieved with Open Source Software\, second hand laptops\, hacked vo
+ ter registration machines\, second hand smartphones and some very smart 
+ and determined young people used to achieving great things with none of 
+ the resources we take for granted. We salute them.\n
+URL://events.ccc.de/congress/2015/Fahrplan/events/7561.html
+SUMMARY:How Open Source Software\, second hand laptops and hackers helped
+  stop Ebola (and stopped an apocalypse).
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

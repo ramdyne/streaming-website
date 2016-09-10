@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T193000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T183000
+DTSTAMP;VALUE=DATE-TIME:20151228T182942Z
+UID:27260dd7-65b6-40ec-8929-2b96b45aa368@frab.cccv.de
+DESCRIPTION:For years SCADA StrangeLove team speaks about vulnerabilities
+  in Industrial Control Systems. Now we want to show by example of railwa
+ y the link between information security and industrial safety and demons
+ trate how a root access gained in a few minutes can bring to naught all 
+ the years of efforts that were devoted to the improvement of fail-safety
+  and reliability of the ICS system.\n\nRailroads is a complex systems an
+ d process automation is used in different areas: to control power\, swit
+ ches\, signals and locomotives. At this talk we will analyze threats and
+  vulnerabilities of fundamental rail-road automation systems such as com
+ puter based interlocking\, automatic train control and automatic train p
+ rotection. \n\nNo vendor names and vulnerabilities details will be relea
+ sed\, for obvious reasons. By the way\, all research based on hands-on s
+ ecurity exercises and most of issues are confirmed and processed by vend
+ ors.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7490.html
+SUMMARY:The Great Train Cyber Robbery
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

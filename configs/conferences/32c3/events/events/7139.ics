@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T170000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T160000
+DTSTAMP;VALUE=DATE-TIME:20151228T153719Z
+UID:fca4934b-5f01-4680-8cda-03fa206aac17@frab.cccv.de
+DESCRIPTION:Yosys (Yosys Open Synthesis Suite) is an Open Source Verilog 
+ synthesis and verification tool.\n\nProject IceStorm aims at reverse eng
+ ineering and documenting  the bit-stream format of Lattice iCE40 FPGAs a
+ nd providing simple tools for analyzing and creating bit-stream files\, 
+ including a tool that converts iCE40 bit-stream files into behavioral Ve
+ rilog. Currently the bitstream format for iCE40 HX1K and HX8K is fully d
+ ocumented and supported by the tools.  \n\nArachne-PNR is an Open Source
+  place&route tool for iCE40 FPGAs based on the databases provided by Pro
+ ject IceStorm. It converts BLIF files into an ASCII file format that can
+  be turned into a bit-stream by IceStorm tools.\n\nThis three projects t
+ ogether implement a complete open source tool-chain for iCE40 FPGAs. It 
+ is available now and it is feature complete (with the exception of timin
+ g analysis\, which is work in progress).
+URL://events.ccc.de/congress/2015/Fahrplan/events/7139.html
+SUMMARY:A Free and Open Source Verilog-to-Bitstream Flow for iCE40 FPGAs
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

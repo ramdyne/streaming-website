@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T193000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T190000
+DTSTAMP;VALUE=DATE-TIME:20151228T183106Z
+UID:4afc705e-a55c-45ae-b67e-a820e5398d23@frab.cccv.de
+DESCRIPTION:In this presentation I will present the experimental language
+  Ling. We shall get an intuitive understanding of the language through f
+ amiliar concepts from imperative programming. We shall cover how Ling en
+ ables a modular and precise control on memory allocation\, through  a ge
+ neral optimization called fusion. This optimization\, fusion is a cost-f
+ ree abstraction mechanism which brings high level programming to system 
+ programming.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7367.html
+SUMMARY:Ling - High level system programming
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

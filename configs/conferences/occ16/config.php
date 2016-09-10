@@ -8,7 +8,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird dieser Zeitpunkt nicht angegeben, gilt die Konferenz immer als angefangen. (Siehe aber ENDS_AT
 	 * und CLOSED weiter unten)
 	 */
-	//'STARTS_AT' => strtotime("2016-08-20 09:00"),
+	'STARTS_AT' => strtotime("2016-09-10 09:00"),
 
 	/**
 	 * Der Endzeitpunkt der Konferenz als Unix-Timestamp. Befinden wir uns danach, wird eine Danke-Und-Kommen-Sie-
@@ -16,7 +16,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 *
 	 * Wird dieser Zeitpunkt nicht angegeben, endet die Konferenz nie. (Siehe aber CLOSED weiter unten)
 	 */
-	'ENDS_AT' => strtotime("2016-09-10 09:50"),
+	'ENDS_AT' => strtotime("2016-09-11 21:00"),
 
 	/**
 	 * Hiermit kann die Funktionalitaet von STARTS_AT/ENDS_AT überschrieben werden. Der Wert 'before'
@@ -82,7 +82,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Link zu den Recordings
 	 * Wird diese Zeile auskommentiert, wird der Link nicht angezeigt
 	 */
-//	'RELEASES' => 'https://media.ccc.de/c/froscon2016',
+	'RELEASES' => 'https://www.youtube.com/user/ownClouders/videos',
 
 	/**
 	 * Link zu einer (externen) ReLive-Übersichts-Seite
@@ -136,7 +136,7 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 	 * in $GLOBALS['CONFIG']['OVERVIEW'] oder im Feedback verwendet wird.
 	 */
 	'S1' => array(
-		'DISPLAY' => 'Saal 1',
+		'DISPLAY' => 'Keynote room - MA-005 - Sat/Sun',
 		'STREAM' => 's1',
 		'PREVIEW' => true,
 		'TRANSLATION' => false,
@@ -187,7 +187,7 @@ $GLOBALS['CONFIG']['SCHEDULE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
-	'ROOMFILTER' => array('Saal 1'),
+	'ROOMFILTER' => array('Keynote room - MA-005 - Sat/Sun',),
 
 	/**
 	 * Skalierung der Programm-Vorschau in Sekunden pro Pixel

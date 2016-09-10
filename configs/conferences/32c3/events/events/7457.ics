@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T174500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T171500
+DTSTAMP;VALUE=DATE-TIME:20151209T223220Z
+UID:56126bd1-f1b3-4bc7-81be-304b6b681cde@frab.cccv.de
+DESCRIPTION:Yearly\, the world is inundated with news about government da
+ ta collection programs. In addition to these programs\, governments coll
+ ect data from third party sources to gather information about individual
+ s.  This data in conjunction with machine learning aids governments in d
+ etermining where crime will be committed and who has committed a crime. 
+ Could this data serve as a method by which governments predict whether o
+ r not the individual will commit a crime? This talk will examine the use
+  of big data in the context of predictive policing. Specifically\, how d
+ oes the data collected inform suspicion about a particular individual? I
+ n the context of U.S. law\, can big data alone establish reasonable susp
+ icion or should it just factor into the totality of the circumstances? H
+ ow do we mitigate the biases that might exist in large data sets?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7457.html
+SUMMARY:Predicting Crime in a Big Data World
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

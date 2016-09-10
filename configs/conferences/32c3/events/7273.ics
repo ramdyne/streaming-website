@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T230000
+DTSTAMP;VALUE=DATE-TIME:20151227T214026Z
+UID:ab751ee0-8623-4a20-bab3-f82f8cf3dd82@frab.cccv.de
+DESCRIPTION:Gradually we are all becoming more and more dependent on mach
+ ines\, we will be able to live longer with an increased quality of life 
+ due to machines integrated into our body. However\, our dependence on te
+ chnology grows faster than our ability to secure it\, and a security fai
+ lure of a medical device can have fatal consequences. This talk is about
+  Marie's personal experience with being the host of a vulnerable medical
+  implant\, and how this has forced her to become a human part of the "In
+ ternet-of-Things". 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7273.html
+SUMMARY:Unpatchable
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

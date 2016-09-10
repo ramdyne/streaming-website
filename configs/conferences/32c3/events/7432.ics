@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T213000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T203000
+DTSTAMP;VALUE=DATE-TIME:20151228T160555Z
+UID:28891a0d-98d9-484a-bd59-ccea80852b12@frab.cccv.de
+DESCRIPTION:Datahavens have long been discussed as a solution to user sec
+ urity and privacy needs.  Instinctively\, the idea of physical locations
+  where servers for communications\, financial privacy\, and other servic
+ es can work is easily understood and seems appealing.  As a founder of t
+ he HavenCo datahaven on Sealand in 2000\, I saw firsthand the potential 
+ and the pitfalls of this approach.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7432.html
+SUMMARY:Datahavens from HavenCo to Today
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T230000
+DTSTAMP;VALUE=DATE-TIME:20151228T181341Z
+UID:534b5a9d-f786-4fc9-96d1-a0827125ee6e@frab.cccv.de
+DESCRIPTION:In this talk Matthew Borgatti\, Lead Scientist at Super-Relea
+ ser\, will take you through the process of turning a puddle of goo into 
+ a working soft robot. He will take you through the different mechanisms 
+ that can be created\, simple processes for fabricating soft robots\, and
+  methods for joining elements together into sophisticated assemblies.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7389.html
+SUMMARY:My Robot Will Crush You With Its Soft Delicate Hands!
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

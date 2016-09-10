@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T193000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T183000
+DTSTAMP;VALUE=DATE-TIME:20151206T193456Z
+UID:b4339927-6780-4881-a342-e7a262078dce@frab.cccv.de
+DESCRIPTION:Street level surveillance technology\, such as surveillance c
+ ameras and iris scanners\, is now a pervasive part of the daily lives of
+  city dwellers\, with disastrous consequences for freedom of expression.
+  This talk will cover what kind of street level technology we’re seeing\
+ , how it’s spreading\, and who’s making money off of it. We’ll also talk
+  about some of the security flaws hackers have exposed on these technolo
+ gies\, and put out a call to action to CCC. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7374.html
+SUMMARY:The architecture of a street level panopticon
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

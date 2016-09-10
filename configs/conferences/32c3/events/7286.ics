@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T174500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T171500
+DTSTAMP;VALUE=DATE-TIME:20151210T015032Z
+UID:969bee9e-d0bf-4d24-a649-15f93747d608@frab.cccv.de
+DESCRIPTION:Technology companies now hold an unprecedented ability to sha
+ pe the world around us by limiting our ability to access certain content
+  and by crafting proprietary algorithm that bring us our daily streams o
+ f content.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7286.html
+SUMMARY:Sin in the time of Technology
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

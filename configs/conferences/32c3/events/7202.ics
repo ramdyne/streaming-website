@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T231500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T224500
+DTSTAMP;VALUE=DATE-TIME:20151223T203540Z
+UID:f4da28f8-1e28-45d4-9fab-d1d36d20ca7b@frab.cccv.de
+DESCRIPTION:Landauf landab entstehen zur Zeit tausende öffentlicher Strom
+ tankstellen. Diese neue Infrastruktur bietet viel Potential für kreative
+  Nutzungen und hat eine Reihe an Nutzungs-\, Sicherheits- und Datenschut
+ zproblemen\, für die bislang Lösungen fehlen.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7202.html
+SUMMARY:Stromtankstellen – eine neue öffentliche Infrastruktur
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

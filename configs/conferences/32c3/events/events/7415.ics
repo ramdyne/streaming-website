@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T180000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T173000
+DTSTAMP;VALUE=DATE-TIME:20151228T180849Z
+UID:5f57ffa9-631c-429d-a11b-5b51bebe0f0f@frab.cccv.de
+DESCRIPTION:Das Nonplusultra für hauptamtliche Jugendschützer sind Filter
+ programme\, auch „Jugendschutzprogramme“ genannt. Doch was machen die Pr
+ ogramme\, welche Wirkungen und vor allem Nebenwirkungen haben sie? Und w
+ as macht eigentlich der Zombie JMStV?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7415.html
+SUMMARY:Wie Jugendschutzprogramme nicht nur die Jugend schädigen
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

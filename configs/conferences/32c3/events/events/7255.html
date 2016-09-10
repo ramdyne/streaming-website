@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Schedule 32. Chaos Communication Congress</title>
+<link rel="stylesheet" media="screen" href="/configs/conferences/32c3/assets/public_schedule-fd8f1c28083623471c99e7cb12d58be5ccc1bf1d357b0689295d59f7505982ff.css">
+<link rel="stylesheet" media="all" href="/configs/conferences/32c3/style.css">
+<link rel="stylesheet" media="print" href="/configs/conferences/32c3/assets/public_schedule_print-99d3251f43ed74e6a77a8013f74ce1ee07c4de819a619a15d8b8bb5dc9d4dad1.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="banner"></div>
+<div id="header">
+<h1>Schedule 32. Chaos Communication Congress</h1>
+</div>
+<div id="horizontal-navigation">
+<ul>
+<li>
+<a href="/configs/conferences/32c3/schedule.html">Index</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/0.html">
+Day 1
+<br>
+<span class="small-font">2015-12-27</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/1.html">
+Day 2
+<br>
+<span class="small-font">2015-12-28</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/2.html">
+Day 3
+<br>
+<span class="small-font">2015-12-29</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/3.html">
+Day 4
+<br>
+<span class="small-font">2015-12-30</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/speakers.html">Speakers</a>
+</li>
+<li class="selected">
+<a href="/configs/conferences/32c3/events.html">Events</a>
+</li>
+</ul>
+</div>
+<div id="main-content">
+<p class="release">
+Version 1.4 - The Pillow Book
+</p>
+<h2>lecture: Neither Snow Nor Rain Nor MITM… The State of Email Security in 2015</h2>
+<h3 class="title"></h3>
+<div class="column left" id="basic">
+<div class="image large"><img src="/configs/conferences/32c3/assets/event_large-4b8aa978adbb7c8e80151f5a83c6782a12e763374ae3a042a55e7e626a64d93b.png" alt="Event large 4b8aa978adbb7c8e80151f5a83c6782a12e763374ae3a042a55e7e626a64d93b"></div>
+<p class="abstract">Is your email being sent in the clear? While PGP and S/MIME provide end-to-end encrypted mail, most users have yet to adopt these practices, and for users who have, these tools leave metadata, such as the subject, sender, and recipient, visible everywhere along a message’s path. SMTP—the ubiquitous mail transport protocol—has evolved over the years to add encryption and authentication, both of which take place behind the scenes and help guard against surveillance and spam. While these features are being increasingly deployed, our research shows that they are almost always configured in vulnerable ways—the details of which are hidden from the users sending and receiving mail. Even more disturbingly, these vulnerabilities are being widely exploited in the wild: in seven countries, more than 20% of inbound Gmail messages are downgraded to cleartext by network-based attacks. In the most severe case, 96% of messages sent from Tunisia to Gmail are downgraded to cleartext. In this talk, I’ll introduce the commonly used SMTP security extensions—including STARTTLS, SPF, DKIM, and DMARC—and describe the current state of mail security on the Internet. I'll describe several commonly occurring attacks our recent research has found and discuss how mail operators can configure their servers to secure email transport. Finally, I'll discuss several weaknesses in the protocols we're using and recent proposals for helping secure email transport.</p>
+<p class="description"></p>
+<p>Email carries some of our most sensitive communication, including private correspondence, financial details, and password recovery confirmations. We expect that messages are private and, in many cases, unforgeable. However, SMTP—the protocol responsible for relaying messages between mail servers—did not originally authenticate senders or encrypt mail in transit. Instead, servers support these features through SMTP extensions. Adopting these features is entirely voluntary and they have only been gradually adopted. As a consequence, mail servers still tolerate unprotected communication and will send messages in clear text if any problems occur when negotiating a secure connection.</p>
+
+<p class="description"></p>
+<p>Earlier this year, I worked with colleagues at the University of Michigan and Google to measure the global adoption of email security features and try to better understand how well email is secured in practice.  Our study draws from two unique data sources: connection logs for Gmail spanning 16 months, plus a snapshot of SMTP server configurations from April 2015 for the Alexa Top Million domains. From Gmail’s perspective, incoming messages protected by TLS have increased 82% over the last year, peaking at 60% of all inbound mail. However, this improvement was largely because a small number of popular web mail providers deployed TLS—many organizations still haven't deployed these features correctly. I will discuss these results and many more that reveal several major weaknesses in the global deployment of mail transport security.</p>
+
+<p class="description"></p>
+<p>This security patchwork enables network attackers to intercept and surveil email. In one kind of attack, actors corrupt the TLS handshakes at the the start of an SMTP connection to downgrade the connection to cleartext—exposing messages to potential eavesdropping. Using Internet-wide scanning, we identified more than 41,000 SMTP servers in 193 countries that are routinely forced to deliver email as cleartext.  We analyzed the mail sent to Gmail from these hosts and find that in seven countries, more than 20% of all messages are prevented from being encrypted by active network attacks. In the most severe case, 96% of messages sent from Tunisia to Gmail are downgraded to cleartext, but even in Denmark, nearly 4% of messages are affected.</p>
+
+<p class="description"></p>
+<p>In a second class of attack, DNS servers provide fraudulent MX records for popular email providers. We searched for servers that provide fraudulent addresses for Gmail’s SMTP servers, and we find 14.6K publicly accessible DNS servers in 69 countries provide falsified responses. We investigate the messages that Gmail received from these hosts and find that in 193 countries more than 0.01% of messages from each country are transited through these impostor hosts. Six of the eight most-affected countries are in Europe.</p>
+<br> 
+<br><p>In this talk, I will first introduce the security extensions for SMTP and the current state of mail security. Then, drawing on our measurements, I will discuss the weaknesses in these protocols and the attacks we see occurring in the wild. I'll discuss what  mail server operators, developers, and even end users, can do to protect against these problems. Finally, I will present current proposals for securing mail transport and several weaknesses that we still need to address.</p>
+</div>
+<div class="column left" id="details">
+<h3>Info</h3>
+<p>
+<b>Day:</b>
+<a href="/configs/conferences/32c3/schedule/2.html">2015-12-29</a>
+<br>
+<b>Start time:</b>
+14:00
+<br>
+<b>Duration:</b>
+01:00
+<br>
+<b>Room:</b>
+Hall 2
+<br>
+<b>Track:</b>
+Security
+<br>
+<b>Language:</b>
+en
+</p>
+<h3>Links:</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/events/7255.ics">iCalendar</a></li>
+</ul>
+<h3>Files</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/system/event_attachments/attachments/000/002/722/original/paper.pdf">Neither Snow Nor Rain Nor MITM . . . An Empirical Analysis of Email Delivery Security</a></li>
+</ul>
+<h3>Feedback</h3>
+<p>
+<a href="https://frab.cccv.de/en/32c3/public/events/7255/feedback/new">Click here to let us know how you liked this event.</a>
+</p>
+<div class="column left" id="concurrent_events">
+<h3><span class="translation_missing" title="translation missing: en.public.schedule.event.concurrent_events">Concurrent Events</span></h3>
+<dl class="dl-horizontal">
+<dt>Hall 1</dt>
+<dd><a href="/configs/conferences/32c3/events/7307.html">State of the Onion</a></dd>
+<dt>Hall 6</dt>
+<dd><a href="/configs/conferences/32c3/events/7421.html">"Fluxus cannot save the world."</a></dd>
+</dl>
+</div>
+</div>
+<div class="column right" id="sidebar">
+<h3>Speakers</h3>
+<table class="list">
+<tbody>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/system/people/avatars/000/005/006/small/zakir.durumeric.jpg" alt="Zakir.durumeric"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/5006.html">Zakir Durumeric</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="span16">
+</div>
+
+<br class="clear">
+</div>
+</div>
+</body>
+</html>

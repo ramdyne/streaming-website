@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T124500
+DTSTAMP;VALUE=DATE-TIME:20151228T170714Z
+UID:3c818a0e-4148-4ba4-a58f-d2559e9d6a82@frab.cccv.de
+DESCRIPTION:The REXUS/BEXUS programme allows students from universities a
+ nd higher education colleges across Europe to carry out scientific and t
+ echnological experiments on research rockets and balloons. Each year\, t
+ wo rockets and two balloons are launched\, carrying up to 20 experiments
+  designed and built by student teams.\nBy reference of two experiments w
+ e were involved in\, we will explain the way from the experiment idea to
+  the launch and test of it.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7325.html
+SUMMARY:REXUS/BEXUS - Rocket and Balloon Experiments for University Stude
+ nts
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

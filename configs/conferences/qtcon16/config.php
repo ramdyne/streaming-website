@@ -408,26 +408,26 @@ $GLOBALS['CONFIG']['ROOMS'] = array(
 		'TWITTER' => true,
 	),
 
-	'a04' => array(
-		'DISPLAY' => 'A04',
-		'STREAM' => 's7',
-		'PREVIEW' => true,
-
-		'TRANSLATION' => false,
-		'SD_VIDEO' => true,
-		'HD_VIDEO' => true,
-		'AUDIO' => true,
-		'SLIDES' => false,
-		'MUSIC' => false,
-
-		'SCHEDULE' => true,
-		'SCHEDULE_NAME' => 'A04',
-		'FEEDBACK' => false,
-		'SUBTITLES' => false,
-		'EMBED' => true,
-		'IRC' => false,
-		'TWITTER' => true,
-	),
+#	'a04' => array(
+#		'DISPLAY' => 'A04',
+#		'STREAM' => 's7',
+#		'PREVIEW' => true,
+#
+#		'TRANSLATION' => false,
+#		'SD_VIDEO' => true,
+#		'HD_VIDEO' => true,
+#		'AUDIO' => true,
+#		'SLIDES' => false,
+#		'MUSIC' => false,
+#
+#		'SCHEDULE' => true,
+#		'SCHEDULE_NAME' => 'A04',
+#		'FEEDBACK' => false,
+#		'SUBTITLES' => false,
+#		'EMBED' => true,
+#		'IRC' => false,
+#		'TWITTER' => true,
+#	),
 
 	'a08' => array(
 		'DISPLAY' => 'A08',

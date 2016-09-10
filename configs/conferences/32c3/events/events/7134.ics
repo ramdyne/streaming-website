@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T193000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T190000
+DTSTAMP;VALUE=DATE-TIME:20151228T183336Z
+UID:62290f8e-f515-416f-9c4a-b403474e94e6@frab.cccv.de
+DESCRIPTION:The Ecuadorian government received international visibility w
+ hen in 2012 it agreed to grant Wikileaks founder Julian Assange politica
+ l asylum and host him in Ecuador's London embassy. Ecuador has since bee
+ n widely praised for standing up to the United States to defend the free
+ dom of the press and freedom of expression.\n\nHowever\, the reality is 
+ not consistent with this image Ecuador seeks to project. Journalists ins
+ ide the country face oppressive laws\, huge fines and lawsuits for repor
+ ting on government corruption. Digital and physical surveillance of jour
+ nalists and activists is in fact getting worse.\n\nWe will analyze some 
+ of the existing leaks that prove such activities. We will also give a fi
+ rst-hand account from someone who had to literally run away from Ecuador
+  for publishing leaked materials proving illegal espionage against journ
+ alists and citizens.\n\nIs Ecuador really interested in free speech? We 
+ don't think so and we will tell you why.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7134.html
+SUMMARY:Ecuador: how an authoritarian government is fooling the entire wo
+ rld
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T210000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T203000
+DTSTAMP;VALUE=DATE-TIME:20151206T190447Z
+UID:930673b3-4f75-40eb-8be5-574469c3920f@frab.cccv.de
+DESCRIPTION:This talk will be an overview of how to reverse-engineer Unif
+ ied Extensible Firmware Interface (UEFI) firmware\, the replacement for 
+ BIOS. Various useful tools will be discussed\, including those written b
+ y the presenter and those written by others. One of the highlights will 
+ be a tool that enables running parts of the firmware in userspace on a s
+ tandard Operating System.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7245.html
+SUMMARY:Reversing UEFI by execution
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

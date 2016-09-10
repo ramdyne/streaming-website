@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T230000
+DTSTAMP;VALUE=DATE-TIME:20151228T182114Z
+UID:1b6ed158-e206-416a-8705-9b285a428dbf@frab.cccv.de
+DESCRIPTION:<p>Last year your friend Karen joined the alternative music s
+ cene and sent you a sound track. The government is recording everything\
+ , and this year announced that alternative music is a gateway drug to te
+ rrorism (see <a href="http://www.theguardian.com/australia-news/2015/sep
+ /25/radicalisation-kit-links-activism-and-alternative-music-scene-to-ext
+ remism">http://www.theguardian.com/australia-news/2015/sep/25/radicalisa
+ tion-kit-links-activism-and-alternative-music-scene-to-extremism</a>). F
+ ortunately\, Karen encrypted the email.</p>
+URL://events.ccc.de/congress/2015/Fahrplan/events/7210.html
+SUMMARY:PQCHacks
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

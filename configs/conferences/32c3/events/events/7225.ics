@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T011500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T001500
+DTSTAMP;VALUE=DATE-TIME:20151218T191823Z
+UID:47cbd880-f500-4c44-b717-c11ed1da087d@frab.cccv.de
+DESCRIPTION:In den nunmehr Hunderte A4-Seiten füllenden Live-Protokollen 
+ des NSA-BND-Untersuchungsausschusses\, die bei netzpolitik.org nachzules
+ en sind\, verbergen sich interessante Antworten auf Fragen\, die niemand
+  gestellt hat\, vorher unbekannte juristische „Theorien“ des BND und Per
+ len verlogener Rabulistik.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7225.html
+SUMMARY:Grundrechte gelten nicht im Weltall!
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

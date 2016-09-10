@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T140000
+DTSTAMP;VALUE=DATE-TIME:20151228T170939Z
+UID:b5456783-49dc-4420-bb0f-fee33a249b65@frab.cccv.de
+DESCRIPTION:Ten years after the rejection of the European software patent
+  directive by the European Parliament\, the software patent problem stil
+ l is not over.\nPolitical action is required.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7283.html
+SUMMARY:Software and business method patents: call for action
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

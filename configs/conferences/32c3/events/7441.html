@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Schedule 32. Chaos Communication Congress</title>
+<link rel="stylesheet" media="screen" href="/configs/conferences/32c3/assets/public_schedule-fd8f1c28083623471c99e7cb12d58be5ccc1bf1d357b0689295d59f7505982ff.css">
+<link rel="stylesheet" media="all" href="/configs/conferences/32c3/style.css">
+<link rel="stylesheet" media="print" href="/configs/conferences/32c3/assets/public_schedule_print-99d3251f43ed74e6a77a8013f74ce1ee07c4de819a619a15d8b8bb5dc9d4dad1.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="banner"></div>
+<div id="header">
+<h1>Schedule 32. Chaos Communication Congress</h1>
+</div>
+<div id="horizontal-navigation">
+<ul>
+<li>
+<a href="/configs/conferences/32c3/schedule.html">Index</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/0.html">
+Day 1
+<br>
+<span class="small-font">2015-12-27</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/1.html">
+Day 2
+<br>
+<span class="small-font">2015-12-28</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/2.html">
+Day 3
+<br>
+<span class="small-font">2015-12-29</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/3.html">
+Day 4
+<br>
+<span class="small-font">2015-12-30</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/speakers.html">Speakers</a>
+</li>
+<li class="selected">
+<a href="/configs/conferences/32c3/events.html">Events</a>
+</li>
+</ul>
+</div>
+<div id="main-content">
+<p class="release">
+Version 1.4 - The Pillow Book
+</p>
+<h2>lecture: The plain simple reality of entropy</h2>
+<h3 class="title">Or how I learned to stop worrying and love urandom</h3>
+<div class="column left" id="basic">
+<div class="image large"><img src="/configs/conferences/32c3/assets/event_large-4b8aa978adbb7c8e80151f5a83c6782a12e763374ae3a042a55e7e626a64d93b.png" alt="Event large 4b8aa978adbb7c8e80151f5a83c6782a12e763374ae3a042a55e7e626a64d93b"></div>
+<p class="abstract">Entropy, the randomness used in many critical cryptography processes including key generation, is as important as it is misunderstood. Many myths are fueled by misleading documentation. This presentation aims to provide simple and actionable information while explaining the core technical details and real world implementations.</p>
+<p class="description">Randomness is as simple as critical. An application wants some bytes which an attacker can't predict. The clearest example is generating a cryptographic key, but a wide array of functions depend on randomness.</p>
+
+<p class="description">Any time a key is generated, any time a DSA signature is made, any time the memory layout is randomized, applications rely on being able to create strings of bytes impossible to predict. If that comes short everything fails: cryptographic keys are compromised, exploits protections are ineffective.</p>
+
+<p class="description">Entropy, the unpredictable raw material, is usually collected by the Operating System and exposed to the applications that need it. Once enough bits of entropy have been collected, it becomes impossible to predict the output of the CSPRNG (cryptographically secure pseudo-random number generator), a stirrer of sorts that expands a seed into unlimited whitened random bytes, often based on stream ciphers or hashes.</p>
+
+<p class="description">Real risks include trying to use a CSPRNG early on in the boot process, when not enough random events have been collected, or using a userspace CSPRNG instead of the kernel one and forgetting to seed it. Or using a non-CS PRNG.</p>
+
+<p class="description">That's just about it. However, there is a lot of misunderstanding on "decreasing entropy". It's a widespread myth that using random bytes decreases the "amount" of entropy. Reality is, to an attacker who's basically trying to predict the CSPRNG output there's no decrease in difficulty no matter how much output is drawn, so developers can avoid introducing additional complexity because of this.</p>
+
+<p class="description">This is all backed up by showing a simple toy CSPRNG design, and reasoning about its properties.</p>
+
+<p class="description">More practically, the points above translate into "in Linux, just use /dev/urandom or the get_random syscall". That's the kernel interface for the system CSPRNG. Its inner working are presented and they will hopefully make it clear why there is no meaningful difference from the "counting" /dev/random.</p>
+</div>
+<div class="column left" id="details">
+<h3>Info</h3>
+<p>
+<b>Day:</b>
+<a href="/configs/conferences/32c3/schedule/2.html">2015-12-29</a>
+<br>
+<b>Start time:</b>
+21:15
+<br>
+<b>Duration:</b>
+00:30
+<br>
+<b>Room:</b>
+Hall 2
+<br>
+<b>Track:</b>
+Security
+<br>
+<b>Language:</b>
+en
+</p>
+<h3>Links:</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/events/7441.ics">iCalendar</a></li>
+</ul>
+<h3>Feedback</h3>
+<p>
+<a href="https://frab.cccv.de/en/32c3/public/events/7441/feedback/new">Click here to let us know how you liked this event.</a>
+</p>
+<div class="column left" id="concurrent_events">
+<h3><span class="translation_missing" title="translation missing: en.public.schedule.event.concurrent_events">Concurrent Events</span></h3>
+<dl class="dl-horizontal">
+<dt>Hall G</dt>
+<dd><a href="/configs/conferences/32c3/events/7246.html">Free Software and Hardware bring National Sovereignty</a></dd>
+<dt>Hall 1</dt>
+<dd><a href="/configs/conferences/32c3/events/7426.html">Intelexit</a></dd>
+</dl>
+</div>
+</div>
+<div class="column right" id="sidebar">
+<h3>Speakers</h3>
+<table class="list">
+<tbody>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/system/people/avatars/000/006/145/small/filippo_valsorda_300.jpg" alt="Filippo valsorda 300"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/6145.html">Filippo Valsorda</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="span16">
+</div>
+
+<br class="clear">
+</div>
+</div>
+</body>
+</html>

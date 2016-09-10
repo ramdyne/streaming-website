@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T124500
+DTSTAMP;VALUE=DATE-TIME:20151206T193326Z
+UID:ff303155-f2fa-4c54-b9aa-ef47cd6e7704@frab.cccv.de
+DESCRIPTION:What do you want? Did you build your web/app for humans or NS
+ A robots? Let's make it usable for human beings. I'd like to show you so
+ me basic design mistakes and how to avoid them to improve usability of y
+ our web or app. Why? Because it's worth it and I'm good in it.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7356.html
+SUMMARY:Top X* usability obstacles
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

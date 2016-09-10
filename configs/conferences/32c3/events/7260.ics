@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T230000
+DTSTAMP;VALUE=DATE-TIME:20151228T182726Z
+UID:56e8d345-8c04-4281-9811-d4ed9da8603e@frab.cccv.de
+DESCRIPTION:With the advancement of defensive security and the constant r
+ elease of research papers into their toolsets\, advanced threat actors h
+ ave had to adapt with new operational security practices\, as well as wi
+ th new technology.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7260.html
+SUMMARY:APT Reports and OPSEC Evolution\, or: These are not  the APT repo
+ rts you are looking for
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

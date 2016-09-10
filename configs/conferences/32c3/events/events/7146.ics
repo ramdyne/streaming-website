@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T170000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T160000
+DTSTAMP;VALUE=DATE-TIME:20151228T181913Z
+UID:7430c969-7ccf-4d40-903a-d9b1ebb4fb15@frab.cccv.de
+DESCRIPTION:Dr. Peter Laackmann und Marcus Janke zeigen mit einem tiefen 
+ Einblick in die Welt der Hardware-Trojaner\, auf welchem Wege „Instituti
+ onen“ versuchen können\, sich versteckten Zugang zu Sicherheits-Hardware
+  zu verschaffen.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7146.html
+SUMMARY:Hardware-Trojaner in Security-Chips
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

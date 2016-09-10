@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T123000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T113000
+DTSTAMP;VALUE=DATE-TIME:20151206T194059Z
+UID:1c39bb2e-fba0-4cb3-9aac-9e6dd396c55e@frab.cccv.de
+DESCRIPTION:Physical keys and locks are one of the oldest security mechan
+ isms still employed\ntoday. In this talk\, we will discuss how 3D printi
+ ng keys enable attacks against many modern lock systems. We will describ
+ e projects researchers and hobbyists have done involving 3D printed keys
+ \, and present our own research on automating several of these attacks i
+ n order to demonstrate how easy they are to do. Ultimately\, we hope to 
+ describe the current state of 3D printed keys\, and their impact on the 
+ physical security systems we most often take for granted.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7435.html
+SUMMARY:Replication Prohibited
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

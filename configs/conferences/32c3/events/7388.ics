@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T210000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T203000
+DTSTAMP;VALUE=DATE-TIME:20151211T040338Z
+UID:f193e1eb-5f67-43bc-a42a-c2c9b0c8d57f@frab.cccv.de
+DESCRIPTION:How have the media reported the Snowden revelations? Does the
+  public care about surveillance\, and how do people react? Do we need a 
+ ‚data justice‘ movement?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7388.html
+SUMMARY:Media Coverage and the Public in the Surveillance Society
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

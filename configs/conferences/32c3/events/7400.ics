@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T233000
+DTSTAMP;VALUE=DATE-TIME:20151206T193709Z
+UID:eb36c9f7-076a-45cc-ad66-ac97768e0c75@frab.cccv.de
+DESCRIPTION:This lecture will give an overview on how technology can help
+  and is helping to prevent or mitigate mass atrocity crimes. It focuses 
+ on the work and research of the Digital Mass Atrocity Prevention Lab (DM
+ AP Lab) but will discuss other major projects as well. The goal is to in
+ form the audience about ongoing efforts and spark their interest to help
+  work at the intersection of technology and human rights.  
+URL://events.ccc.de/congress/2015/Fahrplan/events/7400.html
+SUMMARY:Technology and Mass Atrocity Prevention
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

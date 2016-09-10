@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Schedule 32. Chaos Communication Congress</title>
+<link rel="stylesheet" media="screen" href="/configs/conferences/32c3/assets/public_schedule-fd8f1c28083623471c99e7cb12d58be5ccc1bf1d357b0689295d59f7505982ff.css">
+<link rel="stylesheet" media="all" href="/configs/conferences/32c3/style.css">
+<link rel="stylesheet" media="print" href="/configs/conferences/32c3/assets/public_schedule_print-99d3251f43ed74e6a77a8013f74ce1ee07c4de819a619a15d8b8bb5dc9d4dad1.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="banner"></div>
+<div id="header">
+<h1>Schedule 32. Chaos Communication Congress</h1>
+</div>
+<div id="horizontal-navigation">
+<ul>
+<li>
+<a href="/configs/conferences/32c3/schedule.html">Index</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/0.html">
+Day 1
+<br>
+<span class="small-font">2015-12-27</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/1.html">
+Day 2
+<br>
+<span class="small-font">2015-12-28</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/2.html">
+Day 3
+<br>
+<span class="small-font">2015-12-29</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/3.html">
+Day 4
+<br>
+<span class="small-font">2015-12-30</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/speakers.html">Speakers</a>
+</li>
+<li class="selected">
+<a href="/configs/conferences/32c3/events.html">Events</a>
+</li>
+</ul>
+</div>
+<div id="main-content">
+<p class="release">
+Version 1.4 - The Pillow Book
+</p>
+<h2>lecture: Logjam: Diffie-Hellman, discrete logs, the NSA, and you</h2>
+<h3 class="title"></h3>
+<div class="column left" id="basic">
+<div class="image large"><img src="/configs/conferences/32c3/assets/event_large-4b8aa978adbb7c8e80151f5a83c6782a12e763374ae3a042a55e7e626a64d93b.png" alt="Event large 4b8aa978adbb7c8e80151f5a83c6782a12e763374ae3a042a55e7e626a64d93b"></div>
+<p class="abstract">Earlier this year, we discovered that Diffie-Hellman key
+<br>exchange – cornerstone of modern cryptography – is less
+<br>secure in practice than the security community believed. In this
+<br>talk, we’ll explain how the NSA is likely exploiting this weakness to
+<br>allow it to decrypt connections to at least 20% of HTTPS websites, 25% of SSH servers, and 66% of IPsec VPNs.</p>
+<p class="description">Unlike the NSA, most of us don’t have a billion-dollar budget, but thanks to 1990s-era U.S. crypto backdoors, even attackers with much more modest resources can break the crypto for a sizable fraction of web sites. We’ll explain these flaws and how to defend yourself, and we’ll demonstrate how you too can experiment with Diffie-Hellman cryptanalysis from the comfort of your local hacker space.</p>
+
+<p class="description">Diffie-Hellman key exchange lets two parties negotiate a shared secret key in the presence of an eavesdropper who can see every message they exchange. This bit of cryptographic magic underlies the security of the Internet, from TLS to SSH, IPsec, Tor, OTR, and beyond.
+<br>Diffie-Hellman is widely believed to offer „perfect forward                                                                   secrecy“ – after you’re done communicating, you can „forget" your
+<br>secret key and not even the NSA can later reconstruct it. In recent
+<br>years, this property led to the security community (us included!)
+<br>promoting Diffie-Hellman over other crypto techniques as a defense
+<br>against mass surveillance.</p>
+
+<p class="description">We were wrong. We’re really sorry.</p>
+
+<p class="description">In this talk, we’ll explain how a confluence of number theory, lazy
+<br>implementations, and aging protocols has created a world where anyone willing to spend a few hundred million dollars is likely able to
+<br>passively decrypt a huge fraction of Internet traffic. We’ll then go
+<br>back for a close reading of the Snowden documents that were published at 31C3 and show how such a cryptanalytic exploit lines up exactly with several of the NSA’s most powerful known decryption capabilities.</p>
+
+<p class="description">For those who prefer a more hands-on approach, we’ll tell you how you too can experiment with breaking Diffie-Hellman for the „export-grade“ 512-bit key sizes that were mandated in the 1990s by U.S. crypto regulations. About 8% of popular HTTPS sites still support these weakened keys for use with legacy browsers, but we discovered a TLS protocol flaw, which we named the Logjam attack, that allowed a man-in-the-middle to trick all modern browsers into accepting them.
+<br>We’re pretty sure your browser has shipped a security update to fix
+<br>this by now...</p>
+
+<p class="description">We’ll conclude the talk by discussing what went wrong with
+<br>communication between mathematical cryptographers and security
+<br>practitioners, how we can prevent this from happening again, and what flavors of cryptography you should really be using to defend yourself.
+<br>(Hint: It starts with „elliptic“ and ends with „curve“.)
+</p>
+</div>
+<div class="column left" id="details">
+<h3>Info</h3>
+<p>
+<b>Day:</b>
+<a href="/configs/conferences/32c3/schedule/1.html">2015-12-28</a>
+<br>
+<b>Start time:</b>
+21:45
+<br>
+<b>Duration:</b>
+01:00
+<br>
+<b>Room:</b>
+Hall 1
+<br>
+<b>Track:</b>
+Security
+<br>
+<b>Language:</b>
+en
+</p>
+<h3>Links:</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/events/7288.ics">iCalendar</a></li>
+<li><a href="https://weakdh.org">Weak Diffie-Hellman and the Logjam Attack</a></li>
+<li><a href="https://weakdh.org/imperfect-forward-secrecy.pdf">Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice</a></li>
+</ul>
+<h3>Feedback</h3>
+<p>
+<a href="https://frab.cccv.de/en/32c3/public/events/7288/feedback/new">Click here to let us know how you liked this event.</a>
+</p>
+<div class="column left" id="concurrent_events">
+<h3><span class="translation_missing" title="translation missing: en.public.schedule.event.concurrent_events">Concurrent Events</span></h3>
+<dl class="dl-horizontal">
+<dt>Hall G</dt>
+<dd><a href="/configs/conferences/32c3/events/7493.html">How hackers grind an MMORPG: by taking it apart!</a></dd>
+<dt>Hall 2</dt>
+<dd><a href="/configs/conferences/32c3/events/7502.html">Dissecting VoLTE</a></dd>
+<dt>Hall 6</dt>
+<dd><a href="/configs/conferences/32c3/events/7525.html">Quantenphysik und  Kosmologie</a></dd>
+</dl>
+</div>
+</div>
+<div class="column right" id="sidebar">
+<h3>Speakers</h3>
+<table class="list">
+<tbody>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/system/people/avatars/000/004/228/small/halderman_um14-sm.jpg" alt="Halderman um14 sm"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/4228.html">J. Alex Halderman</a></td>
+</tr>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/assets/person_small-6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf.png" alt="Person small 6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/3547.html">Nadia Heninger</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="span16">
+</div>
+
+<br class="clear">
+</div>
+</div>
+</body>
+</html>

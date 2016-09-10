@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T124500
+DTSTAMP;VALUE=DATE-TIME:20151227T202056Z
+UID:a30bcf2c-1abf-4b7b-9554-a6dacbaeba52@frab.cccv.de
+DESCRIPTION:In recent years\, NGOs have been struggling to defend civil r
+ ights in Brussels. As human rights defenders\, it is part of our job to 
+ detect failures in the EU’s digital policy-making. But we rarely have th
+ e opportunity to explore the underlying reasons and to debug Europe’s ke
+ rnel package.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7227.html
+SUMMARY:Avoiding kernel panic: Europe’s biggest fails in digital policy-m
+ aking
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T140000
+DTSTAMP;VALUE=DATE-TIME:20151206T193439Z
+UID:abc3b46d-6e36-40e5-a037-79724a720183@frab.cccv.de
+DESCRIPTION:What to do if you are neither a hardware- nor a software expe
+ rt and want to contribute in effords of openess neverseless? A short ove
+ rview about what I have done so far\, shown on 3 exaples: The Mooltipass
+ \, a offline password save. The Pandora/Pyra\, a mini handheld\, full Li
+ nux PC and its successor. Senoko\, the Novena battery board. From "just"
+  crowdfunding to producing\, why it's worth to go through all the ups an
+ d downs and encourage others to do the same.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7369.html
+SUMMARY:How to contribute to make open hardware happen
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

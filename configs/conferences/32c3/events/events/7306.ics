@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T133000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T113000
+DTSTAMP;VALUE=DATE-TIME:20151228T181402Z
+UID:f9d33869-f9a2-4570-9e9a-25c56e32082a@frab.cccv.de
+DESCRIPTION:Wir werden einen Überblick über die Themen geben\, die den Ch
+ aos Computer Club 2015 beschäftigt haben. Neben der Zusammenfassung und 
+ der Rückschau auf das vergangene Jahr wollen wir aber auch über zukünfti
+ ge Projekte reden.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7306.html
+SUMMARY:Jahresrückblick des CCC
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

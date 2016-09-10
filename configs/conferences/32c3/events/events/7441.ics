@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T214500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T211500
+DTSTAMP;VALUE=DATE-TIME:20151207T012548Z
+UID:8b01d636-d39b-44b8-8d6f-fc03e47eae1b@frab.cccv.de
+DESCRIPTION:Entropy\, the randomness used in many critical cryptography p
+ rocesses including key generation\, is as important as it is misundersto
+ od. Many myths are fueled by misleading documentation. This presentation
+  aims to provide simple and actionable information while explaining the 
+ core technical details and real world implementations.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7441.html
+SUMMARY:The plain simple reality of entropy
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

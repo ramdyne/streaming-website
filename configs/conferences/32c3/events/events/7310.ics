@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T210000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T203000
+DTSTAMP;VALUE=DATE-TIME:20151206T192623Z
+UID:3026eefd-c196-421a-b9d3-d678753ad8f7@frab.cccv.de
+DESCRIPTION:QR codes have rapidly overtaken rival 2D bar code symbologies
+  and are becoming quite ubiquitous. Most uses are rather pedestrian thou
+ gh\, and even the more non-standard modifications to pure QR codes lack 
+ a certain technical finesse\, opting to just overpaint part of the code 
+ and let error correction handle that instead. Let's see how we can do be
+ tter.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7310.html
+SUMMARY:QRtistry
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

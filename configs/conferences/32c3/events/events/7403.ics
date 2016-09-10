@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T124500
+DTSTAMP;VALUE=DATE-TIME:20151210T135830Z
+UID:c50c5193-7389-4858-9352-14ea6d74b77a@frab.cccv.de
+DESCRIPTION:The leading social networks are the powerful new gatekeepers 
+ of the digital age. Proprietary de facto standards of the dominant compa
+ nies have lead to the emergence of virtual “information silos” that can 
+ barely communicate with one another. Has Diaspora really lost the war? O
+ r is there still a chance to succeed?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7403.html
+SUMMARY:A New Kid on the Block
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

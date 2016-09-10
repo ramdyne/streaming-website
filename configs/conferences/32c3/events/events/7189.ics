@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T181500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T171500
+DTSTAMP;VALUE=DATE-TIME:20151228T172055Z
+UID:dda07b64-844a-4a54-8135-8c03f7ee6718@frab.cccv.de
+DESCRIPTION:Key-Loggers are cool\, really cool. It seems\, however\, that
+  every conceivable aspect of key-logging has already been covered: from 
+ physical devices to hooking techniques. What possible innovation could b
+ e left in this field?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7189.html
+SUMMARY:Key-logger\, Video\, Mouse
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

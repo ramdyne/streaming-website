@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T131500
+DTSTAMP;VALUE=DATE-TIME:20151228T180015Z
+UID:c3731bcd-04a8-49ba-a472-d1180944c106@frab.cccv.de
+DESCRIPTION:Buffering sucks! Why we see regular buffering when watching o
+ nline video. What internet service providers could do to reduce bufferin
+ g and why big players refuse to act. An attempt of calculating the econo
+ mic cost of buffering.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7530.html
+SUMMARY:Buffering sucks!
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T213000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T203000
+DTSTAMP;VALUE=DATE-TIME:20151228T175956Z
+UID:0399a5b3-f539-41ed-b0bc-858d7c987688@frab.cccv.de
+DESCRIPTION:CubeSat are small standardized satellites typically flown as 
+ secondary and containerized payloads piggybacking on the launches of lar
+ ger satellites. Their low entrance cost have been a revolution in openin
+ g access to space for a broad range of institutions. In this talk the ba
+ sics of CubeSat standards\, technology and development are going to be p
+ resented. The goal is to proliferate the knowledge of what it takes to s
+ uccessfully build\, launch and operate a CubeSat within and beyond the h
+ acker community.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7341.html
+SUMMARY:So you want to build a satellite?
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

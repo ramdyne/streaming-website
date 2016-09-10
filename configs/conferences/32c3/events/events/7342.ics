@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T123000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T113000
+DTSTAMP;VALUE=DATE-TIME:20151228T162328Z
+UID:94fa109a-45d7-4fea-86e3-12d12510c374@frab.cccv.de
+DESCRIPTION:In my talk I am 1) discussing philosophical concepts of priva
+ cy\, especially Hannah Arendt's philosophy.  I am 2) explaining why in a
+  liberal-democratic system we need to protect our privacy and 3) what we
+  can morally do to prevent catastrophes such as a totalitarian system fr
+ om happening again. With Hannah Arendt's arguments and her analysis of t
+ otalitarian systems in mind\, I am referring to three examples from toda
+ y's privacy discussions: cybermobbing\, Behavioral Advertising and secre
+ t services.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7342.html
+SUMMARY:Household\, Totalitarianism and Cyberspace
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

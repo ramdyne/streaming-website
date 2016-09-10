@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T170000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T160000
+DTSTAMP;VALUE=DATE-TIME:20151211T150304Z
+UID:018148c1-62c9-4796-8443-2a8c8b8e3a01@frab.cccv.de
+DESCRIPTION:DGAs (Domain Generation Algorithms) have become a trusty fall
+ back mechanism for malware that’s a headache to deal with\, but they hav
+ e one big drawback – they draw a lot of attention to themselves with the
+ ir many DNS request for gibberish domains.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7243.html
+SUMMARY:Gibberish Detection 102
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

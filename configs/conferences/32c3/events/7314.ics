@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T180000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T173000
+DTSTAMP;VALUE=DATE-TIME:20151228T170802Z
+UID:17259b49-65ef-4726-ae03-a0b90e45806a@frab.cccv.de
+DESCRIPTION:"Signal level is high but throughput is low" is a common expe
+ rience in WLAN networks without central management. That causes a lot of
+  frustration\, mainly because there is no easy way for users to OBSERVE 
+ the presence of interference at all. \n\nIn order to improve this situat
+ ion we developed a patch for OpenWRT which makes interference from other
+  sources visible and is able to display the current utilization-ratio (c
+ hannel load). No additional hardware is required and no interruption of 
+ normal operation is necessary - because recent chipsets maintain interna
+ l counters for channel load tracking.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7314.html
+SUMMARY:All Our Shared Spectrum Are Belong to Us
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

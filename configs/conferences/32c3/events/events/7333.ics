@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T123000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T113000
+DTSTAMP;VALUE=DATE-TIME:20151227T224650Z
+UID:7ca8581d-a3f7-4247-8101-786cf04d9bd1@frab.cccv.de
+DESCRIPTION:In the last couple of years\, cloud and web services have bec
+ ome more and more popular. Since Snowden we know for sure that intellige
+ nce agencies have access to the data storage of an  service provider\, e
+ ither by (forced) cooperation\, or espionage. Thus\, to protect our priv
+ acy we have to encrypted our data before hand it over to our service pro
+ vider (data holder). But this approach contradicts the very idea of a we
+ b service where the data holder have to process our data in one way or a
+ n other. Therefore\, we need new cryptographic techniques to enable the 
+  data holder to perform operation on encrypted data. One of the most imp
+ ortant operations for cloud storage or database based web/cloud  service
+ s is the search operation.  In this talk we focus on the very familiar c
+ loud storage scenario. Because in this scenario\, It is obvious\, that t
+ he user (data owner) do not want to perform the search by himself. This 
+ should be a service offered by the data holder. We will present differen
+ t practical approaches to achieve searchable ciphertext\, namely one wit
+ h an index and one with cleverly encrypted words.\n\nNote that no PhD is
+  required to attend this talk \;-)
+URL://events.ccc.de/congress/2015/Fahrplan/events/7333.html
+SUMMARY:The Magic World of Searchable Symmetric Encryption
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

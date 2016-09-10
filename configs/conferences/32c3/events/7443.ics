@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T181500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T171500
+DTSTAMP;VALUE=DATE-TIME:20151227T214855Z
+UID:9d3ce896-1ee6-47c5-b616-1ebcf6860690@frab.cccv.de
+DESCRIPTION:CAGE exists to highlight abuses of the War on Terror. It has 
+ uncovered many secrets of governments that they would like to remain sec
+ ret\, and is now one of the most targeted organisations in the UK. Hear 
+ how the state attempts to suppress dissent\, and yet we manage to speak 
+ out.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7443.html
+SUMMARY:The Price Of Dissent
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

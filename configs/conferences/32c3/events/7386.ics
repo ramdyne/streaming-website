@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T124500
+DTSTAMP;VALUE=DATE-TIME:20151217T130907Z
+UID:31331405-a243-48ba-9536-83285542400a@frab.cccv.de
+DESCRIPTION:Governments around the world are seeking to put a stop to sec
+ ure end-to-end encryption\, from the UK’s Data Retention and Investigato
+ ry Powers Act\, to Australia’s Defence Trade Controls Act\, to India’s d
+ raft proposal to require plain text copies of all secure messages\, to t
+ he United States’ Federal Bureau of Investigation’s public pressure on g
+ lobal companies like Apple and Google to weaken their security and provi
+ de law enforcement access to plain text content.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7386.html
+SUMMARY:Crypto Wars Part II
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

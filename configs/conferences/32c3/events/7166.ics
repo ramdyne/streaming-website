@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T163000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T160000
+DTSTAMP;VALUE=DATE-TIME:20151228T180903Z
+UID:b753dbd8-32bb-437c-9f15-db0d7ac1811a@frab.cccv.de
+DESCRIPTION:Der Hitag S Transponder wird in verschiedensten Applikationen
+  eingesetzt. Während Angriffe für den Hitag 2 bereits bekannt sind\, gil
+ t der Hitag S in der Literatur noch nicht als gebrochen. Wir haben die b
+ eschriebenen Angriffe auf den Hitag S übertragen. Wir sind in der Lage d
+ en Schlüssel zu brechen und Informationen wie das Kennwort zu ermitteln\
+ , obwohl diese zusätzlich vor Lesezugriff geschützt sind. In Abhängigkei
+ t des gewählten Angriffs benötigen wir für das Brechen des Schlüssels zw
+ ischen mehreren hundert Tagen und 5 Minuten. Wir haben einen Emulator ge
+ baut\, der jeden Hitag S Transponder nachbilden kann. Wird der Transpond
+ er in einem Schließsystem eingesetzt\, können wir so eine Schlüsselkopie
+  erstellen. \nBasierend auf unseren Ergebnissen und den Erfahrungen mit 
+ anderen Transpondern aus dem 125kHz Bereich können wir nur vor dem Einsa
+ tz in sicherheitskritischen Bereichen warnen.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7166.html
+SUMMARY:Sicherheit von 125kHz Transpondern  am Beispiel Hitag S
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

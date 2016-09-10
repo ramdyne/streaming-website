@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T140000
+DTSTAMP;VALUE=DATE-TIME:20151228T181858Z
+UID:3cb4101c-2042-4883-b6fb-6591994a70c0@frab.cccv.de
+DESCRIPTION:Analysis of the emission scandal shaking the German automotiv
+ e industry from a procedural\, organizational and technical level. Inclu
+ des insight into cheating for advanced managers and code extraction from
+  ECUs from Ebay. And from Volkswagen. Initially.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7331.html
+SUMMARY:The exhaust emissions scandal („Dieselgate“)
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

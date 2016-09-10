@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T170000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T160000
+DTSTAMP;VALUE=DATE-TIME:20151206T185717Z
+UID:48219ef6-24b8-41ca-8cc0-ec309e4148e6@frab.cccv.de
+DESCRIPTION:Since my move to China in 2012 I have actively engaged in the
+  local art scenes of Beijing and Shanghai\, focusing on collaborating wi
+ th artists interested in technology and the internet. My own personal in
+ dependent research of the Chinese internet and the popular Chinese socia
+ l app\, WeChat 微信\, has contributed to an ongoing massive archive I bega
+ n in 2014 called The Chinternet Archive. To date\, I have over 15\,000 p
+ ieces of content (and growing) documenting localized trends\, memes\, ve
+ rnacular photography\, online personas\, .gif animations\, videos\, self
+ ies\, propaganda\, retail\, family/work life\, and other such digital ar
+ tifacts of online Chinese culture. This archive directly influenced my a
+ rtistic and curatorial practice\, resulting in an online art collection 
+ called Netize.net\, or its Chinese name of 网友网 [wǎngyǒuwǎng] “Internet F
+ riend Network”\, which collaborates with emerging Chinese and internatio
+ nal artists who are exploring or deconstructing East/West dichotomies\, 
+ engaging in Sino-centric Web aesthetics\, or investigating the East onli
+ ne. The goal of this talk is to explore through my Chinternet Archive an
+ d Netize.net collections\, forms of creativity found in China in relatio
+ nship to it’s early internet history\, interactions with technology\, lo
+ calized networks and restrictions.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7216.html
+SUMMARY:CHINTERNET ART
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

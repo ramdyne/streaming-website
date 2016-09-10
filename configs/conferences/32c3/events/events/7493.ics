@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T224500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T214500
+DTSTAMP;VALUE=DATE-TIME:20151220T124140Z
+UID:df35c860-60fc-4df8-801c-b2f4f91b33b8@frab.cccv.de
+DESCRIPTION:When an online game no longer captivates interest\, what do y
+ ou do? Grind on the network protocol\, of course! How does it work\, is 
+ it secure - and\, how can you still get away while doing this?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7493.html
+SUMMARY:How hackers grind an MMORPG: by taking it apart!
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

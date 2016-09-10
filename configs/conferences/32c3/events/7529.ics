@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T184500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T181500
+DTSTAMP;VALUE=DATE-TIME:20151228T182336Z
+UID:658ebc92-ef93-421d-9547-f117f75eed92@frab.cccv.de
+DESCRIPTION:As Internet users increasingly connect to the Internet throug
+ h smartphones\, this has transformed Iran’s Internet ecology towards an 
+ increasing reliance and production in apps. In Iran\, a country that pra
+ ctises some of the most stringent censorship and surveillance techniques
+  in the world has seen this transformation reshape the way the governmen
+ t implements information controls online. While applications with popula
+ r usage on browsers such as Facebook and Twitter remain blocked through 
+ their mobile applications\, platforms that predominantly exist in app fo
+ rm such as WhatsApp\, Viber\, and Instagram remain unblocked in the coun
+ try. This talk will look at how the government is counteracting these po
+ licies through various means\, including local imitation apps\, and new 
+ programs such as ‘intelligent filtering’\, and the Revolutionary Guards'
+  “Spider” program. Additionally\, a discussion of how Iranian Internet u
+ sers use these platforms\, especially in reference to digital security a
+ wareness and practices will be included. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7529.html
+SUMMARY:Mobile Censorship in Iran
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

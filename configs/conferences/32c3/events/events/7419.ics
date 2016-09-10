@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T231500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T224500
+DTSTAMP;VALUE=DATE-TIME:20151220T124631Z
+UID:25dc688f-fe4f-4648-8b82-82c05cc090b8@frab.cccv.de
+DESCRIPTION:Journalists\, while structurally and economically under threa
+ t\, are bringing computer science into their newsrooms. Their tools and 
+ techniques benefit from computer science in areas such as databases\, gr
+ aph analysis and machine learning and allow journalists to tackle new ki
+ nds of stories.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7419.html
+SUMMARY:On Computing Numbers\, with an Application to Problems of our Soc
+ iety
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

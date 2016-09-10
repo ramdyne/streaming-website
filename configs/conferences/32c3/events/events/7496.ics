@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T213000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T203000
+DTSTAMP;VALUE=DATE-TIME:20151206T194642Z
+UID:341d7c6a-a8c0-47ec-8c24-4f6fc8639f3f@frab.cccv.de
+DESCRIPTION:It is clear that something is needed to help the security com
+ munity to evaluate\, audit and control the security level of hardware pr
+ oducts.\n\nHardsploit is a complete tool box (hardware & software)\, a f
+ ramework which aims to:\n\n- Facilitate the audit of electronic systems 
+ for industry 'security' workers (consultants\, auditors\, pentesters\, p
+ roduct designers\, etc.)\n\n- Increase the level of security (and trust 
+ !) of new products designed by the industry
+URL://events.ccc.de/congress/2015/Fahrplan/events/7496.html
+SUMMARY:Hardsploit: A Metasploit-like tool for hardware hacking
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

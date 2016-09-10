@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T224500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T214500
+DTSTAMP;VALUE=DATE-TIME:20151217T220545Z
+UID:2f4cd1ef-dd90-4145-a734-141e5c081940@frab.cccv.de
+DESCRIPTION:Earlier this year\, we discovered that Diffie-Hellman key\nex
+ change – cornerstone of modern cryptography – is less\nsecure in practic
+ e than the security community believed. In this\ntalk\, we’ll explain ho
+ w the NSA is likely exploiting this weakness to\nallow it to decrypt con
+ nections to at least 20% of HTTPS websites\, 25% of SSH servers\, and 66
+ % of IPsec VPNs.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7288.html
+SUMMARY:Logjam: Diffie-Hellman\, discrete logs\, the NSA\, and you
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

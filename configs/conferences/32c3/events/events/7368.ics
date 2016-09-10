@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T224500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T214500
+DTSTAMP;VALUE=DATE-TIME:20151228T182834Z
+UID:2ca47144-1fe0-4ffd-b0fb-e65b1e73f1ff@frab.cccv.de
+DESCRIPTION:Payment systems are old and have – unlike card protocols – se
+ en little scrutiny so far. This talk enumerates design and implementatio
+ n flaws in payment processing systems\, which can defraud consumers and 
+ merchants.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7368.html
+SUMMARY:Shopshifting
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

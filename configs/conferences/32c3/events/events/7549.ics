@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T210000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T203000
+DTSTAMP;VALUE=DATE-TIME:20151208T162905Z
+UID:3b16ddc9-499b-44b1-9084-b3e328daea30@frab.cccv.de
+DESCRIPTION:20 OSCILLATORS IN 20 MINUTES is an experimental music perform
+ ance/technical challenge/standup comedy act where I attempt to build twe
+ nty sound generating square wave oscillators in twenty minutes. This inv
+ olves fabricating small electronic circuits with wires\, chips\, small c
+ omponents and nine-volt batteries under the pressure of limited time and
+  expectation. This is a test of my technical abilities and an experiment
+  in working with live troubleshooting as a method of musical improvisati
+ on. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7549.html
+SUMMARY:20 OSCILLATORS IN 20 MINUTES 
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

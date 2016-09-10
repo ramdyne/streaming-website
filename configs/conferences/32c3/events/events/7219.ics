@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T220000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T213000
+DTSTAMP;VALUE=DATE-TIME:20151225T172222Z
+UID:bfadd7de-3680-4766-a474-faa53c5f141f@frab.cccv.de
+DESCRIPTION:The lecture outlines strategies by the "Artist against 419" o
+ nline community that uses open source intelligence to gather data and fi
+ le reports about fraudulent websites. The lecture presents the artistic 
+ installation "Megacorp." (created by KairUs) that tries to visualize the
+  global phenomenon of fake business websites.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7219.html
+SUMMARY:Trust us and our business will expand!
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

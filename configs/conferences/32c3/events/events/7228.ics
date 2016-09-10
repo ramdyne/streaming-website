@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T124500
+DTSTAMP;VALUE=DATE-TIME:20151228T180831Z
+UID:0417a69e-87af-43f9-abbb-0f0666bfda3e@frab.cccv.de
+DESCRIPTION:Im März 2014 wurde der NSA-Untersuchungsausschuss im Bundesta
+ g eingesetzt\, der die Verwicklungen um die deutschen Geheimdienste aufk
+ lären soll. Ein Rück- und Ausblick: Was wissen wir heute\, was erwartet 
+ uns noch?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7228.html
+SUMMARY:NSA-Untersuchungsausschuss: Zwischen Aufklärungswillen und Mauern
+  aus Schweigen
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

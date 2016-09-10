@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T181500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T171500
+DTSTAMP;VALUE=DATE-TIME:20151228T155004Z
+UID:4c070a2c-0558-48b8-b612-b8507a51154e@frab.cccv.de
+DESCRIPTION:This presentation covers windows kernel driver security issue
+ s. It'll discuss some background\, and then give an overview of the most
+  common issues seen in drivers\, covering both finding and fixing issues
+ .
+URL://events.ccc.de/congress/2015/Fahrplan/events/7510.html
+SUMMARY:Windows drivers attack surface
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T140000
+DTSTAMP;VALUE=DATE-TIME:20151206T191515Z
+UID:36ff9cc8-f717-42f3-b570-fca9810a02fa@frab.cccv.de
+DESCRIPTION:Is your email being sent in the clear? While PGP and S/MIME p
+ rovide end-to-end encrypted mail\, most users have yet to adopt these pr
+ actices\, and for users who have\, these tools leave metadata\, such as 
+ the subject\, sender\, and recipient\, visible everywhere along a messag
+ e’s path. SMTP&mdash\;the ubiquitous mail transport protocol&mdash\;has 
+ evolved over the years to add encryption and authentication\, both of wh
+ ich take place behind the scenes and help guard against surveillance and
+  spam. While these features are being increasingly deployed\, our resear
+ ch shows that they are almost always configured in vulnerable ways&mdash
+ \;the details of which are hidden from the users sending and receiving m
+ ail. Even more disturbingly\, these vulnerabilities are being widely exp
+ loited in the wild: in seven countries\, more than 20% of inbound Gmail 
+ messages are downgraded to cleartext by network-based attacks. In the mo
+ st severe case\, 96% of messages sent from Tunisia to Gmail are downgrad
+ ed to cleartext. In this talk\, I’ll introduce the commonly used SMTP se
+ curity extensions&mdash\;including STARTTLS\, SPF\, DKIM\, and DMARC&mda
+ sh\;and describe the current state of mail security on the Internet. I'l
+ l describe several commonly occurring attacks our recent research has fo
+ und and discuss how mail operators can configure their servers to secure
+  email transport. Finally\, I'll discuss several weaknesses in the proto
+ cols we're using and recent proposals for helping secure email transport
+ .
+URL://events.ccc.de/congress/2015/Fahrplan/events/7255.html
+SUMMARY:Neither Snow Nor Rain Nor MITM… The State of Email Security in 20
+ 15
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Schedule 32. Chaos Communication Congress</title>
+<link rel="stylesheet" media="screen" href="/configs/conferences/32c3/assets/public_schedule-fd8f1c28083623471c99e7cb12d58be5ccc1bf1d357b0689295d59f7505982ff.css">
+<link rel="stylesheet" media="all" href="/configs/conferences/32c3/style.css">
+<link rel="stylesheet" media="print" href="/configs/conferences/32c3/assets/public_schedule_print-99d3251f43ed74e6a77a8013f74ce1ee07c4de819a619a15d8b8bb5dc9d4dad1.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="banner"></div>
+<div id="header">
+<h1>Schedule 32. Chaos Communication Congress</h1>
+</div>
+<div id="horizontal-navigation">
+<ul>
+<li>
+<a href="/configs/conferences/32c3/schedule.html">Index</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/0.html">
+Day 1
+<br>
+<span class="small-font">2015-12-27</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/1.html">
+Day 2
+<br>
+<span class="small-font">2015-12-28</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/2.html">
+Day 3
+<br>
+<span class="small-font">2015-12-29</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/3.html">
+Day 4
+<br>
+<span class="small-font">2015-12-30</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/speakers.html">Speakers</a>
+</li>
+<li class="selected">
+<a href="/configs/conferences/32c3/events.html">Events</a>
+</li>
+</ul>
+</div>
+<div id="main-content">
+<p class="release">
+Version 1.4 - The Pillow Book
+</p>
+<h2>lecture: Verified Firewall Ruleset Verification</h2>
+<h3 class="title">Math, Functional Programming, Theorem Proving, and an Introduction to Isabelle/HOL</h3>
+<div class="column left" id="basic">
+<div class="image large"><img src="/configs/conferences/32c3/system/events/logos/000/007/195/large/isabelle.png" alt="Isabelle"></div>
+<p class="abstract">We develop a tool to verify Linux netfilter/iptables firewalls rulesets. Then, we verify the verification tool itself.</p>
+
+<p class="abstract">Warning: involves math!</p>
+
+<p class="abstract">This talk is also an introduction to interactive theorem proving and programming in Isabelle/HOL. We strongly suggest that audience members have some familiarity with functional programming. A strong mathematical background is NOT required.</p>
+
+<p class="abstract">TL;DR: Math is cool again, we now have the tools for "executable math". Also: iptables!</p>
+<p class="description">We all know that writing large firewall rulesets can be hard. One huge problem. Let's write a tool to statically verify some properties of our rulesets! Now we have three huge problems:
+<br>(1) writing flawless firewall rulesets.
+<br>(2) making sure that our verification tool does the right thing.
+<br>(3) making sure that the internal firewall model of our tool corresponds to the real world.</p>
+
+<p class="description">In this talk, we will solve these problems from front to back. We focus on problems (2) and (3). Warning: this talk involves math!</p>
+
+<p class="description">First, we need to specify the behavior of the Linux netfilter/iptables firewall. In order to be convincing, this model must be small and simple. It should fit on one slide. However, firewalls can be quite complex and the model must cope with this. For example, looking at `man iptables-extensions`, we see numerous match conditions. But nobody required that our model must be executable code; we will specify the model mathematically. For example, this allows to define <i>arbitrary</i> match conditions. Technically speaking, we define the filtering behavior of iptables in terms of bigstep semantics. Mathematical specifications can be very powerful, in particular when we get to the point where the specification is not directly "executable".</p>
+
+<p class="description">Enough math, let's write some executable code to do something with our ruleset. For example, unfolding the jumps to user-defined chains, checking that some packets will be certainly blocked, or checking that we got the spoofing protection right.</p>
+
+<p class="description">Second, based on our firewall model, we can now prove that our algorithms do the right thing. In contrast to testing, a mathematical proof allows assertions for all possible values. For example: For all possible packets, rulesets, and firewall-matching-features, our unfolding algorithm does not change the filtering behavior of the firewall. Yes, we can even show that our tool will still be correct, even if the netfilter team pushes a new matching feature.</p>
+
+<p class="description">Finally, we now have a verified verification tool. We can use it to verify our firewall ruleset and finally sleep well at night again.</p>
+
+<p class="description">We developed an iptables verification library over the last few years in Isabelle/HOL. Isabelle can export executable definitions (i.e. our algorithms) to functional languages such as Haskell, Scala, SML, or OCcaml. Writing the input/output functions manually in Haskell, we have a fast and stand-alone tool.</p>
+
+<p class="description">This talk is also an introduction to interactive theorem proving and programming in Isabelle/HOL. We strongly suggest that audience members have some familiarity with functional programming. A strong mathematical background is not required.</p>
+</div>
+<div class="column left" id="details">
+<h3>Info</h3>
+<p>
+<b>Day:</b>
+<a href="/configs/conferences/32c3/schedule/1.html">2015-12-28</a>
+<br>
+<b>Start time:</b>
+17:30
+<br>
+<b>Duration:</b>
+00:30
+<br>
+<b>Room:</b>
+Hall G
+<br>
+<b>Track:</b>
+Science
+<br>
+<b>Language:</b>
+en
+</p>
+<h3>Links:</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/events/7195.ics">iCalendar</a></li>
+<li><a href="https://github.com/diekmann/Iptables_Semantics">github</a></li>
+</ul>
+<h3>Files</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/system/event_attachments/attachments/000/002/810/original/slides_169.pdf">Slides</a></li>
+</ul>
+<h3>Feedback</h3>
+<p>
+<a href="https://frab.cccv.de/en/32c3/public/events/7195/feedback/new">Click here to let us know how you liked this event.</a>
+</p>
+<div class="column left" id="concurrent_events">
+<h3><span class="translation_missing" title="translation missing: en.public.schedule.event.concurrent_events">Concurrent Events</span></h3>
+<dl class="dl-horizontal">
+<dt>Hall 2</dt>
+<dd><a href="/configs/conferences/32c3/events/7314.html">All Our Shared Spectrum Are Belong to Us</a></dd>
+<dt>Hall 6</dt>
+<dd><a href="/configs/conferences/32c3/events/7415.html">Wie Jugendschutzprogramme nicht nur die Jugend schädigen</a></dd>
+<dt>Hall 1</dt>
+<dd><a href="/configs/conferences/32c3/events/7423.html">One year of securitarian drift in France</a></dd>
+</dl>
+</div>
+</div>
+<div class="column right" id="sidebar">
+<h3>Speakers</h3>
+<table class="list">
+<tbody>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/system/people/avatars/000/004/862/small/c_diekmannn_scholarsmall.jpg" alt="C diekmannn scholarsmall"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/4862.html">Cornelius Diekmann</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="span16">
+</div>
+
+<br class="clear">
+</div>
+</div>
+</body>
+</html>

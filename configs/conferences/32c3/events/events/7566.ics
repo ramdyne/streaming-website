@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T014500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T001500
+DTSTAMP;VALUE=DATE-TIME:20151228T180853Z
+UID:ffa37241-83fe-40ca-9a5a-7c886d5879c0@frab.cccv.de
+DESCRIPTION:Die ASYL-DIALOGE erzählen von Begegnungen\, die Menschen verä
+ ndern\, von gemeinsamen Kämpfen in unerwarteten Momenten – eine dieser G
+ eschichten spielt in Osnabrück\, wo seit März 2014 ein breites Bündnis s
+ olidarischer Menschen bereits 37 Abschiebungen verhindern konnte und som
+ it für viele bundesweit zum Vorbild wurde...
+URL://events.ccc.de/congress/2015/Fahrplan/events/7566.html
+SUMMARY:Die Asyl-Dialoge / The Asylum Dialogues
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

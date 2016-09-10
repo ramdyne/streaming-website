@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T214500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T211500
+DTSTAMP;VALUE=DATE-TIME:20151208T164612Z
+UID:550b8e16-3394-40d2-b47c-7cfe0031945b@frab.cccv.de
+DESCRIPTION:Giant billboard vans\, drone-operated leaflet drops over an N
+ SA building and calls to secret service agents\, Intelexit explores all 
+ routes to reach out to secret service agents and convince them to follow
+  their conscience and quit their jobs. We will take a look at the highli
+ ghts of the campaign from 2015 and what's around the corner for 2016. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7426.html
+SUMMARY:Intelexit
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

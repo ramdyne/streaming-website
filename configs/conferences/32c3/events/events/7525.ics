@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T224500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T214500
+DTSTAMP;VALUE=DATE-TIME:20151206T195155Z
+UID:0549d204-604a-46c5-92a2-e64b85aa9892@frab.cccv.de
+DESCRIPTION:Unsere Welt ist nach allem was wir heute wissen im kleinsten 
+ Massstab völlig bizarr aufgebaut und im grössten also im kosmologischen 
+ Massstab besteht sie ziemlich genau aus nichts. Wie hängt das zusammen u
+ nd was hat das mit dunkler Materie und dunkler Energie zu tun und was zu
+ m Geier ist eigentlich die "spukhafte Fernwirkung" von der Einstein dama
+ ls sprach und warum hat bis heute keiner so recht verstanden wie das all
+ es zusammenpasst?\nHast du schon mal davon gehört\, dass die Quantenphys
+ ik irgendwie schräg ist\, hast dich da aber noch nicht ran getraut\, obw
+ ohl du das gerne besser verstehen wollen würdest? Denkst du manchmal drü
+ ber nach\, wie zum Geier das komplette Universum mit allen Sternen und P
+ laneten ganz früher mal in einen Tischtennisball oder sogar noch was kle
+ ineres gepasst haben soll? Hast du schon mal davon gehört\, dass ein Pro
+ ton angeblich aus drei Quarks besteht und denkst\, "jaja\, ihr könnt mir
+  viel erzählen". Und klinkt sich dein Vorstellungsvermögen aus\, wenn du
+  versuchst dir so was wie ein "schwarzes Loch" vorzustellen\, das unendl
+ ich klein sein soll und dabei unendlich schwer? Dann bist du hier genau 
+ richtig. Ich will dir  ohne wesentliche Vorkenntnisse vorauszusetzen im 
+ Grossen und Ganzen den  Zusammenhang näher bringen\, deine Faszination f
+ ür das Thema wecken oder füttern und dir Mut machen\, dich weiter damit 
+ zu beschäftigen. Du darfst hier Fragen stellen\, dich wundern\, zweifeln
+  und irritiert sein. \nWenn du an Quantenheilung\, Vortex Atome und holi
+ stische Quanten-Kinesiologie glaubst\, dann bist du herzlich willkommen 
+ um zu lernen\, dass das mit Quantenphysik nichts\, aber auch wirklich ga
+ r nichts zu tun hat\, aber sei bitte nicht enttäuscht\, wenn ich auf die
+ se Themen nicht eingehe. Eine Stunde ist viel zu Kurz um zusätzlich eine
+  Einführung in die Prinzipien der Wissenschaft zu halten. \nWenn du aber
+  schon mal die Schrödingergleichung hergeleitet hast oder gerne über die
+  Vorteile der M-Theorie gegenüber der Super-Stringtheorie schwadronieren
+  möchtest oder wenn du diskutieren möchtest\, ob es vielleicht auch noch
+  ein Typ 3 Weyl Fermion geben kann\, dann langweilst du dich hier vermut
+ lich\, das können wir dann ja gerne ein anderes mal machen \;-)\n
+URL://events.ccc.de/congress/2015/Fahrplan/events/7525.html
+SUMMARY:Quantenphysik und  Kosmologie
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

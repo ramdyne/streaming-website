@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T170000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T160000
+DTSTAMP;VALUE=DATE-TIME:20151217T092510Z
+UID:276311bf-60b5-411a-ab68-6a8fbb0fd6a9@frab.cccv.de
+DESCRIPTION:This talk is about Vehicle2Vehicle (V2V) communication in Eur
+ ope and in the U.S. Next to the introduction of some requirements for V2
+ V communication\, the basic approaches of V2V communication based on IEE
+ E 802.11p are presented. This includes an introduction to communication 
+ stack\, concepts of message dissemination\, message contents\, privacy &
+  security issues and an outlook to further developments.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7165.html
+SUMMARY:Vehicle2Vehicle Communication based on IEEE 802.11p
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

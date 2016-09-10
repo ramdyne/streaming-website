@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T134500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T124500
+DTSTAMP;VALUE=DATE-TIME:20151210T135857Z
+UID:4b81e057-d17d-4108-90c4-8b0b162cf6c0@frab.cccv.de
+DESCRIPTION:The military use of Drones has profoundly changed warfare and
+  is a central aspect of the globalized war on terror. The public debate 
+ including the respective talks at prior CCCs is dominated by questions o
+ f the ethical and juridical aspects of Drone use. \n\nThis talk tries to
+  shift the focus towards the enabling dimensions of Drone warfare. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7259.html
+SUMMARY:Graphs\, Drones & Phones
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

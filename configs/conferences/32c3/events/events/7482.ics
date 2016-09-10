@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T170000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T160000
+DTSTAMP;VALUE=DATE-TIME:20151227T125902Z
+UID:e9a8cc8d-a598-4bc3-83ac-82c1fe227b0a@frab.cccv.de
+DESCRIPTION:Algorithms and „big data“ penetrate many aspects of our lives
+  today. In the future\, data collection and analysis will be even more u
+ biquitous and permeate our lives from morning to night.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7482.html
+SUMMARY:Say hi to your new boss: How algorithms might soon control our li
+ ves.
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

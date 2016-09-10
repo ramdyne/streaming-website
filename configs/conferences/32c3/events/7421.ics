@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T140000
+DTSTAMP;VALUE=DATE-TIME:20151206T193943Z
+UID:cc9ede64-bad5-4ed0-92a3-4fbaf54eadec@frab.cccv.de
+DESCRIPTION:The Fluxus movement came about in the early 1960ies and the t
+ alk will discuss its strenghts\, dead-ends and promises for the creation
+  of works and community in our digital environment. International\, tran
+ sdisciplinary\, non-institutional\, anti-art and playful. After several 
+ years of research and new art productions\, Leo Findeisen and Markus Zim
+ mermann will present their findings.  \n
+URL://events.ccc.de/congress/2015/Fahrplan/events/7421.html
+SUMMARY:"Fluxus cannot save the world."
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

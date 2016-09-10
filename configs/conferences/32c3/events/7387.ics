@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T131500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T124500
+DTSTAMP;VALUE=DATE-TIME:20151228T164515Z
+UID:3a221dbd-39c7-4b85-a1fc-73d7e87fd31a@frab.cccv.de
+DESCRIPTION:After two years the fight for net neutrality in Europe about 
+ the Telecom Single Market Regulation has come to a close. In this talk w
+ e will analyse the new net neutrality law and it's consequences and we g
+ ive you the lessons learned from two years of EU campaigning. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7387.html
+SUMMARY:Net Neutrality in Europe
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

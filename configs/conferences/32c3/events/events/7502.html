@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Schedule 32. Chaos Communication Congress</title>
+<link rel="stylesheet" media="screen" href="/configs/conferences/32c3/assets/public_schedule-fd8f1c28083623471c99e7cb12d58be5ccc1bf1d357b0689295d59f7505982ff.css">
+<link rel="stylesheet" media="all" href="/configs/conferences/32c3/style.css">
+<link rel="stylesheet" media="print" href="/configs/conferences/32c3/assets/public_schedule_print-99d3251f43ed74e6a77a8013f74ce1ee07c4de819a619a15d8b8bb5dc9d4dad1.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="banner"></div>
+<div id="header">
+<h1>Schedule 32. Chaos Communication Congress</h1>
+</div>
+<div id="horizontal-navigation">
+<ul>
+<li>
+<a href="/configs/conferences/32c3/schedule.html">Index</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/0.html">
+Day 1
+<br>
+<span class="small-font">2015-12-27</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/1.html">
+Day 2
+<br>
+<span class="small-font">2015-12-28</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/2.html">
+Day 3
+<br>
+<span class="small-font">2015-12-29</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/3.html">
+Day 4
+<br>
+<span class="small-font">2015-12-30</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/speakers.html">Speakers</a>
+</li>
+<li class="selected">
+<a href="/configs/conferences/32c3/events.html">Events</a>
+</li>
+</ul>
+</div>
+<div id="main-content">
+<p class="release">
+Version 1.4 - The Pillow Book
+</p>
+<h2>lecture: Dissecting VoLTE</h2>
+<h3 class="title">Exploiting Free Data Channels and Security Problems</h3>
+<div class="column left" id="basic">
+<div class="image large"><img src="/configs/conferences/32c3/system/events/logos/000/007/502/large/11896496_10204301040837794_7127389902016444054_o.jpg" alt="11896496 10204301040837794 7127389902016444054 o"></div>
+<p class="abstract">Newly adopted VoLTE requires changes in all associated parties, such as 3GPP standard, device, operating system, and cellular core networks. Therefore, it is not too surprising that it has security problems. However, it turns out that it has way too many problems. In this talk, we introduce how you can freely send data in the cellular network, and how an attacker can perform caller spoofing and denial of service attacks on calls to disable the target’s calling. Furthermore, we explain how small implementation glitch on VoLTE may lead to break the whole cellular network down.</p>
+<p class="description">Voice-over-LTE (VoLTE) is a newly adopted voice technology in the LTE network, whose functionality is similar to VoIP. Even though VoLTE works similar to VoIP, implementing it on the cellular network is not an easy problem because it needs many changes at each component of LTE. If these changes are not securely considered, this may lead to several security problems.
+<br> 
+<br>In the legacy 3G network, as data and voice are separate, the accounting policies are also different: data is charged based on byte usage, and voice, on time usage. However, in VoLTE, even though voice is delivered as a packet, it is still charged by time usage. Therefore, this strange accounting policy might open free data channels.
+<br> 
+<br>Another point is that voice signaling for VoLTE is not handled as in the legacy 3G network. Basically, a phone has two processors: an application processor (AP) which runs mobile OSes such as Android and a communication processor (CP) which manages digital signal processing and radio access. In 3G, voice signaling is handled in CP which makes an attacker hard to manipulate it. However, in VoLTE, because voice signaling is handled in AP, an attacker can easily analyze or modify the call flow. Furthermore, this new change can cause problems to the mobile OS.</p>
+
+<p class="description">To scrutinize these two points, we analyzed 5 operators, two in the U.S and three in South Korea. As a result, we found four free data channels. For free data channels, an attacker can inject data in the call signaling procedure or voice data transmission. Additionally, the attacker can freely send data to the Internet or to another phone in the cellular network through the VoLTE interface. Furthermore, we discovered five security problems which include no encryption of voice packets, no authentication of call signaling, no call session management, IMS bypassing, and permission model mismatch in Android. We responsibly disclosed all the vulnerabilities to US/KR CERTs and Google in May. We suggest mitigations for each vulnerability, and further propose possible attack vectors that researchers can study on.</p>
+</div>
+<div class="column left" id="details">
+<h3>Info</h3>
+<p>
+<b>Day:</b>
+<a href="/configs/conferences/32c3/schedule/1.html">2015-12-28</a>
+<br>
+<b>Start time:</b>
+21:45
+<br>
+<b>Duration:</b>
+01:00
+<br>
+<b>Room:</b>
+Hall 2
+<br>
+<b>Track:</b>
+Security
+<br>
+<b>Language:</b>
+en
+</p>
+<h3>Links:</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/events/7502.ics">iCalendar</a></li>
+</ul>
+<h3>Files</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/system/event_attachments/attachments/000/002/829/original/2015.12.28_CCC_Dissecting_VoLTE.pdf">Dissecting VoLTE</a></li>
+</ul>
+<h3>Feedback</h3>
+<p>
+<a href="https://frab.cccv.de/en/32c3/public/events/7502/feedback/new">Click here to let us know how you liked this event.</a>
+</p>
+<div class="column left" id="concurrent_events">
+<h3><span class="translation_missing" title="translation missing: en.public.schedule.event.concurrent_events">Concurrent Events</span></h3>
+<dl class="dl-horizontal">
+<dt>Hall 1</dt>
+<dd><a href="/configs/conferences/32c3/events/7288.html">Logjam: Diffie-Hellman, discrete logs, the NSA, and you</a></dd>
+<dt>Hall G</dt>
+<dd><a href="/configs/conferences/32c3/events/7493.html">How hackers grind an MMORPG: by taking it apart!</a></dd>
+<dt>Hall 6</dt>
+<dd><a href="/configs/conferences/32c3/events/7525.html">Quantenphysik und  Kosmologie</a></dd>
+</dl>
+</div>
+</div>
+<div class="column right" id="sidebar">
+<h3>Speakers</h3>
+<table class="list">
+<tbody>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/assets/person_small-6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf.png" alt="Person small 6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/6204.html">Dongkwan</a></td>
+</tr>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/assets/person_small-6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf.png" alt="Person small 6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/6385.html">Hongil Kim</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="span16">
+</div>
+
+<br class="clear">
+</div>
+</div>
+</body>
+</html>

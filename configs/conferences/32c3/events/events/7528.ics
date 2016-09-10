@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T193000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T190000
+DTSTAMP;VALUE=DATE-TIME:20151228T184114Z
+UID:4f1a0717-6931-4580-9e49-5d523be045df@frab.cccv.de
+DESCRIPTION:Let's Encrypt is a new free and automated certificate authori
+ ty\,\nthat entered closed beta in October and has already issued a large
+  number of\nvalid certificates.  This talk will provide a short overview
+  of \nhow the Let's Encrypt client and server software work\, and explor
+ e\nstatistics gathered during our closed beta and launch period. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7528.html
+SUMMARY:Let's Encrypt -- What launching a free CA looks like
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T231500
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T224500
+DTSTAMP;VALUE=DATE-TIME:20151206T200229Z
+UID:60ba43d2-a9c8-42ab-a434-8772cb182675@frab.cccv.de
+DESCRIPTION:This talk gives an overview on state-of-the-art wireless secu
+ rity concepts: How can we analyze wireless protocols? How can we build m
+ echanisms that are secure even when the attacker has unlimited computati
+ onal power? Can we exploit wireless transmission for more?
+URL://events.ccc.de/congress/2015/Fahrplan/events/7119.html
+SUMMARY:Building and Breaking Wireless Security
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

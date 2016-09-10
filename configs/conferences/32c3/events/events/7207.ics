@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T123000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T113000
+DTSTAMP;VALUE=DATE-TIME:20151227T133813Z
+UID:7504eeb1-1665-47fd-b21a-601d2641c41c@frab.cccv.de
+DESCRIPTION:News reports and political speeches are currently replete wit
+ h references to hacking and hacktivism\, i.e.\, politically motivated ha
+ cking. They often portray hackers and hacktivists negatively and put the
+ m onto the same level with\, for example\, terrorists. This talk is base
+ d on a PhD research project examining the perception of self-identified 
+ hackers and hacktivists on these (in)securitising developments. It inves
+ tigates how hackers and hacktivists understand themselves and their acti
+ vities\, explores how they articulate the effects of this (in)securitisa
+ tion\, and outlines the ways they resist these processes. 
+URL://events.ccc.de/congress/2015/Fahrplan/events/7207.html
+SUMMARY:“I feel like a criminal and I have to be god at the same time”
+ORGANIZER:32c3
+LOCATION:Hall 1
+END:VEVENT
+END:VCALENDAR

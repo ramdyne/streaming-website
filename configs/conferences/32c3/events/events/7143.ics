@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T123000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T113000
+DTSTAMP;VALUE=DATE-TIME:20151228T164618Z
+UID:f6149460-a278-4600-bf9d-61ea737c46de@frab.cccv.de
+DESCRIPTION:The techniques to control access to the Internet\, and the ab
+ ility to bring transparency to those processes are both continuing to ev
+ olve. We’ll give an update on the landscape of online information contro
+ ls\, and our ability to measure them.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7143.html
+SUMMARY:The state of Internet Censorship
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

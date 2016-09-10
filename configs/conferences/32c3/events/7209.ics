@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T193000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T183000
+DTSTAMP;VALUE=DATE-TIME:20151228T181322Z
+UID:f79c744f-30d1-4175-a173-2e760049337d@frab.cccv.de
+DESCRIPTION:In the past years there has been a lot of discussion on the t
+ opic of state sponsored surveillance. But hardly any material can be acc
+ essed to support the general debate due to vaguely declared security con
+ cerns. So we are debating Big Brother with little knowledge about what h
+ e actually sees\, while he is watching. Over the course of three years\,
+  I was able to research the archives left by East Germany's Stasi to loo
+ k for visual memories of this notorious surveillance system and more rec
+ ently I was invited to spend some weeks looking at the archive by the Cz
+ echoslovak StB. Illustrating with images I have found during my research
+ \, I would like to address the question why this material is still relev
+ ant – even 25 years after the fall of the Iron Curtain.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7209.html
+SUMMARY:What does Big Brother see\, while he is watching?
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

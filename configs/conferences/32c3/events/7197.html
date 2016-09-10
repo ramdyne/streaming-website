@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Schedule 32. Chaos Communication Congress</title>
+<link rel="stylesheet" media="screen" href="/configs/conferences/32c3/assets/public_schedule-fd8f1c28083623471c99e7cb12d58be5ccc1bf1d357b0689295d59f7505982ff.css">
+<link rel="stylesheet" media="all" href="/configs/conferences/32c3/style.css">
+<link rel="stylesheet" media="print" href="/configs/conferences/32c3/assets/public_schedule_print-99d3251f43ed74e6a77a8013f74ce1ee07c4de819a619a15d8b8bb5dc9d4dad1.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="banner"></div>
+<div id="header">
+<h1>Schedule 32. Chaos Communication Congress</h1>
+</div>
+<div id="horizontal-navigation">
+<ul>
+<li>
+<a href="/configs/conferences/32c3/schedule.html">Index</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/0.html">
+Day 1
+<br>
+<span class="small-font">2015-12-27</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/1.html">
+Day 2
+<br>
+<span class="small-font">2015-12-28</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/2.html">
+Day 3
+<br>
+<span class="small-font">2015-12-29</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/schedule/3.html">
+Day 4
+<br>
+<span class="small-font">2015-12-30</span>
+</a>
+</li>
+<li>
+<a href="/configs/conferences/32c3/speakers.html">Speakers</a>
+</li>
+<li class="selected">
+<a href="/configs/conferences/32c3/events.html">Events</a>
+</li>
+</ul>
+</div>
+<div id="main-content">
+<p class="release">
+Version 1.4 - The Pillow Book
+</p>
+<h2>lecture: Rowhammer.js: Root privileges for web apps?</h2>
+<h3 class="title">A tale of fault attacks on DRAM and attacks on CPU caches</h3>
+<div class="column left" id="basic">
+<div class="image large"><img src="/configs/conferences/32c3/system/events/logos/000/007/197/large/rowhammerjs-logo.jpg" alt="Rowhammerjs logo"></div>
+<p class="abstract">"Insanity: doing the same thing over and over again and expecting different results." 
+<br>Albert Einstein - Who did not live long enough to see Rowhammer</p>
+
+<p class="abstract">Recent studies have found that repeated accesses to DRAM rows can cause random bit flips, resulting in the so called Rowhammer vulnerability. We present Rowhammer.js, the first remote software-induced hardware-fault attack, from JavaScript. We also extend our presentation with an overview of cache side-channel attacks, that use the same technique to evict data from the cache.</p>
+<p class="description">Last year, studies demonstrated Rowhammer, a fault attack that can cause random bit flips by repeatedly accessing DRAM rows. This vulnerability has already been exploited to gain root privileges and to evade a sandbox, showing the severity of faulting single bits for security. However, these exploits are written in native code and use special instructions that flush data from the cache.</p>
+
+<p class="description">In this talk we present Rowhammer.js [1], a JavaScript-based implementation of the Rowhammer attack. After presenting the native attack, we underline the challenges we faced to trigger the vulnerability from JavaScript, without any special instruction. Beyond DRAM, this attack also requires a very fine understanding of CPU cache internals, that are largely undocumented. We detail our findings on these undocumented parts, and the different steps that led to the attack from JavaScript. We also give an outlook on possible exploits, including gaining root privileges from JavaScript and performing fault attacks on cryptography.</p>
+
+<p class="description">In the last part, we extend our presentation with an overview of cache attacks, bridging the gap between hardware-fault attacks and side channels. In side-channel attacks, the attacker doesn't rely on a direct software compromise, but rather on passive observation of hardware characteristics when a victim process runs. In common with Rowhammer.js, these attacks use techniques to evict data from the last-level cache.</p>
+
+<p class="description">[1] Daniel Gruss, Clémentine Maurice, Stefan Mangard. Rowhammer.js: A Remote Software-Induced Fault Attack in JavaScript. http://arxiv.org/abs/1507.06955</p>
+</div>
+<div class="column left" id="details">
+<h3>Info</h3>
+<p>
+<b>Day:</b>
+<a href="/configs/conferences/32c3/schedule/1.html">2015-12-28</a>
+<br>
+<b>Start time:</b>
+18:15
+<br>
+<b>Duration:</b>
+00:30
+<br>
+<b>Room:</b>
+Hall 1
+<br>
+<b>Track:</b>
+Security
+<br>
+<b>Language:</b>
+en
+</p>
+<h3>Links:</h3>
+<ul>
+<li><a href="/configs/conferences/32c3/events/7197.ics">iCalendar</a></li>
+<li><a href="http://arxiv.org/abs/1507.06955">Paper on arxiv</a></li>
+<li><a href="http://www.slate.com/articles/technology/bitwise/2015/07/rowhammer_security_exploit_why_a_new_security_attack_is_truly_terrifying.html">Coverage by Slate</a></li>
+</ul>
+<h3>Feedback</h3>
+<p>
+<a href="https://frab.cccv.de/en/32c3/public/events/7197/feedback/new">Click here to let us know how you liked this event.</a>
+</p>
+<div class="column left" id="concurrent_events">
+<h3><span class="translation_missing" title="translation missing: en.public.schedule.event.concurrent_events">Concurrent Events</span></h3>
+<dl class="dl-horizontal">
+<dt>Hall 2</dt>
+<dd><a href="/configs/conferences/32c3/events/7138.html">G’scheitern</a></dd>
+<dt>Hall G</dt>
+<dd><a href="/configs/conferences/32c3/events/7238.html">Vector retrogaming</a></dd>
+<dt>Hall 6</dt>
+<dd><a href="/configs/conferences/32c3/events/7529.html">Mobile Censorship in Iran</a></dd>
+</dl>
+</div>
+</div>
+<div class="column right" id="sidebar">
+<h3>Speakers</h3>
+<table class="list">
+<tbody>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/assets/person_small-6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf.png" alt="Person small 6becbdd9bedc5ac3962dfb66f90e5ebb8fdbb97c287002e97bba3762a122a2bf"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/5943.html">Clémentine Maurice</a></td>
+</tr>
+<tr>
+<td><div class="image small"><img src="/configs/conferences/32c3/system/people/avatars/000/006/293/small/c158a43549b43829f5cd9b49325068a2.jpeg" alt="C158a43549b43829f5cd9b49325068a2"></div></td>
+<td><a href="/configs/conferences/32c3/speakers/6293.html">Daniel Gruss</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="span16">
+</div>
+
+<br class="clear">
+</div>
+</div>
+</body>
+</html>

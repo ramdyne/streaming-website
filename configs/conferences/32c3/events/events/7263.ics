@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151230T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151229T233000
+DTSTAMP;VALUE=DATE-TIME:20151206T191630Z
+UID:f1c8f781-1ce7-451f-90e9-218ba94bc955@frab.cccv.de
+DESCRIPTION:On 17th December 2014\, the Government of India's Ministry of
+  Communications and Information Technology issued an order to all licens
+ ed Internet Service Providers (ISPs) in the country to block access to 3
+ 2 websites\, effective immediately. The basis of this was a claim that t
+ he targeted web services were being used for "Jihadi Propaganda" by "Ant
+ i-National groups". As a response to this\, a few technologists in Berli
+ n got together and thought it would be a good idea to do some research u
+ sing free and accessible tools and to look at how censorship has been im
+ plemented\, as well as the various techniques that could be used to circ
+ umvent this censorship. This talk will discuss our findings and make rec
+ ommendations about how ISPs can handle such censorship requests better\,
+  while being fair and transparent to their customers.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7263.html
+SUMMARY:#GOIBlocks - Technical observations about recent internet censors
+ hip in India
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T150000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T140000
+DTSTAMP;VALUE=DATE-TIME:20151228T174400Z
+UID:3aeabb04-6227-4122-8fbc-21e31c04daf0@frab.cccv.de
+DESCRIPTION:Auch in 2015 entstanden wieder zahlreiche Projekte bei Jugend
+  hackt\, die mit Code die Welt verbessern. Im Talk möchten die jugendlic
+ hen HackerInnen Einblick in ihre Ideen und Projekte geben\, und ihre Per
+ spektive auf die Welt vermitteln.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7562.html
+SUMMARY:Jugend hackt 2015
+ORGANIZER:32c3
+LOCATION:Hall 2
+END:VEVENT
+END:VCALENDAR

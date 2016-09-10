@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T000000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151227T230000
+DTSTAMP;VALUE=DATE-TIME:20151228T162852Z
+UID:9f2e9ff0-1555-470b-8743-9f07f54e9097@frab.cccv.de
+DESCRIPTION:In 2011 the Nintendo 3DS was released. Today it is the most p
+ opular current-gen handheld console\, having sold more than 50 million u
+ nits worldwide. The 3DS features a completely redesigned architecture fr
+ om its predecessors the DS and the DSi. This talk will focus on the secu
+ rity features of the 3DS\, and how we got around them.
+URL://events.ccc.de/congress/2015/Fahrplan/events/7240.html
+SUMMARY:Console Hacking
+ORGANIZER:32c3
+LOCATION:Hall G
+END:VEVENT
+END:VCALENDAR

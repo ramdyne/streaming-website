@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID;X-RICAL-TZSOURCE=TZINFO:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20151025T030000
+RDATE:20151025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T123000
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20151228T113000
+DTSTAMP;VALUE=DATE-TIME:20151228T150135Z
+UID:6a02cc83-73d8-4544-8f17-9358dd2495c9@frab.cccv.de
+DESCRIPTION:There are two lines of research in the world about decreasing
+  poverty in low-income communities: (1) to create solutions and share th
+ em with people living in low-income areas or (2) build the capacity of p
+ eople from low-income areas to create their own solutions. Maker Spaces 
+ to BoP have showed great results to the strategy two. The lecture has th
+ e goal to expose all the experience we have learnt in the last three yea
+ rs to project\, implement and manage a Maker Space in a favela in São Pa
+ ulo - Brazil called Innovation Center Vila Nova Esperança (ICVNE).
+URL://events.ccc.de/congress/2015/Fahrplan/events/7540.html
+SUMMARY:Maker Spaces in Favelas - Lecture
+ORGANIZER:32c3
+LOCATION:Hall 6
+END:VEVENT
+END:VCALENDAR
