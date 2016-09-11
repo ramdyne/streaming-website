@@ -97,7 +97,7 @@ $GLOBALS['CONFIG']['CONFERENCE'] = array(
 	 * Wird beides aktiviert, hat der externe Link Vorrang!
 	 * Wird beides auskommentiert, wird der Link nicht angezeigt
 	 */
-//	'RELIVE_JSON' => 'configs/conferences/froscon2016/vod.json',
+	'RELIVE_JSON' => 'configs/conferences/occ16/vod.json',
 
 	/**
 	 * APCU-Cache-Zeit in Sekunden

@@ -1,0 +1,1316 @@
+<schedule>
+<version>36</version>
+<conference>
+<acronym>oCC2016</acronym>
+<title>ownCloud Conference 2016</title>
+<start>2016-09-09</start>
+<end>2016-09-15</end>
+<days>7</days>
+<timeslot_duration>00:10</timeslot_duration>
+</conference>
+<day date='2016-09-09' index='1'>
+<room name='Social Events'>
+<event guid='5UsC_FKjA7rOvu_P48wx8Q' id='131'>
+<date>2016-09-09T18:00:00Z</date>
+<start>18:00</start>
+<duration>02:00</duration>
+<room>Social Events</room>
+<type>Social Event</type>
+<language></language>
+<slug>131-friday-welcome-party</slug>
+<title>Friday Welcome Party</title>
+<subtitle>Meet fellow ownClouders at Room77, Graefestr. 77,  10967 Berlin. Don't forget your bitcoins!</subtitle>
+<track>Social Events</track>
+<abstract>Meet Fellow ownClouders at Room 77. There is awesome Food from burgers to fajitas, chili, a fine collection of Drinks and don't forget to bring your bitcoin wallet.
+Buy your pals a round and pay with bitcoin. </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+</day>
+<day date='2016-09-10' index='2'>
+<room name='Keynote room - MA-005 - Sat/Sun'>
+<event guid='0XiwjX0VczT_JqPYdImaJQ' id='145'>
+<date>2016-09-10T10:30:00Z</date>
+<start>10:30</start>
+<duration>00:20</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (20 min)</type>
+<language></language>
+<slug>145-welcome-and-introduction</slug>
+<title>Welcome and Introduction</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Warm welcome to the ownCloud conference.
+Organisational Infos.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='bMfFUsHIaMMwpd3wFjD-SQ' id='144'>
+<date>2016-09-10T11:00:00Z</date>
+<start>11:00</start>
+<duration>00:40</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>144-keynote-cornelius-schumacher-on-freedom-of-webservices</slug>
+<title>Keynote - Cornelius Schumacher on Freedom of Webservices</title>
+<subtitle>How does the freedom of one user affect the  freedom of another user? Who owns the data? </subtitle>
+<track>Talk</track>
+<abstract>&quot;The Free Software movement has achieved a lot. When you are running free 
+software yourself you enjoy all the benefits of free software, the freedoms to 
+use, study, share, and improve the software. You are in control of your 
+computing.
+
+When using web services the situation is different. Even when the service 
+provider runs free software, it doesn't mean that as a user you have the same 
+freedoms. What about privacy? How does the freedom of one user affect the 
+freedom of another user? Who owns the data? There are a lot of questions like 
+this.
+
+This keynote will explore how a definition of freedom for web services could 
+look like. It's the beginning of a journey, which needs involvement of 
+creators and operators of web services as well as the community at large. At 
+the end we will hopefully have a definition how to guarantee people using web 
+services the same freedom they have when running free software themselves.
+
+Cornelius is a long term FOSS enthusiast and contributor, has been on the 
+board of KDE e.V. for nine years, half of that as its president, and works as 
+an engineering manager for SUSE Linux.&quot;
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='FbRnpBo-BV_0qEGU2-ZDaw' id='154'>
+<date>2016-09-10T11:40:00Z</date>
+<start>11:40</start>
+<duration>00:40</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>154-engineering-update-klaas-freitag-owncloud-head-of-engineering</slug>
+<title>Engineering update Klaas Freitag, ownCloud Head of Engineering</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Engineering update Klaas Freitag, ownCloud Head of Engineering
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='kwNAIvPxyGyiYIbAWSzDNQ' id='129'>
+<date>2016-09-10T12:20:00Z</date>
+<start>12:20</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>129-my-first-year-owncloud</slug>
+<title>My first year @owncloud</title>
+<subtitle>I  started at ownCloud just a year ago, what a time and what a opportunity!</subtitle>
+<track>Lightning Talks</track>
+<abstract>I will give some Insight on my first year @ owncloud. 
+Stuff I've learned, stuff i didn't learn. 
+Community vs. Enterprise.
+And why i love working for an open source company.
+
+ </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='318'>Jonathan Kawohl</person>
+</persons>
+</event>
+<event guid='C_5C-gSMJBSqXSio87P0Jg' id='138'>
+<date>2016-09-10T13:30:00Z</date>
+<start>13:30</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>138-meanwhile-in-the-android-side</slug>
+<title>Meanwhile, in the Android side...</title>
+<subtitle></subtitle>
+<track>Lightning Talks</track>
+<abstract>Status update on what has been done from the last OC conference in the ownCloud app for Android.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='174'>David A. Velasco</person>
+</persons>
+</event>
+<event guid='ENm4SQedO5NOJK5ZIRYaOw' id='137'>
+<date>2016-09-10T13:40:00Z</date>
+<start>13:40</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>137-ios-owncloud-app</slug>
+<title>iOS ownCloud App </title>
+<subtitle>New features</subtitle>
+<track>Lightning Talks</track>
+<abstract>Nowadays the use of mobile devices is growing significantly. There is growing demand in the use and sharing of data anywhere. In newer versions of iOS they have added new APIs that among other features, allow data sharing between mobile apps. The ownCloud iOS app is constantly developing and adapts to new needs and possibilities that offer the OS and users demand us. In this last year we have been adding a lot of new features.
+Therefore, this lightning talk will focus on showing the new features that have been incorporated into the ownCloud iOS app in the last year.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='182'>Noelia Alvarez</person>
+</persons>
+</event>
+<event guid='Fbf70XYIVgNGdIDbfpz0Zw' id='139'>
+<date>2016-09-10T13:50:00Z</date>
+<start>13:50</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>139-next-in-mobile-syncing</slug>
+<title>Next in mobile syncing</title>
+<subtitle>The Storage, the Network, and the Battery</subtitle>
+<track>Lightning Talks</track>
+<abstract>An overview of the next challenges to address in the ownCloud mobile apps (with some bias to Android) and how we plan to conquer them.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='174'>David A. Velasco</person>
+</persons>
+</event>
+<event guid='da_o9VRsNCYDaJX9V5K4wQ' id='181'>
+<date>2016-09-10T14:00:00Z</date>
+<start>14:00</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>181-ldap-as-a-thorn-in-owncloud-s-flesh</slug>
+<title>LDAP as a thorn in ownCloud’s flesh</title>
+<subtitle></subtitle>
+<track>Lightning Talks</track>
+<abstract>ownCloud ships with an LDAP application to allow LDAP users (including Active Directory) to appear in ownCloud user listings. These users will authenticate to ownCloud with their LDAP credentials, so there is no need to create separate ownCloud user accounts for them. LDAP manages ownCloud group memberships, quotas, and sharing permissions just like any other ownCloud user.
+
+In this presentation, I will address the main challenges in the current implementation of LDAP in ownCloud. </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='572'>Piotr Mrowczynski</person>
+</persons>
+</event>
+<event guid='2tOnAK7DmMaRXX96rqMiTg' id='136'>
+<date>2016-09-10T14:10:00Z</date>
+<start>14:10</start>
+<duration>00:20</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (20 min)</type>
+<language></language>
+<slug>136-owncloud-using-our-san-storage</slug>
+<title>ownCloud using our SAN storage</title>
+<subtitle>aka Making my users lives easier.</subtitle>
+<track>Lightning Talks</track>
+<abstract>I needed a way to allow owncloud to run on its own web server but use our SAN to store the user data so we didn't end up with duplicated data. I developed a way to seamlessly serve a &quot;cloud&quot; folder located in the user's SAN mounted /home directory via the /var/www/owncloud/USER/data directory using bindmount, ldap and python. Bonus? The users ownCloud directory is accessible to the user on any server which has their home directories mounted (basically all of them) from the command line.
+
+I'm definitely not a programmer, rather I am a SysAdmin. This was my first attempt at using python and I am sure it could be improved. I am happy to share my process and see what ideas it sparks.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='575'>Simon Fishley</person>
+</persons>
+</event>
+<event guid='t3VDLCYKyNOGUJilKc9gRA' id='130'>
+<date>2016-09-10T14:50:00Z</date>
+<start>14:50</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>130-webdav-reloaded</slug>
+<title>WebDAV reloaded</title>
+<subtitle></subtitle>
+<track>Lightning Talks</track>
+<abstract>Status update on what has been done in a period of one year compared to last years conference:
+https://conference.owncloud.org/conference/oCC2015/program/proposal/89</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='64'>Thomas Müller</person>
+</persons>
+</event>
+<event guid='3Ppl42pVu5aO0N5U_pByRQ' id='179'>
+<date>2016-09-10T15:00:00Z</date>
+<start>15:00</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>179-benchmarking-and-monitoring-framework-for-interconnected-file-synchronization-and-sharing-services</slug>
+<title>Benchmarking and monitoring framework for interconnected file synchronization and sharing services.</title>
+<subtitle>The extension of the Smashbox - QA and Testing framework for the ownCloud-based services</subtitle>
+<track>Lightning Talks</track>
+<abstract>There is a growing number of large-scale file synchronization and sharing services in the research collaboration network. In this contribution I will address the extension of the QA and Testing framework for the ownCloud-based services - called Smashbox - with benchmarking capabilities. I will cover the design of performance/stress-tests additions to the smashbox framework and usage of the web-based application to analyze generated results. The aim of this analytical tool is to allow collaborators to identify bottlenecks and benchmark the performance
+of their respective systems, also comparing results with existing commercial cloud storage services.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='572'>Piotr Mrowczynski</person>
+</persons>
+</event>
+<event guid='0s6WMJD7GFqd4y0-cXJkcQ' id='184'>
+<date>2016-09-10T15:10:00Z</date>
+<start>15:10</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>184-avoiding-a-swarm-of-bugs-using-behat-automated-tests</slug>
+<title>Avoiding a swarm of bugs using behat automated tests</title>
+<subtitle></subtitle>
+<track>Lightning Talks</track>
+<abstract>We have improved the testing process by including automated tests following behaviour driven development techniques. I'll show you how we avoid many bugs to enter into new pull requests on ownCloud's core repository. </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='175'>Sergio Bertolín Puebla</person>
+</persons>
+</event>
+<event guid='6aaZioVh-2DQA-ny3dww5A' id='140'>
+<date>2016-09-10T15:20:00Z</date>
+<start>15:20</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>140-mobile-automated-test</slug>
+<title>Mobile automated test</title>
+<subtitle></subtitle>
+<track>Lightning Talks</track>
+<abstract>Mobile automated test for ownCloud. Overview.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='589'>Jesús Recio</person>
+</persons>
+</event>
+<event guid='kAs8lQ--SL69F0qBz6j4EA' id='186'>
+<date>2016-09-10T15:30:00Z</date>
+<start>15:30</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>186-several-ways-to-help-testing-oc-an-introduction-for-the-community</slug>
+<title>Several ways to help testing oC, an introduction for the community</title>
+<subtitle></subtitle>
+<track>Lightning Talks</track>
+<abstract>Talk related to encourage ownCloud Community to help testing the oC environment. It will describe some tools, methodologies and a guide to be active part of ownCloud QA process</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='173'>davitol</person>
+</persons>
+</event>
+<event guid='yqYcNygE44G1sFl_9oOXow' id='198'>
+<date>2016-09-10T15:40:00Z</date>
+<start>15:40</start>
+<duration>00:20</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (20 min)</type>
+<language></language>
+<slug>198-oc-and-file-service</slug>
+<title>OC and File-Service</title>
+<subtitle>Opening Enterprise NAS to Sync&amp;Share.</subtitle>
+<track>Lightning Talks</track>
+<abstract>We are trying to open our central, scalable, multi-protocol (SMB, NFSv4) NAS/File-Service, to Sync&amp;Share usage. Challenges to tackle:
+
+1. Impersonation: OC accesses the users data, &quot;as&quot; the user. It therefore obtains a Kerberos ticket and accesses as NFSv4-Client. This enables Sync usage, but ...
+
+2. ... in order to pick up changes, scanning has to work reliable and quick, see e.g. bug [#11797](https://github.com/owncloud/core/issues/11797).
+
+3. CRUDS vs. ACLs: To enable sharing of File-Service data, ACLs have to be automatically set, modeling OCs CRUDS permissions.
+
+4. Transparency: The further goal is to enable all usage patterns (access, sync, share, configure share, ...) over all protocols.
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='584'>boogaart</person>
+</persons>
+</event>
+<event guid='03BgRZZDWr8NdopteMn1zw' id='171'>
+<date>2016-09-10T17:30:00Z</date>
+<start>17:30</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Daily Feedback Session!</type>
+<language></language>
+<slug>171-feedback</slug>
+<title>Feedback!</title>
+<subtitle></subtitle>
+<track>Feedback!</track>
+<abstract>The daily feedback session! What can be improved, and what was awesome?</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+<room name='Social Events'>
+<event guid='TVNK4xp2xLE4y_-UGOopxg' id='168'>
+<date>2016-09-10T12:30:00Z</date>
+<start>12:30</start>
+<duration>01:00</duration>
+<room>Social Events</room>
+<type>Lunch</type>
+<language></language>
+<slug>168-lunch</slug>
+<title>Lunch!</title>
+<subtitle></subtitle>
+<track>Social Events</track>
+<abstract>Lunch!</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+<room name='Workshops - MA-043'>
+<event guid='UKvYWHk9VkDUuF87ECiYmA' id='160'>
+<date>2016-09-10T16:00:00Z</date>
+<start>16:00</start>
+<duration>01:00</duration>
+<room>Workshops - MA-043</room>
+<type>Discussion</type>
+<language></language>
+<slug>160-design-where-to-go-and-what-to-improve</slug>
+<title>Design - Where to go and what to improve...</title>
+<subtitle></subtitle>
+<track>Workshop Track</track>
+<abstract>Design -Priciples, Ideas, Framework, you name it... What to do to improve!
+
+Lead by Michael Stingl - Senior GCX Expert and UI and Design Guru</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+</day>
+<day date='2016-09-11' index='3'>
+<room name='Keynote room - MA-005 - Sat/Sun'>
+<event guid='a_r4kARY5rHSBCHQKm3GmA' id='135'>
+<date>2016-09-11T10:30:00Z</date>
+<start>10:30</start>
+<duration>01:00</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Workshop (60 min)</type>
+<language></language>
+<slug>135-keynote-michael-meeks-on-integrating-owncloud-and-collabora</slug>
+<title>Keynote - Michael Meeks on Integrating ownCloud and Collabora</title>
+<subtitle>Integrating ownCloud and LibreOffice</subtitle>
+<track>Talk</track>
+<abstract>Come and hear how the Collabora Online extension for ownCloud
+adds rich document editing functionality to ownCloud. Hear how you can
+deploy this both at home with CODE, and at scale. See how the code is
+structured and how we tackle security, document isolation, and
+interactivity. See a demo of where we are at, hear about what is next,
+and checkout how you can get involved in accelerating that future
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='m8yVbrr92_8ytRqFyeioPQ' id='187'>
+<date>2016-09-11T11:30:00Z</date>
+<start>11:30</start>
+<duration>00:30</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>187-holger-dyroff-coo-owncloud-the-future-of-owncloud-a-short-insight</slug>
+<title>Holger Dyroff COO ownCloud, the future of ownCloud a short insight.</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Holger Dyroff will give insights on the future and vision of ownCloud.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='mAM13EczckTHZIWYqPxj_A' id='183'>
+<date>2016-09-11T13:30:00Z</date>
+<start>13:30</start>
+<duration>00:20</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (20 min)</type>
+<language></language>
+<slug>183-developing-owncloud-for-our-own-needs</slug>
+<title>Developing ownCloud for our own needs</title>
+<subtitle>Feedback on improving the calendar features for a Framasoft-hosted service</subtitle>
+<track>Lightning Talks</track>
+<abstract>A presentation on how the need for a Google Calendar alternative lead to improvements into the DAV module and Calendar app and how the non-profit French organization [Framasoft](http://framasoft.org/) provides and develops free software services for anyone to use as an alternative to services which don't respect users privacy.
+
+Also, feedback on ownCloud as seen as a junior developer.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='678'>Thomas Citharel</person>
+</persons>
+</event>
+<event guid='XAP1quEfDE3BwP0tbDKMpw' id='167'>
+<date>2016-09-11T13:50:00Z</date>
+<start>13:50</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>167-video-conference-with-jitsi-meet</slug>
+<title>Video Conference with jitsi-meet</title>
+<subtitle>Video and Chat for ownCloud</subtitle>
+<track>Lightning Talks</track>
+<abstract>Jitsi Meet is an OpenSource WebRTC JavaScript application.
+You can setup a Videobridge to provide high quality, scalable video conferences.
+
+- quick setup the whole stack with docker
+- lets have a test call 
+- discussion on ownCloud integration
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='74'>Felix Böhm</person>
+</persons>
+</event>
+<event guid='LgqiJWL-yQxGAjUc1qvgsA' id='201'>
+<date>2016-09-11T14:00:00Z</date>
+<start>14:00</start>
+<duration>00:30</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>201-branding-with-ownbrander-and-tips-and-tricks</slug>
+<title>Branding with ownBrander and Tips and Tricks</title>
+<subtitle>best practice recommendations</subtitle>
+<track>Workshop Track</track>
+<abstract>ownBrander is the magic tool we use to build branded desktop and mobile clients. This talk will be a walkthrough and provide some best practice recommendations and tips and tricks.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='231'>Michael Stingl</person>
+</persons>
+</event>
+<event guid='cGRsNHKVyMso41S0A4iWyw' id='192'>
+<date>2016-09-11T15:30:00Z</date>
+<start>15:30</start>
+<duration>00:30</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>192-vnc-lagoon-owncloud-zimbra-collabora-online</slug>
+<title>VNC Lagoon -  OwnCloud - Zimbra - Collabora Online</title>
+<subtitle>VNC Lagoon</subtitle>
+<track>Talk</track>
+<abstract>VNClagoon is an integrated business software framework consisting of highly flexible components and open interfaces that can be operated in any environment. VNClagoon covers all aspects of a modern, powerful private Cloud application environment – from back end and server infrastructure, to customizable applications, middleware components and a beautiful user interface running on any device. Featured components - OwnCloud - Zimbra - Collabora Online.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='676'>Oscar Arias Farrera</person>
+</persons>
+</event>
+<event guid='xcp9tRJauw--akmyhftnrg' id='199'>
+<date>2016-09-11T16:00:00Z</date>
+<start>16:00</start>
+<duration>00:40</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>199-getting-insights-from-your-owncloud-and-desktop-and-mobile-clients</slug>
+<title>Getting Insights from your ownCloud and Desktop and Mobile Clients</title>
+<subtitle>Logging and debugging on all platforms of the ownCloud ecosystem</subtitle>
+<track>Talk</track>
+<abstract>Where can I as a ownCloud admin get insights to investigate issues with my setup or with ownCloud server or the clients?
+
+- owncloud.log
+- webserver access log
+- desktop client logs
+- logs from Android *-debug.apk
+- Live-logging the iOS client with Xcode
+- Capturing HTTP(S) requests with mitmproxy
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='231'>Michael Stingl</person>
+</persons>
+</event>
+<event guid='WCsXVeVIcUxjgfWwYwxWmg' id='173'>
+<date>2016-09-11T17:00:00Z</date>
+<start>17:00</start>
+<duration>00:10</duration>
+<room>Keynote room - MA-005 - Sat/Sun</room>
+<type>Daily Feedback Session!</type>
+<language></language>
+<slug>173-feedback</slug>
+<title>Feedback!</title>
+<subtitle>The daily feedback session! What can be improved, and what was awesome?</subtitle>
+<track>Feedback!</track>
+<abstract>The daily feedback session! What can be improved, and what was awesome?</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+<room name='Social Events'>
+<event guid='gWkGYKJeQBmd_F-FaUhUWQ' id='169'>
+<date>2016-09-11T12:30:00Z</date>
+<start>12:30</start>
+<duration>01:00</duration>
+<room>Social Events</room>
+<type>Lunch</type>
+<language></language>
+<slug>169-lunch</slug>
+<title>Lunch</title>
+<subtitle></subtitle>
+<track>Social Events</track>
+<abstract>Lunch</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='wpsQ3nk-ZK18rSIxMYTeNw' id='132'>
+<date>2016-09-11T17:00:00Z</date>
+<start>17:00</start>
+<duration>02:00</duration>
+<room>Social Events</room>
+<type>Social Event</type>
+<language></language>
+<slug>132-social-event-we-meet-at-the-beergarden-close-by</slug>
+<title>Social Event, we meet at the Beergarden close by.</title>
+<subtitle>Open End</subtitle>
+<track>Social Events</track>
+<abstract>After a day packed with cool talks and workshops we will enjoy the afternoon sunlight at „Schleusenkrug“ Biergarten nearby our conference venue. Join for a nice chit-chat with colleagues and friends accompanied by a refreshing beer.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+<room name='Workshops - MA-043'>
+<event guid='ZfMmaoX4CLon4-6h_6HyEg' id='177'>
+<date>2016-09-11T13:30:00Z</date>
+<start>13:30</start>
+<duration>02:00</duration>
+<room>Workshops - MA-043</room>
+<type>Workshop (120 min)</type>
+<language></language>
+<slug>177-owncloud-installation-and-recommendations-for-small-and-middle-environments-for-beginners-and-intermediate-users</slug>
+<title>ownCloud installation and recommendations for small and middle environments (for beginners and intermediate users)</title>
+<subtitle></subtitle>
+<track>Workshop Track</track>
+<abstract>
+This is workshop for users that has none or minimal experience with owncloud and linux.
+
+The purpose is to reach a comprehension level of the ecosystem needed, - to install ownCloud and feel confident to create their personal ownCloud.
+
+Here you will learn how things are called (see 2), know prerequisites for owncloud. (e.g.'recommended linux - ubuntu 16.04' (see 3), network setup (see 4), filesystem layout (see 8), database recommendation mysql/phpmysqladmin (see 7) and optional items (10, 11,12) and problems.
+
+1.- Introduction  
+2.- Terminology
+3.- Linux server installation/preparation.
+4.- Routing configuration (DHCP, DNS, DynDNS)
+5.- Apache configuration
+6.- PHP configuration
+7.- Database configuration
+8.- Storage 
+9.- Installing ownCloud - tar vs. packages
+10.- Installing Apps.
+11-. Creating Users and importing LDAP users/attributes
+12.- Sync-Clients
+13.- Error analysis
+14.- Questions and Answers
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='690'>Carlos Damken</person>
+</persons>
+</event>
+</room>
+</day>
+<day date='2016-09-12' index='4'>
+<room name='Workshops - MA-043'>
+<event guid='-pyEhAXV1koa-zKO3iBy8w' id='150'>
+<date>2016-09-12T10:30:00Z</date>
+<start>10:30</start>
+<duration>00:40</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>150-expanding-the-owncloud-ecosystem-into-a-marketplace</slug>
+<title>&quot;Expanding the ownCloud ecosystem into a marketplace&quot;</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Holger Dyroff
+
+Expanding ownCloud Development by introducing  the ownCloud Marketplace,</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='o5tOB-Cwj9oezi0dOx5qtQ' id='158'>
+<date>2016-09-12T11:20:00Z</date>
+<start>11:20</start>
+<duration>00:40</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>158-thomas-muller-owncloud-apis-broad-documented-and-stable</slug>
+<title>Thomas Müller &quot;ownCloud APIs broad, documented and stable&quot;</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Thomas Müller &quot;ownCloud APIs broad, documented and stable&quot;</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='ygroY1In3QmHE4d8AGHPzg' id='159'>
+<date>2016-09-12T12:30:00Z</date>
+<start>12:30</start>
+<duration>00:40</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>159-tobias-gerlinger-ceo-leverage-the-owncloud-ecosystem-to-generate-revenue-with-marketplace</slug>
+<title>Tobias Gerlinger, CEO &quot;Leverage the ownCloud Ecosystem to generate revenue with Marketplace&quot;</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>ownCloud intends to set-up its own marketplace in order to expand its ecosystem around ownCloud server, community apps and enterprise apps. Tobias Gerlinger, CEO of ownCloud will showcase that project and will give further information on how to generate revenue with ownClouds new marketplace.
+
+In the future, developers and partners will be able to use a brand new ownCloud marketplace to market and distribute their own commercial and open source apps. This will allow them to generate revenue from licenses, maintenance and support, and even distribute their apps free of charge.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='DhonpgSTiUPXDKay7X9f7A' id='182'>
+<date>2016-09-12T13:30:00Z</date>
+<start>13:30</start>
+<duration>00:40</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>182-the-outlook-add-in-for-owncloud-presented-by-bw-tech-coo-frank-bottcher</slug>
+<title>The Outlook add-in for ownCloud, presented by BW-Tech COO Frank Böttcher.</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Frank Böttcher will give a talk on the current state of the Outlook add-in, an overview of the Roadmap, and discuss requests and improvements by customers. </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='700'>Frank Böttcher</person>
+</persons>
+</event>
+<event guid='tGse2X860Zf1IHxDvZqrJw' id='134'>
+<date>2016-09-12T14:30:00Z</date>
+<start>14:30</start>
+<duration>00:40</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>134-secure-your-own-cloud-with-your-own-two-factors-using-privacyidea-enterprise-grade</slug>
+<title>Secure your own cloud with your own two factors using privacyIDEA - enterprise grade</title>
+<subtitle>Learn about the new two factor authentication framework in ownCloud 9.1</subtitle>
+<track>Talk</track>
+<abstract>This talk is about adding two factor authentication to ownCloud based on the new 2FA framework that comes with ownCloud 9.1. A new authentication app connects ownCloud to privacyIDEA. privacyIDEA is an enterprise grade open source authentication system. It can manage many different kind of authentication devices like OTP tokens, display cards, smartphones or yubikeys to name a few.
+Now users need to authenticate with their ownCloud password **and** a second factor - usually an object of possession. This helps to keep your data even safer.
+
+As authentication devices for multi-factor-authentication are managed centrally in privacyIDEA, these authentication devices can also be used in other applications like VPN, web portals, SSH logins or firewalls.
+
+In this talk I will give a short introduction about the ideas behind two factor authentication.You will learn about the pros and cons of certain two factor authentication methods. I will give an overview over privacyIDEA, so that you get an idea what this system is capable of and where else in your network it can help to improve your security. Finally we will dive into the integration of the two factor authentication system privacyIDEA with ownCloud.
+You will understand why this setup is enterprise grade and others are not.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='573'>Cornelius Kölbel</person>
+</persons>
+</event>
+<event guid='1QBasMuxyzdnuWXICFARow' id='185'>
+<date>2016-09-12T15:10:00Z</date>
+<start>15:10</start>
+<duration>00:10</duration>
+<room>Workshops - MA-043</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>185-ralph-krimmel-establishing-a-state-wide-file-sync-share-solution-for-niedersachsen-with-owncloud-ceph-and-objectstorage</slug>
+<title>Ralph  Krimmel: Establishing a state wide file sync &amp; share solution for Niedersachsen with owncloud, ceph and objectstorage</title>
+<subtitle>ownCloud,ceph and objectstorage</subtitle>
+<track>Talk</track>
+<abstract>Ralph Krimmel from GWDG on ownCloud, Ceph and Objectstorage for a state wide file sync and share solution (Niedersachsen).  </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='eE40BeRt9Dtuzw4b6eGYPQ' id='190'>
+<date>2016-09-12T15:30:00Z</date>
+<start>15:30</start>
+<duration>00:30</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>190-infinite-file-service</slug>
+<title>Infinite File Service</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Stehen File Services vor einem Neubeginn?</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='833'>Sven Bauernfeind</person>
+</persons>
+</event>
+<event guid='kkvCiJAdczl-pJl4aJYkMg' id='191'>
+<date>2016-09-12T16:00:00Z</date>
+<start>16:00</start>
+<duration>00:30</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>191-vnc-lagoon-owncloud-zimbra-collabora-online</slug>
+<title>VNC Lagoon -  OwnCloud - Zimbra - Collabora Online</title>
+<subtitle>VNC Lagoon</subtitle>
+<track>Talk</track>
+<abstract>VNClagoon is an integrated business software framework consisting of highly flexible components and open interfaces that can be operated in any environment.  VNClagoon covers all aspects of a modern, powerful private Cloud application environment – from back end and server infrastructure, to customizable applications, middleware components and a beautiful user interface running on any device. Featured components -  OwnCloud - Zimbra - Collabora Online.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='676'>Oscar Arias Farrera</person>
+</persons>
+</event>
+<event guid='mLAXpoQy-lkizOrCzi0ODQ' id='194'>
+<date>2016-09-12T16:40:00Z</date>
+<start>16:40</start>
+<duration>00:30</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>194-tackling-the-crowded-and-competitive-efss-market</slug>
+<title>Tackling the Crowded and Competitive EFSS Market</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>The EFSS market has grown increasingly competitive in the past few years.  With over 100 vendors (and rising) at last count with names like Dropbox, Box, Amazon, Google, how is one to differentiate and stand out from the rest?
+
+Is it even worth entering into this space?  According to a Gartner study, 70% of EFSS vendors will cease to exist, be acquired, or be put out of business by 2018.  Combined with the fact that cloud storage has become commoditized, the opportunity for revenue generation looks bleak.
+
+This is where Datto Drive comes in.  This talk will focus on Datto’s unique market position and how it is leveraging its own technology along with ownCloud to take this market head on.
+
+
+Tom Yoon brings over 10 years of product management experience in a wide variety sectors ranging from financial services to not for profit and has been leading Datto’s entry into the EFSS market.
+
+Datto is an innovative provider of comprehensive backup, recovery and business continuity solutions used by thousands of managed service providers worldwide.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='871'>thomasyoon</person>
+</persons>
+</event>
+<event guid='8POWz98kAV_XPKfPOXfUqg' id='195'>
+<date>2016-09-12T17:10:00Z</date>
+<start>17:10</start>
+<duration>00:30</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>195-fireside-chat-with-holger-dyroff-and-tobias-gerlinger</slug>
+<title>Fireside Chat – with Holger Dyroff and Tobias Gerlinger  </title>
+<subtitle>Meet Holger Dyroff and Tobias Gerlinger</subtitle>
+<track>Talk</track>
+<abstract>Join us and get to know the management team. Hear from ownCloud’s CEO, Tobias Gerlinger, and COO, Holger Dyroff, about more ownCloud specifics like: 
+
+- The CEO’s motivation to join ownCloud 
+- Open Source business model
+- Vision 
+- Future plans 
+- What’s behind Contributor License Agreement </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='rNBKUKi3fpjD-KGBm9nhug' id='172'>
+<date>2016-09-12T17:40:00Z</date>
+<start>17:40</start>
+<duration>00:10</duration>
+<room>Workshops - MA-043</room>
+<type>Daily Feedback Session!</type>
+<language></language>
+<slug>172-feedback</slug>
+<title>Feedback!</title>
+<subtitle></subtitle>
+<track>Feedback!</track>
+<abstract>The daily feedback session! What can be improved, and what was awesome?</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+<room name='Hacking Rooms - 5th Floor'>
+<event guid='LzvUCWGTr6xF8V84S0GozA' id='157'>
+<date>2016-09-12T13:30:00Z</date>
+<start>13:30</start>
+<duration>02:00</duration>
+<room>Hacking Rooms - 5th Floor</room>
+<type>Workshop (120 min)</type>
+<language></language>
+<slug>157-how-to-program-your-first-owncloud-app-dr-jorn-dreyer</slug>
+<title>How to program your first ownCloud APP, Dr. Jörn Dreyer</title>
+<subtitle></subtitle>
+<track>Workshop Track</track>
+<abstract>Jörn Friedich Dreyer: &quot;How to program your first ownCloud</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+</day>
+<day date='2016-09-13' index='5'>
+<room name='Workshops - MA-043'>
+<event guid='QSTc5KTn4TCALEKdQr77nw' id='151'>
+<date>2016-09-13T10:30:00Z</date>
+<start>10:30</start>
+<duration>00:10</duration>
+<room>Workshops - MA-043</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>151-welcome-holger-dyroff-owncloud-coo-christian-schmitz-owncloud-senior-director-strategic-accounts</slug>
+<title>Welcome, Holger Dyroff ownCloud COO &amp; Christian Schmitz ownCloud Senior Director Strategic Accounts</title>
+<subtitle>Holger Dyroff ownCloud COO &amp; Christian Schmitz ownCloud Senior Director Strategic Accounts</subtitle>
+<track>SCALE !  Big Machines - Big awesome!</track>
+<abstract>Welcome to the ownCloud </abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='vNM_wuAh3ZBX01xHpbXagw' id='152'>
+<date>2016-09-13T10:40:00Z</date>
+<start>10:40</start>
+<duration>00:30</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>152-open-cloud-mesh-and-federation-christian-schmitz-owncloud-senior-director-strategic-accounts-jakub-t-moscicki-cern</slug>
+<title>Open Cloud Mesh and Federation - Christian Schmitz ownCloud, Senior Director Strategic Accounts &amp; Jakub T. Moscicki, CERN </title>
+<subtitle></subtitle>
+<track>SCALE !  Big Machines - Big awesome!</track>
+<abstract>The Future of open Cloud Mesh and Federation</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='LXusM79XJihzh0n__3_YUw' id='196'>
+<date>2016-09-13T11:10:00Z</date>
+<start>11:10</start>
+<duration>00:30</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>196-jakub-moscicki-cern-outlook-of-cernbox</slug>
+<title> Jakub Moscicki, CERN - Outlook of CERNBox</title>
+<subtitle>The Future of CERNbox </subtitle>
+<track>SCALE !  Big Machines - Big awesome!</track>
+<abstract>Jakub Moscicki will give an overview on the CERN will further evolve CERNBox, including the architecture challenges. Since owncloud is a (vital) part of the system it will be interesting how the CERN will generally drive the evolution forward.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='kK3JIEj8vTJRI2Jg-g8v-w' id='153'>
+<date>2016-09-13T11:40:00Z</date>
+<start>11:40</start>
+<duration>00:10</duration>
+<room>Workshops - MA-043</room>
+<type>Lightning (10 min)</type>
+<language></language>
+<slug>153-introducing-the-up2u-project-proposal-peter-szegedi-geant</slug>
+<title>Introducing the Up2U Project Proposal - Peter Szegedi, GÉANT</title>
+<subtitle></subtitle>
+<track>SCALE !  Big Machines - Big awesome!</track>
+<abstract>Introducing the Up2U Project Proposal - Peter Szegedi, GÉANT
+
+The key objective of our project is to bridge the gap between secondary schools and higher education and research by better integrating formal and informal learning scenarios and adapting both the technology and the methodology that students will most likely be facing in universities.
+
+We are focusing on the context of secondary schools, often referred to as high schools, which provide secondary education between the ages of 11 and 19 depending on the country, after primary school and before higher education. The learning context from the perspective of the students is the intersection of formal and informal spaces, a dynamic hybrid learning environment where synchronous activities meet in both virtual and real dimensions. 
+
+For this, we propose to develop an innovative Up to University (Up2U) ecosystem – based on proven experiences in higher education and big research – that facilitates open, more effective and efficient co-design, co-creation, and use of digital content, tools and services adapted for personalised learning and teaching of high school students preparing for university. We will address project based learning and peer-to-peer learning scenarios.
+
+We strongly believe that all the tools and services the project is going to use and/or make available (i.e. incorporate, design, develop and test) must be sustainable after the lifetime of the project. Therefore, the project is going to develop business plans and investigate appropriate business models using the expertise of the Small Medium Enterprise and National Research and Education Network partners and their contacts with third-party business actors. Our plan is to make it easy for new schools to join the Up2U infrastructure and ecosystem that will form a federated market-place for the learning community.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='lDXJ94oMY1iMxpZCtucAhg' id='178'>
+<date>2016-09-13T12:00:00Z</date>
+<start>12:00</start>
+<duration>00:30</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (30 min)</type>
+<language></language>
+<slug>178-engineering-update-klaas-freitag-owncloud-head-of-engineering</slug>
+<title>Engineering update Klaas Freitag, ownCloud Head of Engineering</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Klaas Freitag: Update on Roadmap and Vision</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='CWD-oM-G4b2zn2QiPqK3Og' id='155'>
+<date>2016-09-13T12:30:00Z</date>
+<start>12:30</start>
+<duration>00:40</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>155-owncloud-roadmap-holger-dyroff-owncloud-coo</slug>
+<title>ownCloud Roadmap Holger Dyroff, ownCloud COO </title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>ownCloud Roadmap Holger Dyroff, ownCloud COO 
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='q-w_yakiwSPXMYmcLnd5nw' id='180'>
+<date>2016-09-13T16:00:00Z</date>
+<start>16:00</start>
+<duration>00:40</duration>
+<room>Workshops - MA-043</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>180-synchronisation-protocol-optimization-bundling-and-beyond</slug>
+<title>Synchronisation protocol optimization: Bundling and beyond.</title>
+<subtitle>Optimisation to the synchronisation protocol by bundling (grouping) file upload request together</subtitle>
+<track>Talk</track>
+<abstract>Research of performance of cloud synchronisation services like ownCloud, Seafile and Dropbox has shown, that on-premise services show better performance characteristics than public clouds syncing big files (higher transfer rates in both upload and download could be obtained due to smaller activity of users for specific bandwith) and are very competitive syncing mixtures of files. However, the long distribution tails (penalizing transfers of small files over WAN) are characteristic for services using current ownCloud synchronization protocol. Assuming symmetric network uplink characteristics, the overheads of single-file upload request correspond to write performance of underlying storage and additional bookkeeping and metadata handling performed by the server, but also are related to the number of processes opened on the server side per file.
+
+In current work, I will present the development steps of the feature - Bundling - being implemented into ownCloud client-server architecture. Bundling small files together and thus forcing delayed acknowledgement mechanism for the files might effectively utilize the limited server bandwidth so that the whole sync time and traffic overhead can be significantly decreased. Furthermore, it could reduce the number of processes and operations per file required in the synchronisation of big number of small files.
+
+In my presentation, I will also include the first performance results and comparison using the benchmarking framework - smashbox. 
+
+My work will also include future prospects, ideas and possible optimizations to the prototype state bundling feature. 
+
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='572'>Piotr Mrowczynski</person>
+</persons>
+</event>
+<event guid='114H7ecgn51Saaj-Grdecw' id='200'>
+<date>2016-09-13T17:10:00Z</date>
+<start>17:10</start>
+<duration>00:20</duration>
+<room>Workshops - MA-043</room>
+<type>Lightning (20 min)</type>
+<language></language>
+<slug>200-oc-heart-file-service</slug>
+<title>OC heart File-Service</title>
+<subtitle>Opening Enterprise NAS to Sync&amp;Share</subtitle>
+<track>Lightning Talks</track>
+<abstract>
+We are trying to open our central, scalable, multi-protocol (SMB, NFSv4) NAS/File-Service, to Sync&amp;Share usage. Challenges to tackle:
+
+1. Impersonation: OC accesses the users data, &quot;as&quot; the user. It therefore obtains a Kerberos ticket and accesses as NFSv4-Client. This enables Sync usage, but ...
+
+2. ... in order to pick up changes, scanning has to work reliable and quick, see e.g. bug [#11797](https://github.com/owncloud/core/issues/11797).
+
+3. CRUDS vs. ACLs: To enable sharing of File-Service data, ACLs have to be automatically set, modeling OCs CRUDS permissions.
+
+4. Transparency: The further goal is to enable all usage patterns (access, sync, share, configure share, ...) over all protocols.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='555'>Michael Roth</person>
+</persons>
+</event>
+<event guid='4PYLbO4x8blR9Mnprvx-MQ' id='174'>
+<date>2016-09-13T17:30:00Z</date>
+<start>17:30</start>
+<duration>00:10</duration>
+<room>Workshops - MA-043</room>
+<type>Daily Feedback Session!</type>
+<language></language>
+<slug>174-feedback</slug>
+<title>Feedback!</title>
+<subtitle></subtitle>
+<track>Feedback!</track>
+<abstract>The daily feedback session! What can be improved, and what was awesome?</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+</day>
+<day date='2016-09-14' index='6'>
+<room name='Hacking Rooms - 5th Floor'>
+<event guid='hrl1Vp4IKIw2ITl9kvdegA' id='161'>
+<date>2016-09-14T10:00:00Z</date>
+<start>10:00</start>
+<duration>02:00</duration>
+<room>Hacking Rooms - 5th Floor</room>
+<type>Workshop (120 min)</type>
+<language></language>
+<slug>161-lets-improve-owncloud-org</slug>
+<title>Lets improve owncloud.org</title>
+<subtitle></subtitle>
+<track>Workshop Track</track>
+<abstract>In my opinion ownCloud.org needs some work on architecture and design. Lets Discuss what we could do to improve the user experience with ownCloud.org.
+
+
+</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='QxCRH0Y5wT60ysC3KygrDA' id='148'>
+<date>2016-09-14T13:30:00Z</date>
+<start>13:30</start>
+<duration>01:00</duration>
+<room>Hacking Rooms - 5th Floor</room>
+<type>Workshop (60 min)</type>
+<language></language>
+<slug>148-clients-roadmap</slug>
+<title>clients roadmap</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Features expected till the end of 2016 and beyond.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='wV8RDCZhGntOrEGg2nDF7Q' id='149'>
+<date>2016-09-14T14:30:00Z</date>
+<start>14:30</start>
+<duration>00:40</duration>
+<room>Hacking Rooms - 5th Floor</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>149-api-s</slug>
+<title>API's</title>
+<subtitle></subtitle>
+<track>Talk</track>
+<abstract>Lets talk about APIs, for instance: favorite ones so that the ownCloud platform is aligned.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+<event guid='THT7Zgg1-67Q42mgJcA4UQ' id='176'>
+<date>2016-09-14T17:30:00Z</date>
+<start>17:30</start>
+<duration>00:10</duration>
+<room>Hacking Rooms - 5th Floor</room>
+<type>Daily Feedback Session!</type>
+<language></language>
+<slug>176-feedback</slug>
+<title>Feedback!</title>
+<subtitle></subtitle>
+<track>Feedback!</track>
+<abstract>The daily feedback session! What can be improved, and what was awesome?</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+</day>
+<day date='2016-09-15' index='7'>
+<room name='Social Events'>
+<event guid='o6nPgr7HtyiF01KVHBsILw' id='141'>
+<date>2016-09-15T16:00:00Z</date>
+<start>16:00</start>
+<duration>00:40</duration>
+<room>Social Events</room>
+<type>Talk (40 min)</type>
+<language></language>
+<slug>141-retrospective</slug>
+<title>Retrospective</title>
+<subtitle>Looking back how can we improve the conference</subtitle>
+<track>Workshop Track</track>
+<abstract>What was good, what could be better? 
+How can we improve the conference?
+
+Which topics where not covered enough.
+Which topics where covered to much in Depth.</abstract>
+<recording>
+<license />
+<optout>false</optout>
+</recording>
+<persons>
+<person id='570'>ownclouders</person>
+</persons>
+</event>
+</room>
+</day>
+</schedule>
